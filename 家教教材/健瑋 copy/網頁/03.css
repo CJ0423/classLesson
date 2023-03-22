@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 116.5em;
+    height: 60em;
+
+}
+
+.div1 {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 115em;
+    height: 7em;
+    border-bottom: 1.5px black solid;
+    display: flex;
+    transform: translate(0px, -960px);
+    background-color: white;
+    opacity: 0.7;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.div1btn {
+    transition: 0.5s;
+}
+
+.div1btn:hover {
+    transform: translate(0px, -5px);
+}
+
+.div1>p {
+    opacity: 10;
+    font-size: 3em;
+    margin-right: 3em;
+}
+
+.div1>button {
+    font-size: 1.2em;
+    margin: 20px;
+    border: 0;
+    background-color: white;
+}
+
+header>img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 275%;
+    flex-grow: 1;
+    opacity: 0.5;
+    transition: 3s;
+}
+
+.div2 {
+    transform: translate(0px, 1000px);
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    width: 115em;
+    height: 55em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div2>img {
+    width: 35em;
+    height: 35em;
+}
+
+#jpg1 {
+    transform: translate(150px, -30px);
+    border: 3px black solid;
+}
+
+.div2>p {
+
+    font-size: 1.1em;
+    line-height: 2.2em;
+    transform: translate(-50px, 0px);
+}
+
+.div2 .jpg2 {
+    margin: 0.5em;
+    width: 7em;
+    height: 7em;
+    transform: translate(-320px, 320px);
+}
+
+.div2>.jpg2 .opc {
+    opacity: 0.5;
+}
