@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="text">
+
+    </div>
+    <script>
+        const text = document.querySelector(".text")
+        for (let i = 1; i <= 9; i++) {
+
+            for (let j = 1; j <= 9; j++) {
+                text.innerHTML += `${i}*${j}=${i * j}`
+
+                text.innerHTML += `<br>`
+
+
+
+            }
+            text.innerHTML += `<br>`
+        }
+
+        // 我們的作業 九九乘法表
+    </script>
 </body>
+
 </html>
