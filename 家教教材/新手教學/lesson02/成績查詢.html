@@ -18,22 +18,34 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .box{
+            width: 100%;
+            height: 20vh;
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
     <h1>請輸入您的成績：</h1>
-    <input type="text" id="score" placeholder="成績" />
+    <input type="text" id="score" placeholder="請輸入成績" />
     <input type="submit" value="送出" onclick="checkScore()" />
     <p id="result"></p>
 
     <script>
+        // function text (x,y){
+        //     console.log(x)
+        //     console.log(y)
+        //     console.log("hello world")
+        // }
+
+
         function checkScore() {
             // 試試看改成queryselector的寫法吧
-            const score = document.getElementById("score").value;
+            const score = document.querySelector("#score").value;
             const result = document.getElementById("result");
             
             if (score >= 60) {
-                result.innerHTML = "你及格了！";
+                result.innerHTML = "<div class='box'>測試用</div>";
             } else {
                 // innerHTML是做什麼的呢？
                 result.innerHTML = "你不及格！";
