@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+form{
+    width: 20%;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    border: black solid 1px;
+}
+label{
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    width: 20%;
+}
+input[type="reset"]{
+    width: 20%;
+    margin-left: 10px;
+}
+.adjust{
+    display: flex;
+}
+</style>
+<body>
+    <form action="">
+        <h3>請填寫以下資料</h3>
+    <label for="cname">姓名 <input id="cname" type="text"></label>
+   
+    <label for="number">座號 <input id="test" type="text"></label>
+    <label for="sex"> 性別   <select name="" id="sex">
+        <option value="男生">男生</option>
+        <option value="女生">女生</option>
+    </select></label>
+    <div class="adjust"><input type="submit">
+        <input type="reset"></div>
+    
+    </form>
+</body>
+</html>
