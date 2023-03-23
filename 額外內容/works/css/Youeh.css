@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.functions {
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+}
+.function {
+  /* width: 500px; */
+  /* background-color: antiquewhite; */
+  font-size: 14px;
+  margin-left: 25px;
+}
+#drop-down-money {
+  display: none;
+}
+#drop-down-money:checked + .function-ul {
+  width: 300px;
+  background-color: antiquewhite;
+  display: block;
+  /* text-align: center; */
+}
+.function-ul {
+  display: none;
+
+  list-style: none;
+}/*# sourceMappingURL=Youeh.css.map */
