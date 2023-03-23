@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    overflow: visible;
+    background-color: white;
+}
+
+#menu {
+    transition: 0.5s;
+    transform: translate(20px, 20px);
+    display: none;
+    border: 1px black solid;
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    flex-direction: column;
+}
+
+#menu>div {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#x {
+    margin-bottom: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#start {
+    display: flex;
+    width: 500px;
+    height: 200px;
+
+    flex-direction: column;
+}
+
+#three {
+    transform: translate(20px, 20px);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
