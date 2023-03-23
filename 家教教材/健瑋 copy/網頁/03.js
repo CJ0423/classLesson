@@ -17,16 +17,16 @@ window.onload = function () {
         document.getElementById("number5"),
     ]
     var pic = [
-        "/pic/988.jpg",
-        "/pic/990.jpg",
-        "/pic/982.jpg",
-        "/pic/009.jpg",
+        "./pic/988.jpg",
+        "./pic/990.jpg",
+        "./pic/982.jpg",
+        "./pic/009.jpg",
     ]
     var pic1 = [
-        "/pic/010.jpg",
-        "/pic/011.jpg",
-        "/pic/012.jpg",
-        "/pic/013.jpg",
+        "./pic/010.jpg",
+        "./pic/011.jpg",
+        "./pic/012.jpg",
+        "./pic/013.jpg",
     ]
     var num = 0;
 
@@ -58,24 +58,24 @@ window.onload = function () {
     })
 
     number[0].addEventListener("mouseover", function () {
-        section2.src = "/pic/001.jpg";
+        section2.src = "./pic/001.jpg";
         this.style.background = "grey";
 
     })
     number[1].addEventListener("mouseover", function () {
-        section2.src = "/pic/002.jpg";
+        section2.src = "./pic/002.jpg";
         this.style.background = "grey";
     })
     number[2].addEventListener("mouseover", function () {
-        section2.src = "/pic/003.jpg";
+        section2.src = "./pic/003.jpg";
         this.style.background = "grey";
     })
     number[3].addEventListener("mouseover", function () {
-        section2.src = "/pic/004.jpg";
+        section2.src = "./pic/004.jpg";
         this.style.background = "grey";
     })
     number[4].addEventListener("mouseover", function () {
-        section2.src = "/pic/005.jpg";
+        section2.src = "./pic/005.jpg";
         this.style.background = "grey";
     })
 
