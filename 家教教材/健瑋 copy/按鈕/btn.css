@@ -1,0 +1,16 @@
+#submit {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 30px;
+}
