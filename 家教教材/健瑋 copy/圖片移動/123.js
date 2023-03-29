@@ -6,11 +6,11 @@ let pic = [
     "./pic/puppy.jpg",
     "./pic/wood.jpg",
 ]
-let x = 0;
+let x = 1;
 setInterval(function () {
     inner.style.backgroundImage = "url(" + pic[x] + ")";
     x += 1;
     if (x > 3) {
         x = 0;
     }
-}, 10000)
+}, 5000)

@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    animation: key 10s linear infinite;
+    animation: key 5s linear infinite;
 }
 
 @keyframes key {
@@ -61,10 +61,13 @@ header>div {
 }
 
 .shopping {
-    margin: 15px;
-    margin-right: 500px;
+    width: 50%;
+
+
+    /* margin-right: 500px; */
     font-size: 1.2em;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    padding-left: 50px;
 }
 
 .shopping a,
@@ -73,7 +76,11 @@ header>div {
 }
 
 .join {
-    margin: 15px;
+    width: 50%;
+    /* margin: 15px; */
+    text-align: right;
     font-size: 1.2em;
-    margin-left: 900px;
+    /* margin-left: 900px; */
+    padding-right: 50px;
+
 }
