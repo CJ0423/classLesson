@@ -2,32 +2,44 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  /* overflow: hidden; */
-  overflow: visible;
 }
 
-.functions {
-  width: 100%;
+nav {
+  max-width: 1600px;
+  padding: 8px 28px;
+}
+nav .top-nav {
+  display: flex;
+}
+nav .top-nav .small-logo {
+  display: none;
+}
+nav .top-nav .functions {
   display: flex;
   margin-left: auto;
 }
-.function {
-  /* width: 500px; */
-  /* background-color: antiquewhite; */
+nav .top-nav .functions .function {
   font-size: 14px;
   margin-left: 25px;
 }
- #drop-down-money {
+@media (max-width: 1200px) {
+  nav .top-nav .functions .hidden-1200 {
+    display: none;
+  }
+}
+nav .top-nav .functions .hidden-1200 #drop-down-money {
   display: none;
 }
-#drop-down-money:checked + .function-ul {
-  width: 300px;
-  background-color: antiquewhite;
+nav .top-nav .functions .hidden-1200 #drop-down-money:checked + .function-ul {
   display: block;
-  /* text-align: center; */
 }
-.function-ul {
+nav .top-nav .functions .hidden-1200 #drop-down-langue {
   display: none;
-
+}
+nav .top-nav .functions .hidden-1200 #drop-down-langue:checked + .function-ul {
+  display: block;
+}
+nav .top-nav .functions .hidden-1200 .function-ul {
+  display: none;
   list-style: none;
 }/*# sourceMappingURL=Youeh.css.map */

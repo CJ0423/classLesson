@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.outer-div{
+background-color: azure;
+width: 100%;
+height: 900px;
+/* display: flex;
+justify-content: center; */
+position: relative;
+
+}
+
+.inner-div{
+background-image: url("../img/bed.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100% 0%; 
+/* 我找找為什麼 */
+
+width: 300px;
+height: 400px;
+
+float: left;
+position: relative; 
+
+top: calc( 50% - 200px);
+left: calc(50% - 150px);
+animation: move-something 20s linear infinite;
+
+
+}
+@keyframes move-something{
+    0%{
+        background-position: 100% 0%; 
+    }
+    25%{
+        background-position: 70% 0% ;
+    }
+    50%{
+        background-position: 40% 0% ;
+    }
+    75%{
+        background-position: 70% 0% ;
+    }
+    100%{
+        background-position: 100% 0%; 
+    }
+}
+
+
+
+/* .inner-div2{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    
+    position: relative;
+    top:100px;
+    left: 200px;
+} */
+
+
+</style>
+<body>
+    <div class="outer-div">
+        <!-- <div class="inner-div2"></div> -->
+        <div class="inner-div"></div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 1想辦法做到透過js去更改圖片 -->
