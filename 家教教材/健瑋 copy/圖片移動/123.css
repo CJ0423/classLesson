@@ -6,7 +6,7 @@
 
 .outer {
     width: 100%;
-    height: 20vh;
+    height: 100vh;
     background-color: aquamarine;
     position: relative;
 }
@@ -17,9 +17,9 @@
     background-image: url(./pic/bed.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 100%;
     width: 100%;
-    animation: key 15s linear infinite;
+    animation: key 10s linear infinite;
 }
 
 @keyframes key {
@@ -42,4 +42,38 @@
     100% {
         background-position: 0% 100%;
     }
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+header>div {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(223, 20, 20);
+
+}
+
+.shopping {
+    margin: 15px;
+    margin-right: 500px;
+    font-size: 1.2em;
+    margin-left: 50px;
+}
+
+.shopping a,
+.join a {
+    text-decoration: none;
+}
+
+.join {
+    margin: 15px;
+    font-size: 1.2em;
+    margin-left: 900px;
 }
