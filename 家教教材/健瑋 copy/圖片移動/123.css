@@ -68,6 +68,7 @@ header>div {
     font-size: 1.2em;
     /* margin-left: 50px; */
     padding-left: 50px;
+    border: 1px white solid;
 }
 
 .shopping a,
@@ -82,5 +83,5 @@ header>div {
     font-size: 1.2em;
     /* margin-left: 900px; */
     padding-right: 50px;
-
+    border: 1px white solid;
 }
