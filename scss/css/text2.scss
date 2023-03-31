@@ -1,3 +1,6 @@
+$color-blue:rgb(100, 84, 73);
+$width:100%;
+
 *{
     margin: 0px;
     padding: 0px;
@@ -6,7 +9,7 @@
 }
 header{
     nav{
-        width:100%;
+        width:$width;
         height: 50px;
         background-color: aquamarine;
         display: flex;
@@ -19,8 +22,33 @@ header{
             height: 50px;
             background-color: aqua;
         }
+        .text1{
+            background-color: $color-blue;
+            &:hover{
+                background-color: aqua;
+            }
+            @media (max-width:1100px) {
+                background-color: red;
+            }
+
+
+        }
+        .text2{
+            background-color: $color-blue;
+        }
+        .text3{
+            background-color: $color-blue;
+        }
+
+
+        // .color-blue{
+        //     background-color: rgb(0, 26, 255);
+        // }
+    
     }
 }
 
 
 // 這是scss的第一招
+
+

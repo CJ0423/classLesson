@@ -17,4 +17,21 @@ header nav .nav-all {
   max-width: 1000px;
   height: 50px;
   background-color: aqua;
+}
+header nav .text1 {
+  background-color: rgb(100, 84, 73);
+}
+header nav .text1:hover {
+  background-color: aqua;
+}
+@media (max-width: 1100px) {
+  header nav .text1 {
+    background-color: red;
+  }
+}
+header nav .text2 {
+  background-color: rgb(100, 84, 73);
+}
+header nav .text3 {
+  background-color: rgb(100, 84, 73);
 }/*# sourceMappingURL=text2.css.map */
