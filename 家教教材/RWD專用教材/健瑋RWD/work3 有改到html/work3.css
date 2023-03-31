@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.all-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.all-page .main-left {
+  width: 100%;
+  height: 15%;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-page img {
+  width: 20%;
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 120px;
+}
+.all-page .main-right {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 3% 1%;
+}
+.all-page .main-right .xyz {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.all-page .main-right .xyz .x {
+  width: 100%;
+  height: 50%;
+  padding: 0;
+}
+.all-page .main-right .xyz .small {
+  height: 50%;
+  display: flex;
+}
+.all-page .main-right .xyz .small .y {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.all-page .main-right .xyz .small .z {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}/*# sourceMappingURL=work3.css.map */
