@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.biggest-div {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.biggest-div .center-div {
+  width: 70%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+.biggest-div .center-div input {
+  display: none;
+}
+.biggest-div .center-div #leftButton {
+  background-image: url(../pic/playSolid.svg);
+  background-size: cover;
+  width: 50px;
+  height: 65px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  padding-left: 5px;
+}
+.biggest-div .center-div #leftButton:hover {
+  width: 50px;
+  height: 68px;
+}
+.biggest-div .center-div #rightButton {
+  background-image: url(../pic/playSolid.svg);
+  background-size: cover;
+  width: 50px;
+  height: 65px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.biggest-div .center-div #rightButton:hover {
+  width: 50px;
+  height: 68px;
+}/*# sourceMappingURL=lun-bo.css.map */
