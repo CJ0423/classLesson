@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(min-width:1281px) and (max-width:1920px) {
+    .all-div {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+
+        .menu-left {
+            width: 20%;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+
+            .left-pic {
+
+                width: 100px;
+                height: 100px;
+                background-image: url(../pic/dog1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 40px;
+            }
+
+
+
+            .left-text {
+                margin: 4px;
+            }
+        }
+
+        .menu-right {
+            width: 80%;
+            height: 100vh;
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .right-box {
+                width: 50%;
+                height: 50%;
+                display: flex;
+
+                img {
+                    width: calc(100% / 3);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:769px) and (max-width:1280px) {
+    .all-div {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+
+        .menu-left {
+            width: 20%;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+
+            .left-pic {
+
+                width: 100px;
+                height: 100px;
+                background-image: url(../pic/dog1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 40px;
+            }
+
+
+
+            .left-text {
+                margin: 4px;
+            }
+        }
+
+        .menu-right {
+            width: 80%;
+            height: 100vh;
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .right-box {
+                width: 50%;
+                height: 50%;
+
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                #dog1 {
+                    height: 50%;
+                }
+
+                #dog2 {
+                    height: 50%;
+                    width: 50%;
+                }
+
+                #dog3 {
+                    height: 50%;
+                    width: 50%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:376px) and (max-width:768px) {
+    .all-div {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+
+        .menu-left {
+            width: 100%;
+            height: 10%;
+            background-color: aquamarine;
+            display: flex;
+            padding-left: 50px;
+            align-items: center;
+            justify-content: space-between;
+
+            .left-pic {
+                width: 100px;
+                height: 100%;
+                background-image: url(../pic/dog1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-right: 120px;
+            }
+
+            .left-text {
+                margin: 0px 30px;
+            }
+        }
+
+        .menu-right {
+            width: 100%;
+            height: 90%;
+            background-color: bisque;
+            padding: 5% 3%;
+
+            .right-box {
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                #dog1 {
+                    width: 100%;
+                    height: 50%;
+                }
+
+                #dog2 {
+                    width: 50%;
+                    height: 50%;
+                }
+
+                #dog3 {
+                    width: 50%;
+                    height: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .all-div {
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+
+        .menu-left {
+            width: 100%;
+            height: 15%;
+            background-color: bisque;
+            display: flex;
+            padding: 10% 0px;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            label {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height: 50%;
+                width: 25%;
+                background-image: url(../pic/hamburger.svg);
+                background-repeat: no-repeat;
+            }
+
+            input {
+                display: none;
+
+                &:checked~.all-left-text {
+                    display: flex;
+                }
+            }
+
+            .left-pic {
+                height: 100%;
+                width: 30%;
+                background-image: url(../pic/dog1.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .all-left-text {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                border: 5px black solid;
+                padding: 100px 20px;
+                display: none;
+                flex-direction: column;
+
+                div {
+
+                    margin: 5px;
+                }
+            }
+
+        }
+
+        .menu-right {
+            height: 85%;
+            width: 100%;
+            background-color: bisque;
+
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            .right-box {
+                height: 100%;
+                width: 100%;
+
+                .right-pic {
+                    width: 100%;
+                    height: calc(100% / 3);
+                }
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+}

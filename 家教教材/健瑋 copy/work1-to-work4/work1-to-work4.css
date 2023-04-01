@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .all-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .all-div .menu-left {
+    width: 20%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .all-div .menu-left .left-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url(../pic/dog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+  .all-div .menu-left .left-text {
+    margin: 4px;
+  }
+  .all-div .menu-right {
+    width: 80%;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .all-div .menu-right .right-box {
+    width: 50%;
+    height: 50%;
+    display: flex;
+  }
+  .all-div .menu-right .right-box img {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+  .all-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .all-div .menu-left {
+    width: 20%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .all-div .menu-left .left-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url(../pic/dog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+  .all-div .menu-left .left-text {
+    margin: 4px;
+  }
+  .all-div .menu-right {
+    width: 80%;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .all-div .menu-right .right-box {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .all-div .menu-right .right-box #dog1 {
+    height: 50%;
+  }
+  .all-div .menu-right .right-box #dog2 {
+    height: 50%;
+    width: 50%;
+  }
+  .all-div .menu-right .right-box #dog3 {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .all-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .all-div .menu-left {
+    width: 100%;
+    height: 10%;
+    background-color: aquamarine;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .all-div .menu-left .left-pic {
+    width: 100px;
+    height: 100%;
+    background-image: url(../pic/dog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 120px;
+  }
+  .all-div .menu-left .left-text {
+    margin: 0px 30px;
+  }
+  .all-div .menu-right {
+    width: 100%;
+    height: 90%;
+    background-color: bisque;
+    padding: 5% 3%;
+  }
+  .all-div .menu-right .right-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .all-div .menu-right .right-box #dog1 {
+    width: 100%;
+    height: 50%;
+  }
+  .all-div .menu-right .right-box #dog2 {
+    width: 50%;
+    height: 50%;
+  }
+  .all-div .menu-right .right-box #dog3 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .all-div {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+  }
+  .all-div .menu-left {
+    width: 100%;
+    height: 15%;
+    background-color: bisque;
+    display: flex;
+    padding: 10% 0px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .all-div .menu-left label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 25%;
+    background-image: url(../pic/hamburger.svg);
+    background-repeat: no-repeat;
+  }
+  .all-div .menu-left input {
+    display: none;
+  }
+  .all-div .menu-left input:checked ~ .all-left-text {
+    display: flex;
+  }
+  .all-div .menu-left .left-pic {
+    height: 100%;
+    width: 30%;
+    background-image: url(../pic/dog1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .all-div .menu-left .all-left-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 5px black solid;
+    padding: 100px 20px;
+    display: none;
+    flex-direction: column;
+  }
+  .all-div .menu-left .all-left-text div {
+    margin: 5px;
+  }
+  .all-div .menu-right {
+    height: 85%;
+    width: 100%;
+    background-color: bisque;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .all-div .menu-right .right-box {
+    height: 100%;
+    width: 100%;
+  }
+  .all-div .menu-right .right-box .right-pic {
+    width: 100%;
+    height: 33.3333333333%;
+  }
+}/*# sourceMappingURL=work1-to-work4.css.map */
