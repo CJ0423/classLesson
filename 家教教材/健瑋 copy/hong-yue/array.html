@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hi">1</div>
+    <div class="hi">2</div>
+    <div class="hi">3</div>
+    <div class="hi">4</div>
+ <script>
+        const his=Array.from(document.querySelectorAll(".hi"))
+
+        let text2=["蘋果","橘子","水蜜桃","西瓜"]
+
+        // his[0].textContent=text2[0]
+
+//     for(let i=0;i<=3;i++){
+//    his[i].textContent=text2[i] 
+//     }
+
+
+    for(let i=0;i<=3;i++){   
+     his[i].addEventListener("click",()=>{
+        appear(i)
+     })
+}
+
+//     for(let i=0;i<=3;i++){   
+//      his[i].addEventListener("click",function(){
+//         appear(i)
+//      })
+
+// }
+
+    function appear(i){
+        his[i].innerHTML=text2[i]
+    }
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
