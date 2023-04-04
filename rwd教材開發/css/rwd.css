@@ -1,0 +1,321 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  .all {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .all {
+    display: block;
+  }
+}
+
+header {
+  background-color: #89daff;
+}
+@media (max-width: 1440px) {
+  header {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 1440px) {
+  header nav {
+    width: 100%;
+    padding: 30px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    height: 56PX;
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+}
+header nav .logo {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/icon-img/lovepik-hamster-png-image_401561774_wh1200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  header nav .logo {
+    width: 30%;
+    height: 40px;
+    padding: 10px 20px;
+    background-position: left;
+  }
+}
+@media (max-width: 375px) {
+  header nav .logo {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+}
+@media (max-width: 1440px) {
+  header nav .bugar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav .bugar {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  header nav .bugar {
+    display: block;
+    position: absolute;
+    left: calc(10% - 23px);
+    top: 10%;
+    font-size: 46px;
+    cursor: pointer;
+  }
+}
+header nav #check {
+  display: none;
+}
+header nav #check:checked ~ div {
+  display: block;
+}
+header nav .menu {
+  display: none;
+  font-size: 24px;
+  background-color: #89daff;
+}
+header nav .title {
+  padding: 10px 20px;
+  text-align: center;
+}
+header nav .title:hover {
+  background-color: #dbb1bc;
+}
+header nav .menu-768 {
+  width: 70%;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  header nav .menu-768 {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  header nav .menu-768 {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 375px) {
+  header nav .menu-768 {
+    display: none;
+  }
+}
+header nav .menu-768 .title-768 {
+  font-size: 24px;
+  cursor: pointer;
+}
+header nav .menu-768 .title-768:hover {
+  background-color: #dbb1bc;
+}
+@media (max-width: 1440px) {
+  header nav .menu-768 .title-768 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  header nav .menu-768 .title-768 {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+}
+
+main {
+  height: 100vh;
+  background-color: #8f95d3;
+}
+@media (max-width: 1440px) {
+  main {
+    width: calc(100% - 300px);
+    height: 100vh;
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    height: calc(100vh - 56px);
+    padding: 20px 10px 30px 10px;
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  main {
+    padding: 0%;
+  }
+}
+@media (max-width: 1440px) {
+  main section {
+    width: 100%;
+    height: 100%;
+    padding: 75px;
+    display: flex;
+  }
+}
+@media (max-width: 1220px) {
+  main section {
+    width: 100%;
+    height: 100%;
+    padding: 75px 20px 75px 20px;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  main section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+}
+@media (max-width: 375px) {
+  main section {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1440px) {
+  main section .up-main {
+    width: 33.3333333333%;
+    height: 100%;
+  }
+}
+@media (max-width: 1220px) {
+  main section .up-main {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  main section .up-main {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 375px) {
+  main section .up-main {
+    width: 100%;
+    height: 33.3333333333%;
+  }
+}
+main section .up-main .x {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/main-img/apple.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section .down-main {
+  height: 50%;
+}
+@media (max-width: 1440px) {
+  main section .down-main {
+    width: 66.6666666667%;
+    height: 100%;
+    display: flex;
+  }
+}
+@media (max-width: 1220px) {
+  main section .down-main {
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  main section .down-main {
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  main section .down-main {
+    width: 100%;
+    height: 66.6666666667%;
+    display: block;
+  }
+}
+main section .down-main .y {
+  background-image: url("../img/main-img/apple2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1440px) {
+  main section .down-main .y {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main section .down-main .y {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 375px) {
+  main section .down-main .y {
+    width: 100%;
+    height: 50%;
+  }
+}
+main section .down-main .z {
+  background-image: url("../img/main-img/apple3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1440px) {
+  main section .down-main .z {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main section .down-main .z {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 375px) {
+  main section .down-main .z {
+    width: 100%;
+    height: 50%;
+  }
+}/*# sourceMappingURL=rwd.css.map */
