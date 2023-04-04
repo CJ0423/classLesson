@@ -6,6 +6,10 @@ let houseImg = document.querySelector("#house-img");
 let houseTextQuestion = document.querySelector("#house-text-question");
 let houseImgAbout = document.querySelector("#house-img-about");
 let houseTextAbout = document.querySelector("#house-text-about");
+
+
+
+
 houseText.addEventListener("mouseover", function () {
     houseText.innerHTML = "首頁";
 })
