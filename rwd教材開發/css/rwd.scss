@@ -30,6 +30,7 @@ header {
         width: 100%;
     }
 
+
     background-color: $bg-color;
 
     nav {
@@ -120,17 +121,14 @@ header {
         }
 
         .menu {
-
             display: none;
             font-size: 24px;
             background-color: $bg-color;
-
         }
 
         .title {
             padding: 10px 20px;
             text-align: center;
-
             &:hover {
                 background-color: $point-color;
             }
