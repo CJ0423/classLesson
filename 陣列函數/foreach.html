@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = [];
+let shiftText=[]
+let unShiftText=[]
+
+numbers.forEach(function(currentValue, index, array) {
+  doubledNumbers.push(currentValue * 2);
+});
+
+// 其實和for是一樣的東西，差別只在於他可以直接帶入ｉｎｄｅｘ，不過這個在js中並沒有太大的效果，因為js的索引值是只能是數字
+numbers.forEach((currentValue, index, array) =>{
+  doubledNumbers.push(currentValue * 2);
+  unShiftText.unshift(currentValue);//將所有的數值翻轉過來
+;
+});
+
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+// [2, 4, 6, 8, 10]
+
+
+console.log(unShiftText); // [10, 8, 6, 4, 2]
+
+shiftText=unShiftText.shift() //取出第一位
+console.log(shiftText); 
+
+
+    </script>
+</body>
+</html>
