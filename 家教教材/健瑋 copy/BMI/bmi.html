@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bmi.css">
+</head>
+
+<body>
+    <div class="all-page">
+        <div class="index">
+            <div class="BMIText">BMI計算工具</div>
+            <div class="height-weight">
+                <div>身高<input type="text" class="height" id="height"></div>
+                <div>體重<input type="text" class="weight" id="weight"></div>
+            </div>
+            <div class="count-reset">
+                <div class="count">計算</div>
+                <div class="reset">重製</div>
+            </div>
+        </div>
+        <div class="change-index-skinny">
+            <div class="change-index-text1" id="skinny">您的bmi值為:<div id="theAnswer"></div>太瘦了喔,要多加運動才行</div>
+        </div>
+        <div class="change-index-middle">
+            <div class="change-index-text2" id="middle">您的bmi值為:<div id="theAnswer"></div>剛剛好呢,繼續保持哦!!</div>
+        </div>
+        <div class="change-index-fat">
+            <div class="change-index-text3" id="fat">您的bmi值為:<div id="theAnswer"></div>太胖了喔,可能宵夜要少吃一點了哦</div>
+        </div>
+    </div>
+
+    <script src="./bmi.js"></script>
+</body>
+
+</html>
