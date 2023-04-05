@@ -5,6 +5,77 @@
 }
 
 @media (max-width: 1920px) and (min-width: 1101px) {
+  .nav-bar {
+    width: 100%;
+    background-color: black;
+    top: 0;
+    opacity: 0.7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    position: fixed;
+    transition: 0.5s;
+    border-bottom: 1px white solid;
+    z-index: 1;
+  }
+
+  .nav-bar .hong-yue {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .nav-bar .about-us {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
+  .nav-bar .about-us #house-img-home {
+    width: 35px;
+    height: 35px;
+    background-image: url("./pic/house.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .nav-bar .about-us #house-img-question {
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+  }
+
+  .nav-bar .about-us #house-img-about {
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+  }
+
+  .nav-bar .about-us a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+  }
+
+  .nav-bar .about-us a:hover {
+    opacity: 0.5;
+    -webkit-text-decoration: white solid underline;
+    text-decoration: white solid underline;
+    transform: translate(0px, -3px);
+  }
+
   .first-big-background {
     width: 100%;
     height: 100vh;
@@ -16,70 +87,7 @@
     padding: 0;
     background-color: black;
   }
-  .first-big-background .nav-bar {
-    width: 100%;
-    background-color: black;
-    top: 0;
-    opacity: 0.7;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    transition: 0.5s;
-    border-bottom: 1px white solid;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-  }
-  .first-big-background .nav-bar .hong-yue {
-    font-size: 60px;
-    font-weight: bold;
-  }
-  .first-big-background .nav-bar .about-us {
-    display: flex;
-    position: absolute;
-    right: 0;
-  }
-  .first-big-background .nav-bar .about-us #house-img-home {
-    width: 35px;
-    height: 35px;
-    background-image: url("./pic/house.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: white;
-    border-radius: 50%;
-  }
-  .first-big-background .nav-bar .about-us #house-img-question {
-    width: 35px;
-    height: 35px;
-    color: white;
-    background-color: white;
-    border: 0;
-    border-radius: 50%;
-  }
-  .first-big-background .nav-bar .about-us #house-img-about {
-    width: 35px;
-    height: 35px;
-    color: white;
-    background-color: white;
-    border: 0;
-    border-radius: 50%;
-  }
-  .first-big-background .nav-bar .about-us a {
-    margin: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: 0.2s;
-  }
-  .first-big-background .nav-bar .about-us a:hover {
-    opacity: 0.5;
-    -webkit-text-decoration: white solid underline;
-            text-decoration: white solid underline;
-    transform: translate(0px, -3px);
-  }
+
   .talk-about-us {
     display: flex;
     font-size: 1.5em;
@@ -93,6 +101,7 @@
     height: 70vh;
     overflow: hidden;
   }
+
   .talk-about-us .text-about-us {
     display: none;
     position: absolute;
@@ -101,6 +110,7 @@
     left: 800px;
     margin-top: 40px;
   }
+
   .talk-about-us .title-about-us {
     font-size: 2em;
     display: flex;
@@ -109,6 +119,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .wood {
     width: 100%;
     height: 50vh;
@@ -119,6 +130,7 @@
     animation: infinite bed-move 15s;
     margin: 0;
   }
+
   .footer {
     width: 100%;
     height: 10vh;
@@ -130,15 +142,18 @@
     padding-right: 50px;
     position: relative;
   }
+
   .footer .footer-create {
     position: relative;
     left: -400px;
     top: 20px;
   }
+
   .footer div {
     margin-left: 20px;
     color: white;
   }
+
   .footer a div {
     width: 50px;
     height: 50px;
@@ -148,14 +163,19 @@
     background-size: contain;
   }
 }
+
 @keyframes bed-move {
   0% {
     background-size: 100%;
   }
+
   50% {
     background-size: 150%;
   }
+
   100% {
     background-size: 100%;
   }
-}/*# sourceMappingURL=hong-yue.css.map */
+}
+
+/*# sourceMappingURL=hong-yue.css.map */

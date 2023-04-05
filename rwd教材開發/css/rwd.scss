@@ -1,0 +1,338 @@
+$main-dark: #58504a;
+$point-color: #dbb1bc;
+$strong-color: #8f95d3;
+$bg-color: #89daff;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.all {
+    @media (max-width:1440px) {
+        display: flex;
+
+    }
+
+    @media (max-width:768px) {
+        display: block;
+
+    }
+}
+
+header {
+    @media (max-width:1440px) {
+        width: 300px;
+    }
+
+    @media (max-width:768px) {
+        width: 100%;
+    }
+
+
+    background-color: $bg-color;
+
+    nav {
+        @media (max-width:1440px) {
+            width: 100%;
+            padding: 30px 20px 0px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        @media (max-width:768px) {
+
+            width: 100%;
+            height: 56PX;
+            padding: 0px 0px 0px 20px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            position: relative;
+        }
+
+
+        .logo {
+            width: 100%;
+            height: 100px;
+       
+            background-image: url("../img/icon-img/lovepik-hamster-png-image_401561774_wh1200.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            white-space: nowrap;
+            @media (max-width:1440px) {
+                
+            }
+
+            @media (max-width:768px) {
+                width: 30%;
+                height: 40px;
+                padding: 10px 20px;
+                background-position: left;
+            }
+
+            @media (max-width:375px) {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+            }
+
+        }
+
+        .bugar {
+            @media (max-width:1440px) {
+                display: none;
+
+            }
+
+            @media (max-width:768px) {
+                display: none;
+
+            }
+
+
+            @media (max-width:375px) {
+                display: block;
+                position: absolute;
+                left: calc(10% - 23px);
+                top: 10%;
+
+                font-size: 46px;
+                cursor: pointer;
+
+            }
+        }
+
+        #check {
+            display: none;
+
+            &:checked~div {
+                display: block;
+            }
+        }
+
+        .menu {
+            display: none;
+            font-size: 24px;
+            background-color: $bg-color;
+        }
+
+        .title {
+            padding: 10px 20px;
+            text-align: center;
+            &:hover {
+                background-color: $point-color;
+            }
+        }
+
+        .menu-768 {
+            width: 70%;
+            text-align: center;
+
+            @media (max-width:1440px) {
+                display: flex;
+                justify-content: right;
+                flex-direction: column;
+            }
+
+            @media (max-width:768px) {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media (max-width:375px) {
+                display: none;
+            }
+
+            .title-768 {
+                font-size: 24px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $point-color;
+                }
+
+                @media (max-width:1440px) {
+                    margin-top: 20px;
+                }
+
+    
+
+                @media (max-width:768px) {
+                    margin-left: 10px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+
+    }
+}
+
+main {
+    height: 100vh;
+
+    @media (max-width:1440px) {
+        width: calc(100% - 300px);
+        height: 100vh;
+        display: flex;
+    }
+
+
+    background-color: $strong-color;
+
+    @media (max-width:768px) {
+        width: 100%;
+        height: calc(100vh - 56px);
+        padding: 20px 10px 30px 10px;
+        display: block;
+
+    }
+
+    @media (max-width:375px) {
+        padding: 0%;
+    }
+
+    section {
+        @media (max-width:1440px) {
+            width: 100%;
+            height: 100%;
+            padding: 75px;
+            display: flex;
+        }
+        @media (max-width:1220px) {
+            width: 100%;
+            height: 100%;
+            padding: 75px 20px 75px 20px;
+            display:block;
+        }
+
+        @media (max-width:768px) {
+            display: block;
+
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+        }
+
+        @media (max-width:375px) {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .up-main {
+   
+            @media (max-width:1440px) {
+                width:calc(100% / 3);
+                height: calc(100%);
+            }
+            @media (max-width:1220px) {
+                width: 100%;
+                height: calc(100% / 2);
+             
+            }
+
+            @media (max-width:768px) {
+                width: 100%;
+                height: calc(100% / 2);
+            }
+
+            @media (max-width:375px) {
+                width: 100%;
+                height: calc(100% / 3);
+            }
+
+            .x {
+                width: 100%;
+                height: 100%;
+                background-image: url("../img/main-img/apple.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .down-main {
+
+            height: calc(100% / 2);
+            @media (max-width:1440px) {
+                width: calc(100% / 1.5);
+                height: calc(100%);
+                display: flex;
+            }
+            @media (max-width:1220px) {
+                width: calc(100% );
+                height: calc(100% / 2);
+                display: flex;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+                height: calc(100% / 2);
+                display: flex;
+            }
+
+            @media (max-width:375px) {
+                width: 100%;
+                height: calc(100% / 1.5);
+                display: block;
+            }
+
+            .y {
+
+
+
+                @media (max-width:1440px) {
+                    width: calc(100% / 2);
+                    height: 100%;
+                }
+                @media (max-width:768px) {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @media (max-width:375px) {
+                    width: 100%;
+                    height: 50%;
+                }
+
+
+                background-image: url("../img/main-img/apple2.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .z {
+                @media (max-width:1440px) {
+                    width: calc(100% / 2);
+                    height: 100%;
+                }
+                @media (max-width:768px) {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @media (max-width:375px) {
+                    width: 100%;
+                    height: 50%;
+                }
+
+                background-image: url("../img/main-img/apple3.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

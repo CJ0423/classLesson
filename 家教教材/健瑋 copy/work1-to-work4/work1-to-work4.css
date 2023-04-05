@@ -22,7 +22,7 @@
   .all-div .menu-left .left-pic {
     width: 100px;
     height: 100px;
-    background-image: url(../pic/dog1.jpg);
+    background-image: url(./pic/dog1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,7 +66,7 @@
   .all-div .menu-left .left-pic {
     width: 100px;
     height: 100px;
-    background-image: url(../pic/dog1.jpg);
+    background-image: url(./pic/dog1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@
   .all-div .menu-left .left-pic {
     width: 100px;
     height: 100%;
-    background-image: url(../pic/dog1.jpg);
+    background-image: url(./pic/dog1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -185,7 +185,7 @@
     left: 0;
     height: 50%;
     width: 25%;
-    background-image: url(../pic/hamburger.svg);
+    background-image: url(./pic/hamburger.svg);
     background-repeat: no-repeat;
   }
   .all-div .menu-left input {
@@ -197,7 +197,7 @@
   .all-div .menu-left .left-pic {
     height: 100%;
     width: 30%;
-    background-image: url(../pic/dog1.jpg);
+    background-image: url(./pic/dog1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
