@@ -7,9 +7,21 @@ let houseTextQuestion = document.querySelector("#house-text-question");
 let houseImgAbout = document.querySelector("#house-img-about");
 let houseTextAbout = document.querySelector("#house-text-about");
 
+let changeText = document.querySelectorAll('.change-text');
+let changeTextEng = ['Hong-Yue', 'About Us'];
+// <let changeTextCh = ['宏悅家具', '關<br>於<br>我<br>們'];>
+let changeTextCh = ['宏悅家具', '關於我們'];
 
+for (let i = 0; i < changeText.length; i++) {
+    changeText[i].addEventListener("click", function () {
+        if (changeText[i].innerHTML == changeTextCh[i]) {
+            changeText[i].innerHTML = changeTextEng[i];
+        } else {
+            changeText[i].innerHTML = changeTextCh[i];
+        }
 
-
+    })
+}
 houseText.addEventListener("mouseover", function () {
     houseText.innerHTML = "首頁";
 })
