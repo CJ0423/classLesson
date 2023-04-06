@@ -1,0 +1,6 @@
+.text1::before {
+  color: rgb(226, 159, 26);
+}
+.text1::after {
+  content: "sss";
+}/*# sourceMappingURL=fontasomw.css.map */

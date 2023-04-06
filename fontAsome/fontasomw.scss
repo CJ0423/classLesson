@@ -1,0 +1,8 @@
+.text1{
+    &::before{
+        color: rgb(226, 159, 26);
+    }
+    &::after{
+        content: "sss";
+    }
+}
