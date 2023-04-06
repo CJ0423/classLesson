@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,53 @@
     <title>Document</title>
 </head>
 <style>
-
-    .hi{
+    .hi {
         width: 40px;
         height: 40px;
+        position:absolute;
+    }
+
+    .hiboss {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(29, 249, 0);
+        z-index:10;
         position: absolute;
     }
-    .hi1{background-color: aquamarine;
-   }
-    .hi2{background-color: antiquewhite;
-        z-index: 1;}
-    .hi3{background-color: rgb(251, 35, 35);}
+    .hiboss2 {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(239, 20, 192);
+        z-index: 9;
+        position: absolute;
+    }
+
+    .hi1 {
+        background-color: aquamarine;
+        z-index: 2;
+    }
+
+    .hi2 {
+        background-color: antiquewhite;
+        z-index: 3;
+
+    }
+
+    .hi3 {
+        background-color: rgb(251, 35, 35);
+        z-index: 2;
+    }
 </style>
+
 <body>
-    <div class="hi1 hi">1</div>
-    <div class="hi2 hi">2</div>
-    <div class="hi3 hi">3</div>
+    <div class="hiboss">
+        <div class="hi1 hi">1</div>
+        <div class="hi2 hi">2</div>
+        <div class="hi3 hi">3</div>
+    </div>
+    <div class="hiboss2">
+ 
+    </div>
 </body>
+
 </html>
