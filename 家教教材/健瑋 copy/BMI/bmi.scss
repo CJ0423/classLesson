@@ -12,6 +12,8 @@
     justify-content: center;
     align-items: center;
 
+
+
     .index {
         width: 30%;
         height: 50%;
@@ -72,6 +74,14 @@
         font-size: 25px;
         line-height: 250%;
 
+        .again {
+            cursor: pointer;
+            padding: 0px;
+            position: relative;
+            font-size: 40px;
+            top: -60px;
+            left: 150px;
+        }
     }
 
     .change-index-middle {
@@ -88,6 +98,15 @@
         font-size: 25px;
         line-height: 250%;
 
+        .again {
+            cursor: pointer;
+            padding: 0px;
+            position: relative;
+            font-size: 40px;
+            top: -60px;
+            left: 150px;
+        }
+
     }
 
     .change-index-fat {
@@ -103,6 +122,15 @@
         position: absolute;
         font-size: 25px;
         line-height: 250%;
+
+        .again {
+            cursor: pointer;
+            padding: 0px;
+            position: relative;
+            font-size: 40px;
+            top: -60px;
+            left: 150px;
+        }
 
     }
 }

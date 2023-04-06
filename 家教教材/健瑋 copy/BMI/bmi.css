@@ -65,6 +65,14 @@
   font-size: 25px;
   line-height: 250%;
 }
+.all-page .change-index-skinny .again {
+  cursor: pointer;
+  padding: 0px;
+  position: relative;
+  font-size: 40px;
+  top: -60px;
+  left: 150px;
+}
 .all-page .change-index-middle {
   width: 30%;
   height: 50%;
@@ -79,6 +87,14 @@
   font-size: 25px;
   line-height: 250%;
 }
+.all-page .change-index-middle .again {
+  cursor: pointer;
+  padding: 0px;
+  position: relative;
+  font-size: 40px;
+  top: -60px;
+  left: 150px;
+}
 .all-page .change-index-fat {
   width: 30%;
   height: 50%;
@@ -92,4 +108,12 @@
   position: absolute;
   font-size: 25px;
   line-height: 250%;
+}
+.all-page .change-index-fat .again {
+  cursor: pointer;
+  padding: 0px;
+  position: relative;
+  font-size: 40px;
+  top: -60px;
+  left: 150px;
 }/*# sourceMappingURL=bmi.css.map */

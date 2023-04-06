@@ -17,8 +17,43 @@ let theAnswer = document.querySelector("#theAnswer");
 let skinnyBmi = document.querySelector("#skinny");
 let middleBmi = document.querySelector("#middle");
 let fatBmi = document.querySelector("#fat");
+
+let again = document.querySelectorAll(".again");
+
 count.addEventListener("click", countBMI);
 reset.addEventListener("click", resetNum);
+
+
+for (let i = 0; i < again.length; i++) {
+    again[i].addEventListener("click", function () {
+        index.style.display = "flex";
+        index.style.opacity = 1;
+        skinny.style.opacity = 0;
+        middle.style.opacity = 0;
+        fat.style.opacity = 0;
+        middle.style.display = "flex";
+        fat.style.display = "flex";
+        skinny.style.display = "flex";
+        height.value = "";
+        weight.value = "";
+    });
+}
+// again[0].addEventListener("click", function () {
+//     index.style.display = "flex";
+//     index.style.opacity = 1;
+//     skinny.style.opacity = 0;
+//     middle.style.opacity = 0;
+//     fat.style.opacity = 0;
+//     middle.style.display = "flex";
+//     fat.style.display = "flex";
+//     skinny.style.display = "flex";
+//     height.value = "";
+//     weight.value = "";
+// });
+// again[1].addEventListener("click", function () {
+//     alert(123);
+// });
+
 function countBMI() {
     if (isNaN(parseFloat(height.value)) || isNaN(parseFloat(weight.value))) {
         alert("請輸入數字");
@@ -35,24 +70,27 @@ function countBMI() {
         if (answer < 18.5) {
             index.style.opacity = 0;
             skinny.style.opacity = 1;
-            middle.style.opacity = 0;
-            fat.style.opacity = 0;
-            skinny.innerHTML = `您的bmi值為:<div>${answer.toFixed(2)}</div>太瘦了喔,要多加運動才行</div>`;
+            middle.style.display = "none";
+            fat.style.display = "none";
+            changeIndexText1.innerHTML = `<div>您的bmi值為:${answer.toFixed(2)}<br>太瘦了喔,要多加運動才行 </div>`;
 
         } else if ((answer >= 18.5) && (answer < 24)) {
             index.style.opacity = 0;
-            skinny.style.opacity = 0;
+            skinny.style.display = "none";
             middle.style.opacity = 1;
-            fat.style.opacity = 0;
-            middle.innerHTML = `您的bmi值為:<div>${answer.toFixed(2)}</div>剛剛好,繼續保持!!</div>`;
+            fat.style.display = "none";
+            changeIndexText2.innerHTML = `您的bmi值為:<div>${answer.toFixed(2)}</div>剛剛好,繼續保持!!</div>`;
 
         } else {
             index.style.opacity = 0;
             skinny.style.opacity = 0;
             middle.style.opacity = 0;
             fat.style.opacity = 1;
-            fat.innerHTML = `您的bmi值為:<div>${answer.toFixed(2)}</div>太胖了哦,可能要多加運動</div>`;
+            changeIndexText3.innerHTML = `您的bmi值為:<div>${answer.toFixed(2)}</div>太胖了哦,可能要多加運動</div>`;
         }
+        setTimeout(function () {
+            index.style.display = "none";
+        }, 1000)
     }
 }
 
@@ -61,3 +99,5 @@ function resetNum() {
     height.value = "";
     weight.value = "";
 }
+
+
