@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.all-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./pic/dream_TradingCard.jpg");
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // animation: 30s keys infinite;
+
+    .fa-xmark {
+        font-size: 40px;
+        position: relative;
+        left: 380px;
+        top: 60px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .title {
+        font-size: 30px;
+        color: white;
+        display: flex;
+
+        .note-book {
+            display: flex;
+        }
+
+        .note-book>div {
+            position: absolute;
+            border: 1px white solid;
+            cursor: pointer;
+            top: 40px;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: none;
+        }
+
+        .home-work {
+            position: relative;
+            display: flex;
+            transition: 0.2s;
+
+
+            div {
+                position: absolute;
+                border: 1px white solid;
+                cursor: pointer;
+                top: 40px;
+                font-size: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                display: none;
+            }
+        }
+
+        .count-down {
+            position: relative;
+            display: flex;
+            transition: 0.2s;
+
+            div {
+                position: absolute;
+                border: 1px white solid;
+                cursor: pointer;
+                top: 40px;
+                font-size: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                display: none;
+            }
+        }
+
+        .occupation {
+            position: relative;
+            display: flex;
+            transition: 0.2s;
+
+            div {
+                position: absolute;
+                border: 1px white solid;
+                cursor: pointer;
+                top: 40px;
+                font-size: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                display: none;
+            }
+        }
+
+        >div {
+            border: 2px white solid;
+            cursor: pointer;
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: 0.2s;
+            position: relative;
+
+            &:hover {
+                transform: translate(0px, -5px);
+            }
+
+            ;
+        }
+    }
+
+    .submit {
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.2s;
+        border: 2px white solid;
+        background-color: black;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5%;
+
+
+        &:hover {
+            transform: translate(0px, -5px);
+        }
+    }
+
+    .key-text {
+        margin: 15px;
+        font-size: 30px;
+    }
+
+    .text-board {
+        width: 50%;
+        height: 50%;
+        border: 5px black solid;
+        background-color: white;
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+
+
+
+        ol>li {
+            font-size: 25px;
+            // border-bottom: 2px black solid;
+        }
+
+
+
+
+    }
+
+}
+
+@keyframes keys {
+    0% {
+        background-position: 0% 10%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 10%;
+    }
+}
