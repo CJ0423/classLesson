@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>正則表達式</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css files media means All machine can use this css -->
+	<link href="../css/stylelogin.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+	<section id="singup">
+		<!-- main -->
+		<div class="main">
+			<div class="main-border">
+				<div class="main-form">
+					<div class="big-title">註冊會員</div>
+					<form class="singup-form" action="#" method="post">
+						<input placeholder="請輸入您的姓名" name="Name" type="text" required=""> <span class="notice-text"></span>
+						<input id="phone" placeholder="請輸入手機號碼" name="Phone-number" type="text" required=""><span class="notice-text"></span>
+					  
+						<div id="calendar">
+						  <select class="date-picker chose-date" id="year-picker" name="year">
+							<option value="1994">1994</option>
+						  </select> 年
+						  <select class="date-picker chose-date" id="month-picker" name="month">
+							<option value="04">04</option>
+						  </select> 月
+						  <select class="date-picker chose-date" id="day-picker" name="day">
+							<option value="23">23</option>
+						  </select> 日
+						  <span class="notice-text"></span>
+						</div>
+					  
+						<input placeholder="請輸入您的電子信箱（帳號）" name="Email" type="email" required="">
+						
+						<span class="notice-text"></span>
+						
+						<input placeholder="請輸入密碼" name="Password" type="password" required="">
+						
+						<span class="notice-text"></span>
+						
+						<input placeholder="確定密碼" name="Confirm-Password" type="password" required="">
+						
+						<span class="notice-text"></span>
+						<br>
+						<input type="submit" value="Get Started" name="signup">
+					  </form>
+					  
+						<a id="forget" href="#">已有帳號-登入</a>
+	
+				</div>
+				<!-- //main -->
+
+			</div>
+		</div>
+
+	</section>
+	<script src="https://kit.fontawesome.com/79d58604b5.js" crossorigin="anonymous"></script>
+	<script src="../js/singup.js"></script>
+</body>
+
+</html>

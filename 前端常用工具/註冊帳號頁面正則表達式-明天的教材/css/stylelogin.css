@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+#singup {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  min-height: 680px;
+}
+#singup .main {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#singup .main .main-border {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#singup .main .main-border .main-form {
+  width: 50%;
+  min-width: 375px;
+  padding: 20px 0px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  text-align: center;
+}
+#singup .main .main-border .main-form .big-title {
+  color: white;
+  font-size: 2rem;
+}
+#singup .main .main-border .main-form .singup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#singup .main .main-border .main-form .singup-form input[type=text], #singup .main .main-border .main-form .singup-form input[type=email], #singup .main .main-border .main-form .singup-form input[type=password], #singup .main .main-border .main-form .singup-form input[type=date] {
+  width: 75%;
+  padding: 16px 50px 16px 50px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  margin: 14px 0px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#singup .main .main-border .main-form .singup-form input[type=email] {
+  background: rgba(0, 0, 0, 0.55) url(../images/email.svg) no-repeat;
+  background-size: 30px, 30px;
+  background-position: 10px center;
+}
+#singup .main .main-border .main-form .singup-form input[type=text] {
+  background: rgba(0, 0, 0, 0.55) url(../images/user.png) no-repeat 10px 10px;
+}
+#singup .main .main-border .main-form .singup-form #calendar {
+  width: 75%;
+  padding: 12px 0px 12px 50px;
+  margin: 14px 0px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.55) url(../images/calendar.svg) no-repeat;
+  background-size: 25px, 25px;
+  background-position: 12px center;
+}
+#singup .main .main-border .main-form .singup-form .chose-date {
+  font-size: 13px;
+  margin-left: 5px;
+}
+#singup .main .main-border .main-form .singup-form #phone {
+  background: rgba(0, 0, 0, 0.55) url(../images/mobile.svg) no-repeat;
+  background-size: 20px, 20px;
+  background-position: 14px center;
+}
+#singup .main .main-border .main-form .singup-form input[type=password] {
+  background: rgba(0, 0, 0, 0.55) url(../images/lock.png) no-repeat 10px 10px;
+}
+#singup .main .main-border .main-form .singup-form input[type=submit] {
+  padding: 14px 30px;
+  font-size: 1em;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #2dde98;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 8px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+#singup .main .main-border .main-form .singup-form input[type=submit]:hover {
+  background: #ff4f81;
+  color: white;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+#singup .main .main-border .main-form .singup-form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+#singup .main .main-border .main-form .singup-form ::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+#singup .main .main-border .main-form #forget {
+  display: block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=stylelogin.css.map */
