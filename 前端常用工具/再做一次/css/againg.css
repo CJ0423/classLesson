@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bg/oriental-tiles.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+body main {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .my-form {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .my-form .big-title {
+  font-size: 2rem;
+  color: white;
+}
+body main .my-form .form-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+body main .my-form .form-all .form-content {
+  width: 75%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+body main .my-form .form-all .form-content input {
+  width: 100%;
+}
+body main .my-form .form-all .form-content input[type=password] {
+  width: 20px;
+}
+body main .my-form .form-all .form-content #form-password {
+  width: 500px;
+}
+body main .sing-up-now {
+  display: block;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=againg.css.map */
