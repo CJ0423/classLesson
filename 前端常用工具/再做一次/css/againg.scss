@@ -45,24 +45,45 @@ body {
                 align-items: center;
                 flex-direction: column;
                 margin-top: 10px;
-
+                .birthday{
+                    height: 44px;
+                }
                 .form-content{
                     width: 75%;
-                    margin-top: 5px;
+                    margin-top: 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: cadetblue;
+                    background-color: $bg-main;
+                    select{
+                        width: 20%;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 4px;
+                    }
                     input{
                         width: 100%;
-                    }
-                    input[type="password"]{
-                        width: 20px;
-                    }
-                    #form-password{
-                        width: 500px;
+                        padding: 8px 16px;
+                        border-radius: 4px;
+                        background-color: $bg-main;
+                        color: $white;
+                        font-size: 24px;
+                        outline: none;
+                        border: 0.5px solid $white;
+                        ::placeholder{
+                            color: $fade-white;
+                        }
 
                     }
+                    input[type="password"]{
+                        outline: none;
+                        background-color: $bg-main;
+
+                    }
+                    // #form-password{
+                    //     width: 500px;
+
+                    // }
                 }
             }
 

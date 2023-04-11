@@ -37,22 +37,42 @@ body main .my-form .form-all {
   flex-direction: column;
   margin-top: 10px;
 }
+body main .my-form .form-all .birthday {
+  height: 44px;
+}
 body main .my-form .form-all .form-content {
   width: 75%;
-  margin-top: 5px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: cadetblue;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+body main .my-form .form-all .form-content select {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
 }
 body main .my-form .form-all .form-content input {
   width: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 24px;
+  outline: none;
+  border: 0.5px solid white;
+}
+body main .my-form .form-all .form-content input ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+body main .my-form .form-all .form-content input ::placeholder {
+  color: rgba(255, 255, 255, 0.65);
 }
 body main .my-form .form-all .form-content input[type=password] {
-  width: 20px;
-}
-body main .my-form .form-all .form-content #form-password {
-  width: 500px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 body main .sing-up-now {
   display: block;
