@@ -3,6 +3,7 @@ $white: #ffff;
 $fade-white: rgba(255, 255, 255, 0.65);
 $green-btn: #2dde98;
 $green-btn-hover: #ff4f81;
+$red:red;
 
 * {
     margin: 0px;
@@ -45,13 +46,12 @@ body {
                 align-items: center;
                 flex-direction: column;
                 margin-top: 10px;
-                .birthday{
-                    height: 44px;
-                }
+
                 .form-content{
                     width: 75%;
                     margin-top: 20px;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     background-color: $bg-main;
@@ -76,6 +76,12 @@ body {
                         }
 
                     }
+                    .phone-text{
+                        display: none;
+                        font-size: 12px;
+                       padding: 10px 0px;
+                        color:$red ;
+                    }
                     input[type="password"]{
                         outline: none;
                         background-color: $bg-main;
@@ -85,6 +91,10 @@ body {
                     //     width: 500px;
 
                     // }
+                }
+                .birthday{
+                    height: 44px;
+                    flex-direction: row;
                 }
             }
 

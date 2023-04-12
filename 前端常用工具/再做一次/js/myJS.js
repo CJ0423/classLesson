@@ -39,7 +39,7 @@ const cname=getDom(".cname")
 const cellphone=getDom(".cellphone")
 const email=getDom(".email")
 
-const cellphoneRegex=/^[0-9]+$/
+const cellphoneRegex=/^09[0-9]{8}$/
 
 
 
@@ -49,9 +49,37 @@ console.log(email)
 
 
 cellphone.addEventListener("input",isPhoneFUnction)
+let isPhone=cellphoneRegex.test(cellphone.value)
+const phoneText=getDom(".phone-text")
 
 function isPhoneFUnction(){
-    const isPhone=cellphoneRegex.test(cellphone.value)
-
+isPhone=cellphoneRegex.test(cellphone.value)
 console.log(isPhone)
+if(isPhone){
+    phoneText.style.display="none"
+
+}
+else{
+    phoneText.style.display="block"
+}
+}
+
+// 現在我們要在表單處上鎖，避免用戶一樣可以上傳錯誤的資料到後台服務器中
+
+const formSubmit=getDom(".form-submit")
+
+formSubmit.addEventListener("click",checkFrom)
+
+function checkFrom(e){
+console.log(this)
+e.preventDefault() //取消事件
+
+if(isPhone){
+    const formAll=getDom(".form-all")
+    formAll.submit()
+}
+else{
+    alert("請不要輸入錯誤的資訊喔")
+}
+
 }
