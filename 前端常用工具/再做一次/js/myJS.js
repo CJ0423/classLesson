@@ -10,10 +10,16 @@ console.log(choseYear)
 // const optionYear2=document.createElement("option")
 // optionYear1.textContent=1993
 // optionYear1.value=1993
+
+// optionYear2.textContent=1993
+// optionYear2.value=1992
 // choseYear.appendChild(optionYear1)
 // choseYear.appendChild(optionYear2)
 
 // 取得日期的方法
+const text= Date()
+console.log(text)
+
 const currentYear =new Date().getFullYear()
 const currentMonth =new Date().getMonth()+1
 const currentDate =new Date().getDate()
@@ -28,33 +34,34 @@ console.log(currentDay)
 const yearOption=[]
 
 for(let i=0;i<100;i++){
+    choseYear.innerHTML+=`<option>${currentYear-i}</option>`
+}
+for(let i=0;i<100;i++){
     yearOption[i]=document.createElement("option")
     yearOption[i].textContent=currentYear-i
     yearOption[i].value=currentYear-i
     choseYear.appendChild(yearOption[i])
 }
-
-// 正則表達式 要進行正則的有 手機號碼 電子信箱 姓名
+// // 正則表達式 要進行正則的有 手機號碼 電子信箱 姓名
 const cname=getDom(".cname")
 const cellphone=getDom(".cellphone")
 const email=getDom(".email")
 
-const cellphoneRegex=/^09[0-9]{8}$/
-
-
+const cellphoneRegex=/^09[0-9]{8}$/ 
 
 console.log(cname)
 console.log(cellphone)
 console.log(email)
 
+cellphone.addEventListener("input",isPhoneFUnction)//當有人改變它
+let isPhone=false
 
-cellphone.addEventListener("input",isPhoneFUnction)
-let isPhone=cellphoneRegex.test(cellphone.value)
 const phoneText=getDom(".phone-text")
 
 function isPhoneFUnction(){
 isPhone=cellphoneRegex.test(cellphone.value)
-console.log(isPhone)
+// console.log(isPhone)
+
 if(isPhone){
     phoneText.style.display="none"
 
@@ -83,3 +90,10 @@ else{
 }
 
 }
+// 關於＋=
+// let a=1
+// let b=2
+// a+=1
+// a=a+1
+// a+=b;
+// console.log(a)
