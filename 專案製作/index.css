@@ -36,6 +36,12 @@
 .nav-bar-all .nav-bar-all-sec .nav-bar-join {
   display: flex;
 }
+@media (min-width: 769px) {
+  .nav-bar-all .nav-bar-all-sec .nav-bar-join .click-menu:hover {
+    -webkit-text-decoration: underline solid white;
+            text-decoration: underline solid white;
+  }
+}
 @media (max-width: 768px) {
   .nav-bar-all .nav-bar-all-sec .nav-bar-join {
     position: absolute;

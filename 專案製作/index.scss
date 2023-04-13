@@ -38,6 +38,15 @@
         .nav-bar-join {
             display: flex;
 
+            @media (min-width:769px) {
+                .click-menu {
+                    &:hover {
+                        text-decoration: underline solid white;
+                    }
+                }
+
+            }
+
 
 
             @media (max-width:768px) {
