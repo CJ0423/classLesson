@@ -22,7 +22,6 @@ body {
     main {
         width: 100%;
         padding: 50px;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,6 +34,13 @@ body {
             align-items: center;
             flex-direction: column;
 
+            @media (max-width:750px) {
+                width: 75%;
+            }
+
+            @media (max-width:500px) {
+                width: 100%;
+            }
 
             .big-title {
                 font-size: 2rem;

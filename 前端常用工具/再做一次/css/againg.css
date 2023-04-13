@@ -25,6 +25,16 @@ body main .my-form {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 750px) {
+  body main .my-form {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  body main .my-form {
+    width: 100%;
+  }
+}
 body main .my-form .big-title {
   font-size: 2rem;
   color: white;
