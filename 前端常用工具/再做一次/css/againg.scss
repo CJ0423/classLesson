@@ -39,7 +39,8 @@ body {
             .big-title {
                 font-size: 2rem;
                 color: $white;
-
+                font-weight: bold;
+                padding-top: 5px;
             }
 
             .form-all {
@@ -63,15 +64,69 @@ body {
                         background-image: url("../img/circle-user.svg");
                         background-position: 2%;
                         background-repeat: no-repeat;
-                        background-size: 5%;
+                        background-size: 30px;
+                        padding-left: 50px;
 
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
                     }
 
                     .email {
                         background-image: url("../img/envelope-solid.svg");
                         background-position: 2%;
                         background-repeat: no-repeat;
-                        background-size: 5%;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+
+
+                    }
+
+                    .cellphone {
+                        background-image: url("../img/phone-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+                    }
+
+                    #form-password {
+                        background-image: url("../img/unlock-keyhole-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+                    }
+
+                    .form-password {
+                        background-image: url("../img/unlock-keyhole-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+
+
                     }
 
                     .fz {
@@ -111,6 +166,10 @@ body {
                         font-size: 12px;
                         padding: 10px 0px;
                         color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
                     }
 
                     .password-text {
@@ -118,6 +177,10 @@ body {
                         font-size: 12px;
                         padding: 10px 0px;
                         color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
                     }
 
                     .email-text {
@@ -125,6 +188,10 @@ body {
                         font-size: 12px;
                         padding: 10px 0px;
                         color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
                     }
 
                     .name-text {
@@ -132,6 +199,10 @@ body {
                         font-size: 12px;
                         padding: 10px 0px;
                         color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
                     }
 
                     .phone-text {
@@ -139,6 +210,10 @@ body {
                         font-size: 12px;
                         padding: 10px 0px;
                         color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
                     }
 
                     input[type="password"] {
@@ -159,7 +234,17 @@ body {
                     background-image: url("../img/calendar-days.svg");
                     background-position: 2%;
                     background-repeat: no-repeat;
-                    background-size: 5%;
+                    background-size: 30px;
+
+                    @media (max-width:890px) {
+                        background-image: none;
+                        padding: 0px;
+                    }
+
+                    @media (max-width:640px) {
+                        flex-direction: column;
+                        height: 75px;
+                    }
                 }
 
                 .form-submit {
@@ -179,6 +264,11 @@ body {
                     &:hover {
                         background-color: #ff4f81;
 
+                    }
+
+                    @media (max-width:400px) {
+                        padding-left: 8px;
+                        padding-right: 8px;
                     }
                 }
 

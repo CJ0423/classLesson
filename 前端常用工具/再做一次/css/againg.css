@@ -28,6 +28,8 @@ body main .my-form {
 body main .my-form .big-title {
   font-size: 2rem;
   color: white;
+  font-weight: bold;
+  padding-top: 5px;
 }
 body main .my-form .form-all {
   width: 100%;
@@ -50,13 +52,66 @@ body main .my-form .form-all .form-content .cname {
   background-image: url("../img/circle-user.svg");
   background-position: 2%;
   background-repeat: no-repeat;
-  background-size: 5%;
+  background-size: 30px;
+  padding-left: 50px;
+}
+@media (max-width: 890px) {
+  body main .my-form .form-all .form-content .cname {
+    background-image: none;
+    padding: 0px;
+  }
 }
 body main .my-form .form-all .form-content .email {
   background-image: url("../img/envelope-solid.svg");
   background-position: 2%;
   background-repeat: no-repeat;
-  background-size: 5%;
+  background-size: 30px;
+  padding-left: 50px;
+}
+@media (max-width: 890px) {
+  body main .my-form .form-all .form-content .email {
+    background-image: none;
+    padding: 0px;
+  }
+}
+body main .my-form .form-all .form-content .cellphone {
+  background-image: url("../img/phone-solid.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 50px;
+}
+@media (max-width: 890px) {
+  body main .my-form .form-all .form-content .cellphone {
+    background-image: none;
+    padding: 0px;
+  }
+}
+body main .my-form .form-all .form-content #form-password {
+  background-image: url("../img/unlock-keyhole-solid.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 50px;
+}
+@media (max-width: 890px) {
+  body main .my-form .form-all .form-content #form-password {
+    background-image: none;
+    padding: 0px;
+  }
+}
+body main .my-form .form-all .form-content .form-password {
+  background-image: url("../img/unlock-keyhole-solid.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 50px;
+}
+@media (max-width: 890px) {
+  body main .my-form .form-all .form-content .form-password {
+    background-image: none;
+    padding: 0px;
+  }
 }
 body main .my-form .form-all .form-content .fz {
   font-size: 16px;
@@ -91,11 +146,21 @@ body main .my-form .form-all .form-content .password-test-text {
   padding: 10px 0px;
   color: red;
 }
+@media (max-width: 430px) {
+  body main .my-form .form-all .form-content .password-test-text {
+    font-size: 6px;
+  }
+}
 body main .my-form .form-all .form-content .password-text {
   display: none;
   font-size: 12px;
   padding: 10px 0px;
   color: red;
+}
+@media (max-width: 430px) {
+  body main .my-form .form-all .form-content .password-text {
+    font-size: 6px;
+  }
 }
 body main .my-form .form-all .form-content .email-text {
   display: none;
@@ -103,17 +168,32 @@ body main .my-form .form-all .form-content .email-text {
   padding: 10px 0px;
   color: red;
 }
+@media (max-width: 430px) {
+  body main .my-form .form-all .form-content .email-text {
+    font-size: 6px;
+  }
+}
 body main .my-form .form-all .form-content .name-text {
   display: none;
   font-size: 12px;
   padding: 10px 0px;
   color: red;
 }
+@media (max-width: 430px) {
+  body main .my-form .form-all .form-content .name-text {
+    font-size: 6px;
+  }
+}
 body main .my-form .form-all .form-content .phone-text {
   display: none;
   font-size: 12px;
   padding: 10px 0px;
   color: red;
+}
+@media (max-width: 430px) {
+  body main .my-form .form-all .form-content .phone-text {
+    font-size: 6px;
+  }
 }
 body main .my-form .form-all .form-content input[type=password] {
   outline: none;
@@ -125,7 +205,19 @@ body main .my-form .form-all .birthday {
   background-image: url("../img/calendar-days.svg");
   background-position: 2%;
   background-repeat: no-repeat;
-  background-size: 5%;
+  background-size: 30px;
+}
+@media (max-width: 890px) {
+  body main .my-form .form-all .birthday {
+    background-image: none;
+    padding: 0px;
+  }
+}
+@media (max-width: 640px) {
+  body main .my-form .form-all .birthday {
+    flex-direction: column;
+    height: 75px;
+  }
 }
 body main .my-form .form-all .form-submit {
   background-color: #2dde98;
@@ -143,6 +235,12 @@ body main .my-form .form-all .form-submit {
 }
 body main .my-form .form-all .form-submit:hover {
   background-color: #ff4f81;
+}
+@media (max-width: 400px) {
+  body main .my-form .form-all .form-submit {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 body main .my-form .sing-up-now {
   margin-bottom: 15px;
