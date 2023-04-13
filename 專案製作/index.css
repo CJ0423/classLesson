@@ -8,8 +8,8 @@
   width: 100%;
   background-color: #8d99ae;
   height: 10vh;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .nav-bar-all .nav-bar-all-sec {
   width: 100%;
@@ -27,7 +27,9 @@
 @media (max-width: 768px) {
   .nav-bar-all .nav-bar-all-sec img {
     position: absolute;
-    top: 5px;
+    top: 25px;
+    height: 40px;
+    width: 40px;
   }
 }
 .nav-bar-all .nav-bar-all-sec .hamburger {
@@ -88,6 +90,7 @@
     width: 50px;
     height: 50px;
     left: 0;
+    position: absolute;
   }
   .nav-bar-all .nav-bar-all-sec .hamburger:hover {
     cursor: pointer;
@@ -109,6 +112,21 @@
   display: flex;
   width: 40%;
   height: 70vh;
+}
+@media (max-width: 1400px) {
+  .main .form-all {
+    width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  .main .form-all {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .main .form-all {
+    width: 100%;
+  }
 }
 .main .form-all .form-content-boss {
   display: none;
@@ -160,23 +178,11 @@
   font-size: 20px;
   padding-left: 10px;
 }
-@media (max-width: 1300px) {
-  .main .form-all .form-content-boss input[type=text],
-  .main .form-all .form-content-boss input[type=password] {
-    width: 350px;
-  }
-}
-@media (max-width: 970px) {
+@media (max-width: 768px) {
   .main .form-all .form-content-boss input[type=text],
   .main .form-all .form-content-boss input[type=password] {
     width: 250px;
-  }
-}
-@media (max-width: 769px) {
-  .main .form-all .form-content-boss input[type=text],
-  .main .form-all .form-content-boss input[type=password] {
-    width: 150px;
-    height: 60px;
+    height: 40px;
   }
 }
 .main .form-all .submit {
