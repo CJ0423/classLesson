@@ -46,6 +46,22 @@ body main .my-form .form-all .form-content {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.55);
 }
+body main .my-form .form-all .form-content .cname {
+  background-image: url("../img/circle-user.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+body main .my-form .form-all .form-content .email {
+  background-image: url("../img/envelope-solid.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+body main .my-form .form-all .form-content .fz {
+  font-size: 16px;
+  height: 50px;
+}
 body main .my-form .form-all .form-content select {
   width: 75px;
   padding: 4px 2px;
@@ -69,6 +85,30 @@ body main .my-form .form-all .form-content input ::-moz-placeholder {
 body main .my-form .form-all .form-content input ::placeholder {
   color: rgba(255, 255, 255, 0.65);
 }
+body main .my-form .form-all .form-content .password-test-text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px;
+  color: red;
+}
+body main .my-form .form-all .form-content .password-text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px;
+  color: red;
+}
+body main .my-form .form-all .form-content .email-text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px;
+  color: red;
+}
+body main .my-form .form-all .form-content .name-text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px;
+  color: red;
+}
 body main .my-form .form-all .form-content .phone-text {
   display: none;
   font-size: 12px;
@@ -82,6 +122,33 @@ body main .my-form .form-all .form-content input[type=password] {
 body main .my-form .form-all .birthday {
   height: 44px;
   flex-direction: row;
+  background-image: url("../img/calendar-days.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+body main .my-form .form-all .form-submit {
+  background-color: #2dde98;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+body main .my-form .form-all .form-submit:hover {
+  background-color: #ff4f81;
+}
+body main .my-form .sing-up-now {
+  margin-bottom: 15px;
+}
+body main .my-form .sing-up-now:hover {
+  opacity: 0.5;
 }
 body main .sing-up-now {
   display: block;

@@ -12,41 +12,44 @@
 <body>
     <main>
         <div class="my-form">
-            <div style="color: red;" class="big-title">註冊會員</div>
+            <div class="big-title">註冊會員</div>
             <form class="form-all" action="">
                 <div class="form-content">
-                    <input placeholder="請輸入姓名"  class="cname" type="text">
+                    <input placeholder="請輸入姓名" class="cname fz" type="text">
+                    <span class="name-text">請輸入正確的中文姓名</span>
                 </div>
-             
+
                 <div class="form-content birthday">
                     <select name="b" class="chose-year">
-                        <option value="1992">1992</option>
+                        <option value="1992">--年分--</option>
                     </select>
                     <select name="" class="chose-month">
-                        <option value="04">04</option>
+                        <option value="04">--月份--</option>
                     </select>
                     <select name="" class="chose-day">
-                        <option value="23">23</option>
+                        <option value="23">--日期--</option>
                     </select>
                 </div>
                 <div class="form-content">
-                    <input placeholder="請輸入電子信箱" type="email" name="" class="email">
-                    
+                    <input placeholder="請輸入電子信箱" type="email" name="" class="email fz">
+                    <span class="email-text">請輸入正確的電子信箱</span>
                 </div>
 
                 <div class="form-content">
-                    <input placeholder="請輸入手機號碼" class="cellphone" type="text">
+                    <input placeholder="請輸入手機號碼" class="cellphone fz" type="text">
                     <span class="phone-text">請輸入正確的手機號碼</span>
                 </div>
                 <div class="form-content">
-                    <input placeholder="請輸入密碼" type="password" name="" id="form-password">
+                    <input placeholder="請輸入密碼" type="password" name="" id="form-password" class="fz">
+                    <span class="password-text">密碼至少6位元但不超過12位元 且只能輸入英文及數字</span>
                 </div>
                 <div class="form-content">
-                    <input placeholder="請輸入密碼" type="password" name="" class="form-password">
+                    <input placeholder="確定密碼" type="password" name="" class="form-password fz">
+                    <span class="password-test-text">與原密碼不符</span>
                 </div>
-                <input value="送出" class="form-submit" type="submit">
+                <input value="Get Started" class="form-submit" type="submit">
             </form>
-            <a class="sing-up-now" href="">已有帳號登入</a>
+            <a class="sing-up-now" href="">已有帳號-登入</a>
         </div>
     </main>
     <script src="../js/myJS.js"></script>

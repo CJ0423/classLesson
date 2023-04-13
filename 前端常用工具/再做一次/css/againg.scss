@@ -3,7 +3,8 @@ $white: #ffff;
 $fade-white: rgba(255, 255, 255, 0.65);
 $green-btn: #2dde98;
 $green-btn-hover: #ff4f81;
-$red:red;
+$red: red;
+$place-holder-fz : 16px;
 
 * {
     margin: 0px;
@@ -28,15 +29,17 @@ body {
 
         .my-form {
             width: 50%;
-            background-color:$bg-main;
+            background-color: $bg-main;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
 
+
             .big-title {
                 font-size: 2rem;
                 color: $white;
+
             }
 
             .form-all {
@@ -47,7 +50,7 @@ body {
                 flex-direction: column;
                 margin-top: 10px;
 
-                .form-content{
+                .form-content {
                     width: 75%;
                     margin-top: 20px;
                     display: flex;
@@ -55,14 +58,38 @@ body {
                     justify-content: center;
                     align-items: center;
                     background-color: $bg-main;
-                    select{
+
+                    .cname {
+                        background-image: url("../img/circle-user.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 5%;
+
+                    }
+
+                    .email {
+                        background-image: url("../img/envelope-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 5%;
+                    }
+
+                    .fz {
+                        font-size: $place-holder-fz ;
+                        height: 50px;
+
+
+                    }
+
+                    select {
                         width: 75px;
                         padding: 4px 2px;
                         display: flex;
                         align-items: center;
                         border-radius: 4px;
                     }
-                    input{
+
+                    input {
                         width: 100%;
                         padding: 8px 16px;
                         border-radius: 4px;
@@ -71,34 +98,99 @@ body {
                         font-size: 24px;
                         outline: none;
                         border: 0.5px solid $white;
-                        ::placeholder{
+
+                        ::placeholder {
                             color: $fade-white;
+
                         }
 
                     }
-                    .phone-text{
+
+                    .password-test-text {
                         display: none;
                         font-size: 12px;
-                       padding: 10px 0px;
-                        color:$red ;
+                        padding: 10px 0px;
+                        color: $red ;
                     }
-                    input[type="password"]{
+
+                    .password-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+                    }
+
+                    .email-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+                    }
+
+                    .name-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+                    }
+
+                    .phone-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+                    }
+
+                    input[type="password"] {
                         outline: none;
                         background-color: $bg-main;
 
                     }
+
                     // #form-password{
                     //     width: 500px;
 
                     // }
                 }
-                .birthday{
+
+                .birthday {
                     height: 44px;
                     flex-direction: row;
+                    background-image: url("../img/calendar-days.svg");
+                    background-position: 2%;
+                    background-repeat: no-repeat;
+                    background-size: 5%;
                 }
+
+                .form-submit {
+                    background-color: #2dde98;
+                    font-size: 20px;
+                    color: white;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-radius: 20px 20px 20px 20px;
+                    cursor: pointer;
+                    transition: background-color 0.2s;
+
+                    &:hover {
+                        background-color: #ff4f81;
+
+                    }
+                }
+
             }
 
+            .sing-up-now {
+                margin-bottom: 15px;
 
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
 
 
 
