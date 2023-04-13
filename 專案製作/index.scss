@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav-bar-all {
+    width: 100%;
+    background-color: #8d99ae;
+    height: 10vh;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    .nav-bar-all-sec {
+        // border: 5px black solid;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #8d99ae;
+        position: relative;
+
+        img {
+            height: 80px;
+            width: 80px;
+
+            @media (max-width:768px) {
+                position: absolute;
+            }
+        }
+
+        .nav-bar-join {
+            display: flex;
+
+
+            @media (max-width:768px) {
+                position: absolute;
+                left: 0;
+                flex-direction: column;
+                top: 95px;
+                display: none;
+
+
+            }
+        }
+
+        .nav-bar-join.show {
+            display: flex;
+        }
+
+        >div>a {
+            @media (min-width:769px) {
+
+                text-decoration: none;
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 20px;
+                color: white;
+
+                &:hover {
+                    text-shadow: 0 0 3px black;
+                }
+            }
+
+            @media (max-width:768px) {
+                text-decoration: none;
+                margin-top: 15px;
+                width: 250px;
+                font-size: 30px;
+                color: white;
+                border-bottom: 1px white solid;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+
+            @media (max-width:768px) {
+                display: block;
+                width: 50px;
+                height: 50px;
+                left: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    border: 2px black solid;
+}
