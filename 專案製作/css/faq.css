@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2e9e4;
+}
+
+.nav-bar-all {
+  width: 100%;
+  background-color: #8d99ae;
+  height: 10vh;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nav-bar-all .nav-bar-all-sec {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8d99ae;
+  position: relative;
+}
+.nav-bar-all .nav-bar-all-sec img {
+  height: 80px;
+  width: 80px;
+}
+@media (max-width: 768px) {
+  .nav-bar-all .nav-bar-all-sec img {
+    position: absolute;
+    top: 25px;
+    height: 40px;
+    width: 40px;
+  }
+}
+.nav-bar-all .nav-bar-all-sec .hamburger {
+  top: 25px;
+}
+.nav-bar-all .nav-bar-all-sec .nav-bar-join {
+  display: flex;
+}
+.nav-bar-all .nav-bar-all-sec .nav-bar-join .faq {
+  color: blue;
+}
+@media (min-width: 769px) {
+  .nav-bar-all .nav-bar-all-sec .nav-bar-join .click-menu:hover {
+    -webkit-text-decoration: underline solid white;
+            text-decoration: underline solid white;
+  }
+}
+@media (max-width: 768px) {
+  .nav-bar-all .nav-bar-all-sec .nav-bar-join {
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    top: 95px;
+    display: none;
+  }
+}
+.nav-bar-all .nav-bar-all-sec .nav-bar-join.show {
+  display: flex;
+}
+@media (min-width: 769px) {
+  .nav-bar-all .nav-bar-all-sec > div > a {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  .nav-bar-all .nav-bar-all-sec > div > a:hover {
+    text-shadow: 2px 2px 10px white, -2px -2px 10px white;
+  }
+}
+@media (max-width: 768px) {
+  .nav-bar-all .nav-bar-all-sec > div > a {
+    text-decoration: none;
+    margin-top: 15px;
+    width: 250px;
+    font-size: 30px;
+    color: white;
+    border-bottom: 1px white solid;
+  }
+  .nav-bar-all .nav-bar-all-sec > div > a:hover {
+    text-shadow: 2px 2px 10px white, -2px -2px 10px white;
+  }
+}
+.nav-bar-all .nav-bar-all-sec .hamburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-bar-all .nav-bar-all-sec .hamburger {
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: 25%;
+    left: 0;
+    position: absolute;
+  }
+  .nav-bar-all .nav-bar-all-sec .hamburger:hover {
+    cursor: pointer;
+  }
+}
+
+.main-all {
+  background-color: #f2e9e4;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.main-all .main {
+  width: 70%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-all .main .big-title {
+  font-size: 45px;
+  border-bottom: 2px black solid;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-all .main .question-boss {
+  padding-top: 50px;
+  width: 100%;
+}
+.main-all .main .question-boss .questions-all {
+  width: 100%;
+  border: 2px black solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #cb997e;
+  font-size: 20px;
+  background-image: url("../img/plus-solid.svg");
+  background-position: 2%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+}
+.main-all .main .question-boss .qa {
+  border: 2px black solid;
+  border-top: none;
+  margin-top: 0;
+  background-color: white;
+  transition: 0.5s;
+  height: 200px;
+  display: none;
+  align-items: center;
+  transition: 0.5s;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .main-all .main .question-boss .qa {
+    font-size: 15px;
+  }
+}
+.main-all .main .question-boss .q4-answer {
+  align-items: top;
+  font-size: 15px;
+  height: 800px;
+}
+.main-all .main .question-boss .q5-answer {
+  font-size: 20px;
+  height: 700px;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #8d99ae;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-all {
+  width: 80%;
+  height: 40vh;
+  background-color: #8d99ae;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .footer-all a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  border: 2px white solid;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: background-color 0.2s color 0.2s;
+}
+.footer .footer-all a:hover {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=faq.css.map */

@@ -1,0 +1,618 @@
+$bg-main: rgba(0, 0, 0, 0.55);
+$white: #ffff;
+$fade-white: rgba(255, 255, 255, 0.65);
+$green-btn: #2dde98;
+$green-btn-hover: #ff4f81;
+$red: red;
+$place-holder-fz : 16px;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav-bar-all {
+    width: 100%;
+    background-color: #8d99ae;
+    height: 10vh;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .nav-bar-all-sec {
+        // border: 5px black solid;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #8d99ae;
+        position: relative;
+
+        img {
+            height: 80px;
+            width: 80px;
+
+            @media (max-width:768px) {
+                position: absolute;
+                top: 25px;
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        .hamburger {
+            top: 25px;
+        }
+
+        .nav-bar-join {
+            display: flex;
+
+            @media (min-width:769px) {
+                .click-menu {
+                    &:hover {
+                        text-decoration: underline solid white;
+                    }
+                }
+
+            }
+
+
+
+            @media (max-width:768px) {
+                position: absolute;
+                left: 0;
+                flex-direction: column;
+                top: 95px;
+                display: none;
+
+
+            }
+        }
+
+        .nav-bar-join.show {
+            display: flex;
+            // text-shadow: 2px 2px 4px #be1818;
+        }
+
+        >div>a {
+            @media (min-width:769px) {
+
+                text-decoration: none;
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 20px;
+                color: white;
+
+                &:hover {
+                    // text-shadow: 0 0 3px black;
+                    text-shadow: 2px 2px 10px white, -2px -2px 10px white;
+                }
+            }
+
+            @media (max-width:768px) {
+                text-decoration: none;
+                margin-top: 15px;
+                width: 250px;
+                font-size: 30px;
+                color: white;
+                border-bottom: 1px white solid;
+
+                &:hover {
+                    // text-shadow: 0 0 3px black;
+                    text-shadow: 2px 2px 10px white, -2px -2px 10px white;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+
+            @media (max-width:768px) {
+                display: block;
+                width: 50px;
+                height: 50px;
+                top: calc(100% / 4);
+                left: 0;
+                position: absolute;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    border-top: 2px black solid;
+    background-image: url("../img/pexels-cottonbro-studio-4064835.jpg");
+    background-position: 0% 87%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+
+    .form-all {
+        display: flex;
+        width: 40%;
+        height: 70vh;
+
+        @media (max-width:1400px) {
+            width: 70%;
+        }
+
+        @media (max-width:1200px) {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+            width: 100%;
+        }
+
+
+
+        .my-form {
+            width: 100%;
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(26, 19, 19, 0.9);
+            // text-shadow: 2px 2px 8px white, -2px -2px 8px white;
+            position: relative;
+            transition: opacity 1s;
+
+            @media (max-width:750px) {
+                width: 100%;
+            }
+
+            @media (max-width:500px) {
+                width: 100%;
+            }
+
+            .x-mark {
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top: 50px;
+                right: 80px;
+                cursor: pointer;
+
+                @media (max-width:1200px) {
+                    right: 40px;
+                }
+
+                @media (max-width:765px) {
+                    right: 20px;
+                }
+
+
+            }
+
+            .big-title {
+                font-size: 2rem;
+                color: $white;
+
+                padding-top: 15px;
+            }
+
+            .form-all {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 10px;
+
+
+
+                .form-content {
+                    width: 75%;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bg-main;
+
+
+                    .cname {
+                        background-image: url("../img/circle-user.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+                    }
+
+                    .email {
+                        background-image: url("../img/envelope-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+
+
+                    }
+
+                    .cellphone {
+                        background-image: url("../img/phone-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+                    }
+
+                    #form-password {
+                        background-image: url("../img/unlock-keyhole-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+                    }
+
+                    .form-password {
+                        background-image: url("../img/unlock-keyhole-solid.svg");
+                        background-position: 2%;
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        padding-left: 50px;
+
+                        @media (max-width:890px) {
+                            background-image: none;
+                            padding: 0px;
+                        }
+
+
+                    }
+
+                    .fz {
+                        font-size: $place-holder-fz ;
+                        height: 50px;
+
+
+                    }
+
+                    select {
+                        width: 75px;
+                        padding: 4px 2px;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 4px;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 8px 16px;
+                        border-radius: 4px;
+                        background-color: $bg-main;
+                        color: $white;
+                        font-size: 24px;
+                        outline: none;
+                        border: 0.5px solid $white;
+
+                        ::placeholder {
+                            color: $fade-white;
+
+                        }
+
+                    }
+
+                    .password-test-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
+                    }
+
+                    .password-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
+                    }
+
+                    .email-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
+                    }
+
+                    .name-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
+                    }
+
+                    .phone-text {
+                        display: none;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        color: $red ;
+
+                        @media (max-width:430px) {
+                            font-size: 6px;
+                        }
+                    }
+
+                    input[type="password"] {
+                        outline: none;
+                        background-color: $bg-main;
+
+                    }
+
+
+
+                    // #form-password{
+                    //     width: 500px;
+
+                    // }
+                }
+
+                .birthday {
+                    height: 44px;
+                    flex-direction: row;
+                    background-image: url("../img/calendar-days.svg");
+                    background-position: 2%;
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+
+                    @media (max-width:890px) {
+                        background-image: none;
+                        padding: 0px;
+                    }
+
+                    @media (max-width:640px) {
+
+                        height: 75px;
+                    }
+                }
+
+                .form-submit {
+                    background-color: #2dde98;
+                    font-size: 20px;
+                    color: white;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-radius: 20px 20px 20px 20px;
+                    cursor: pointer;
+                    transition: background-color 0.2s;
+
+                    &:hover {
+                        background-color: #ff4f81;
+
+                    }
+
+                    @media (max-width:400px) {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                    }
+                }
+
+            }
+
+            .sing-up-now {
+                margin-bottom: 15px;
+                display: block;
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+
+
+        }
+
+        .form-content-boss {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(26, 19, 19, 0.9);
+            // text-shadow: 2px 2px 8px white, -2px -2px 8px white;
+            position: relative;
+            border-radius: 10% 10% 10% 10%;
+            transition: opacity 1s;
+
+            .big-title {
+                font-size: 30px;
+                color: white;
+            }
+
+            .x-mark {
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top: 50px;
+                right: 80px;
+                cursor: pointer;
+
+                @media (max-width:1200px) {
+                    right: 40px;
+                }
+
+                @media (max-width:765px) {
+                    right: 20px;
+                }
+
+
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: 500px;
+                height: 80px;
+                border: none;
+                border-radius: 20px 20px 20px 20px;
+                background-color: black;
+                border: 2px white solid;
+                color: white;
+                font-size: 20px;
+                padding-left: 60px;
+
+                @media (max-width:768px) {
+                    width: 250px;
+                    height: 40px;
+                }
+
+            }
+
+            input[type="text"] {
+                background-image: url("../img/circle-user.svg");
+                background-size: 8%;
+                background-repeat: no-repeat;
+                background-position: 2%;
+            }
+
+            input[type="password"] {
+                background-image: url("../img/unlock-keyhole-solid.svg");
+                background-size: 8%;
+                background-repeat: no-repeat;
+                background-position: 2%;
+            }
+        }
+
+        .form-content-second {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(26, 19, 19, 0.9);
+            text-shadow: 2px 2px 8px white, -2px -2px 8px white;
+            position: relative;
+            border-radius: 10% 10% 10% 10%;
+            transition: opacity 1s;
+
+            .x-mark {
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top: 50px;
+                right: 80px;
+                cursor: pointer;
+
+                @media (max-width:1200px) {
+                    right: 40px;
+                }
+
+                @media (max-width:765px) {
+                    right: 20px;
+                }
+
+                @media (max-width:600px) {
+                    right: 20px;
+
+                }
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: 500px;
+                height: 80px;
+                border: none;
+                border-radius: 20px 20px 20px 20px;
+                background-color: black;
+                border: 2px white solid;
+                color: white;
+                font-size: 20px;
+                padding-left: 10px;
+
+                @media (max-width:768px) {
+                    width: 400px;
+                    height: 40px;
+                }
+
+                @media (max-width:450px) {
+                    width: 300px;
+                    height: 40px;
+                }
+
+            }
+
+            .big-title {
+                font-size: 30px;
+                color: white;
+            }
+
+
+        }
+
+        .submit {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            border-radius: 20px 20px 20px 20px;
+            cursor: pointer;
+            background-color: #2dde98;
+            transition: 0.2s;
+            color: white;
+
+            &:hover {
+                background-color: #ff4f81;
+                transform: translate(0px, -5px);
+            }
+
+
+            // $green-btn: #2dde98;
+            // $green-btn-hover: #ff4f81;
+        }
+    }
+
+    @media (max-width:1200px) {
+        background-position: 50% 87%;
+    }
+
+}
