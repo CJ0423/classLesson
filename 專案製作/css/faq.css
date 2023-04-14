@@ -108,13 +108,11 @@ body {
 .main-all {
   background-color: #f2e9e4;
   width: 100%;
-  height: 90vh;
   display: flex;
   justify-content: center;
 }
 .main-all .main {
   width: 70%;
-  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -178,14 +176,15 @@ body {
 
 .footer {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background-color: #8d99ae;
   display: flex;
   justify-content: center;
+  margin-top: 150px;
 }
 .footer .footer-all {
   width: 80%;
-  height: 40vh;
+  height: 30vh;
   background-color: #8d99ae;
   display: flex;
   align-items: center;
