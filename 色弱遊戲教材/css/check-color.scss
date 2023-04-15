@@ -1,0 +1,84 @@
+$main:#dcaf5f;
+$bgColor:rgb(176, 92, 58);
+$black:black;
+$btn:rgb(6, 242, 223);
+$btnHover:rgb(17, 205, 189);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $main;
+    .big-title{
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .second-title{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .function{
+        width: 612px;
+
+        padding:0px 30px;
+
+        display: flex;
+        background-color:$bgColor;
+        .time{
+            width: 50%;
+            font-size: 1.5rem;
+
+        }
+        .level-text{
+            width: 50%;
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 1.5rem;
+        }
+    }
+    .game{
+        width:612px;
+        height:612px ;
+        border: 1px solid $black;
+        position: relative;
+        .start-btn{
+            padding: 10px 20px;
+            position: absolute;
+            top: calc(30% - 33px);
+            left:calc(50% - 84px);
+
+            font-size: 2rem;
+            cursor: pointer;
+            background-color: $btn;
+
+            &:hover{
+            background-color: $btnHover;
+            box-shadow: 0.5px 0.5px $black
+            }
+        }
+        .box{width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            white-space: pre-wrap;
+
+                .pick-item{
+                    width:50%;
+                    height: 50%;
+                    border: 1px solid $black;
+                    background-color: azure;
+                }
+            }
+        }
+}
