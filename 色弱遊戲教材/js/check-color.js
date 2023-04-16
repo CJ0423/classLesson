@@ -15,7 +15,6 @@ let theTime=0
 function isOver(gameOver){
 if(gameOver){
     level=0
-
     return true
 }
 return false
@@ -102,7 +101,6 @@ function  addSomething(){
         element.addEventListener("click",wrong)}
     });
 }
-
 function wrong(){
     console.log("答錯了")
 }
