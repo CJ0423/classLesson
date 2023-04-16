@@ -58,12 +58,18 @@ function update() {
     let i = Math.floor(Math.random() * 255);
     let j = Math.floor(Math.random() * 255);
     let k = Math.floor(Math.random() * 255);
+    let specialI = 0;
+    let specialJ = 0;
+    let specailK = 0;
     console.log(i, j, k);
     special = Math.floor(Math.random() * boxCount[x]);
     for (let i = 0; i < pickItem.length; i++) {
         pickItem[i].style.backgroundColor = `rgb(${i}, ${j}, ${k})`;
+        specialI = i;
+        specialJ = j;
+        specialK = k;
     }
-    pickItem[special].style.backgroundColor = `rgb(${i + 2}, ${j}, ${k})`;
+    pickItem[special].style.backgroundColor = `rgb(${specialI + 20}, ${specialJ + 20}, ${specialK + 20})`;
 }
 
 
@@ -97,7 +103,7 @@ function createDiv() {
         box.innerHTML += `<div style="width:${100 / (boxCountForWidth[x])}%; height:${100 / boxCountForWidth[x]}%;background-color:rgb(${ii}, ${jj}, ${kk})"class="pick-item"></div>`
     }
     pickItem = Array.from(document.querySelectorAll(".pick-item"));
-    pickItem[special].style.backgroundColor = `rgb(${ii + 2}, ${jj + 50}, ${kk + 50})`;
+    pickItem[special].style.backgroundColor = `rgb(${ii + 20}, ${jj + 20}, ${kk + 20})`;
 }
 
 

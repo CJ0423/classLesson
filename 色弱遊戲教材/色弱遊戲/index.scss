@@ -31,6 +31,12 @@ main {
         width: 50%;
         justify-content: space-evenly;
         padding-right: 80px;
+
+        @media (max-width:375px) {
+            font-size: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .game {
@@ -66,6 +72,11 @@ main {
             left: 45%;
 
             border-radius: 20px 20px 20px 20px;
+
+            @media (max-width:375px) {
+                top: 45%;
+                left: 25%;
+            }
 
             &:hover {
                 background-color: antiquewhite;
