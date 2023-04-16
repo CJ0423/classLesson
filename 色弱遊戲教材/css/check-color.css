@@ -63,7 +63,6 @@ main .game .box {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  white-space: pre-wrap;
 }
 main .game .box .pick-item {
   width: 50%;
