@@ -21,18 +21,49 @@ let levelText = getDom(".level-text");
 let begin = 0;
 let x = 0;
 let howMuchLevel = 1;
+let again = getDom(".again");
+let game = getDom(".game");
 
 startBtn.addEventListener("click", startgame)
 
 // 開始遊戲
 function startgame() {
-
     startBtn.style.display = "none";
     begin = 1;
+    i = 60;
     if (begin == 1) {
         count()
         update()
     }
+
+}
+// 重製遊戲----
+again.addEventListener("click", reset);
+
+function reset() {
+
+    again.style.display = "none";
+    victory.style.display = "none";
+    startBtn.style.display = "flex";
+    box.innerHTML = "";
+    playingScore = 0;
+    begin = 1;
+    i = 60;
+    time.innerHTML = `<div class="time">剩下時間：60秒</div>`;
+    score.innerHTML = `<div class="score">目前分數:0</div>`;
+    x = 0;
+    howMuchLevel = 1;
+    levelText.innerHTML = `level:${howMuchLevel}`
+    let ii = Math.floor(Math.random() * 255);
+    let jj = Math.floor(Math.random() * 255);
+    let kk = Math.floor(Math.random() * 255);
+    for (let i = 0; i < boxCount[x]; i++) {
+        box.innerHTML += `<div style="width:${100 / (boxCountForWidth[x])}%; height:${100 / boxCountForWidth[x]}%;background-color:white"class="pick-item"></div>`
+    }
+    pickItem = Array.from(document.querySelectorAll(".pick-item"));
+    pickItem[special].style.backgroundColor = `rgb(${ii + 20}, ${jj + 20}, ${kk + 20})`;
+
+    startBtn.addEventListener("click", startgame);
 
 }
 
@@ -41,10 +72,12 @@ function count() {
     let zero = setInterval(function () {
         i--;
         time.innerHTML = `<div class="time">剩下時間：${i}秒</div>`
-        if (i <= 0) {
+        if (i <= 0 || playingScore >= 24) {
             clearInterval(zero);
             victory.innerHTML = `恭喜獲得${playingScore}分`
             victory.style.display = "flex";
+            again.style.display = "block";
+            game.style.backgroundColor = "black";
         }
     }, 1000)
 
@@ -55,19 +88,20 @@ function count() {
 //  background-color: white;
 // Math.floor(Math.random() * 256);
 function update() {
-    let i = Math.floor(Math.random() * 255);
-    let j = Math.floor(Math.random() * 255);
-    let k = Math.floor(Math.random() * 255);
+    let iii = Math.floor(Math.random() * 255);
+    let jjj = Math.floor(Math.random() * 255);
+    let kkk = Math.floor(Math.random() * 255);
     let specialI = 0;
     let specialJ = 0;
-    let specailK = 0;
-    console.log(i, j, k);
+    let specialK = 0;
+    console.log(iii, jjj, kkk);
     special = Math.floor(Math.random() * boxCount[x]);
+
     for (let i = 0; i < pickItem.length; i++) {
-        pickItem[i].style.backgroundColor = `rgb(${i}, ${j}, ${k})`;
-        specialI = i;
-        specialJ = j;
-        specialK = k;
+        pickItem[i].style.backgroundColor = `rgb(${iii}, ${jjj}, ${kkk})`;
+        specialI = iii;
+        specialJ = jjj;
+        specialK = kkk;
     }
     pickItem[special].style.backgroundColor = `rgb(${specialI + 20}, ${specialJ + 20}, ${specialK + 20})`;
 }
@@ -84,9 +118,7 @@ box.addEventListener("click", function (e) {
             createDiv()
         }
     }
-    if (howMuchLevel > 8) {
-        alert("恭喜全部通關!!")
-    }
+
 
 })
 
@@ -131,3 +163,5 @@ function createDiv() {
         }
     }*/
 
+
+// <div style="width: 50%; height: 50%; border: 1px solid black; background-color: white;">Content goes here</div>
