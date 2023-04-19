@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main-all {
+  height: 100vh;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-all #img1 {
+  position: absolute;
+  height: 200px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.main-all .win {
+  color: red;
+  font-size: 50px;
+  display: none;
+}
+.main-all .put-here {
+  width: 50%;
+  height: 50%;
+  border: 5px black solid;
+}/*# sourceMappingURL=index.css.map */
