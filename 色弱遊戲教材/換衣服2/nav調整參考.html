@@ -1,0 +1,31 @@
+<style>
+    .animation {
+      transition: opacity .3s;
+    }
+    .fadeInOut {
+      opacity: 0;
+    }
+  </style>
+  <body>
+    <div id='title' class='animation'>JS 20 Min</div>
+    <button id='fadeout-button'>淡出</button>
+    <button id='fadein-button'>淡入</button>
+    <script src='./main.js'></script>
+  </body>
+  <script>
+  let title = document.getElementById('title');
+
+  
+  let fadeout_button = document.getElementById('fadeout-button');
+  let fadein_button = document.getElementById('fadein-button');
+  function fadeIn() {
+    title.classList.add('fadeInOut')
+  }
+  function fadeOut() {
+    title.classList.remove('fadeInOut')
+  }
+  fadein_button.addEventListener('click', fadeOut)
+
+
+  fadeout_button.addEventListener('click', fadeIn)
+  </script>
