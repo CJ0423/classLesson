@@ -7,6 +7,7 @@ let startY = mainAll.offsetTop;
 let win = document.querySelector(".win");
 img.addEventListener("mousedown", function (e) {
     let imgLeft = e.pageX - startX - img.offsetLeft;
+    console.log(startX)
     let imgTop = e.pageY - startY - img.offsetTop;
 
     function moving(e) {

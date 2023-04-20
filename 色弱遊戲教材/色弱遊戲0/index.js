@@ -88,9 +88,9 @@ function count() {
 //  background-color: white;
 // Math.floor(Math.random() * 256);
 function update() {
-    let iii = Math.floor(Math.random() * 255);
-    let jjj = Math.floor(Math.random() * 255);
-    let kkk = Math.floor(Math.random() * 255);
+    let iii = Math.floor(Math.random() * 235);
+    let jjj = Math.floor(Math.random() * 235);
+    let kkk = Math.floor(Math.random() * 235);
     let specialI = 0;
     let specialJ = 0;
     let specialK = 0;
