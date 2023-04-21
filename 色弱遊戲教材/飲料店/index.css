@@ -204,10 +204,64 @@
   transform: translate3d(0, 0, 0);
 }
 
-.main-one {
+.four-of-drink {
   width: 100%;
-  height: 100vh;
+  height: 400vh;
   border: 1px black solid;
+  background-color: #E5E3DD;
+  position: relative;
+  overflow: hidden;
+}
+.four-of-drink #main-one-pic {
+  position: absolute;
+  left: 80%;
+  top: 13%;
+}
+.four-of-drink .title-one {
+  position: absolute;
+  left: 80%;
+}
+.four-of-drink .title-one .brand {
+  font-size: 70px;
+  font-family: Adobe Caslon Pro;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+}
+.four-of-drink .title-one .about-Jo {
+  font-size: 3.5rem;
+  letter-spacing: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 40px 0 35px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.four-of-drink .title-one .detail {
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  letter-spacing: 5px;
+}
+.four-of-drink .main-one {
+  top: 150px;
+  width: 35%;
+  height: 100vh;
+  flex: 5;
+  height: 35vw;
+  background: #013B4F;
+  border-radius: 10% 45% 0% 45%;
+  overflow: hidden;
+  position: relative;
+  right: 1.5vw;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.four-of-drink .main-one img {
+  width: 70%;
 }
 
 @keyframes dropping {
