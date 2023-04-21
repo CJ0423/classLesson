@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    vertical-align:baseline
 }
 
 .header {
@@ -56,6 +57,8 @@
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+
+    position: relative;
 
     .drop {
         position: relative;
@@ -204,28 +207,35 @@
 
     .ocean {
         width: 100%;
-        height: 15vh;
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        z-index: 101;
+        height: 8%;
+        // display: block;
+        position: absolute;
+        // z-index: 101;
+
+        bottom: 0px;
+        left: 0px;
 
         #waves1 {
-            position: absolute;
+            top: -175px;
+            // background-image: url("./img/text.svg");
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,swell 7s ease -1.25s infinite;
+           opacity: 1;
 
         }
 
 
         .waves {
-
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
             background-image: url("https://tibamef2e.com/ced101/project/g1/Images/brandStory/banner_btm.svg");
-            background-position: 90% 0%;
+            // background-image: url("./img/banner_btm.svg");
+            // background-position: 90% 0%;
+            position: absolute;
             background-repeat: repeat-x;
-            background-size: contain;
+            // background-size: contain;
+            top: -198px;
             width: 6400px;
-            height: 300px;
-            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-            transform: translate3d(0, 0, 0);
+            height: 250px;
+          transform: translate3d(0, 0, 0);
         }
     }
 
@@ -265,7 +275,10 @@
 
 @keyframes swell {
 
-    0%,
+    0%{
+        transform: translate3d(0, -25px, 0);
+
+    }
     100% {
         transform: translate3d(0, -25px, 0);
     }
