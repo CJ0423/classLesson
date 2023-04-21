@@ -245,72 +245,470 @@
 .four-of-drink {
     width: 100%;
     height: 400vh;
-    border: 1px black solid;
+    // border: 1px black solid;
     background-color: #E5E3DD;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
-    #main-one-pic {
-        position: absolute;
-        left: 80%;
-        top: 13%;
-    }
-
-    .title-one {
-        position: absolute;
-        left: 80%;
-
-        .brand {
-            font-size: 70px;
-            font-family: Adobe Caslon Pro;
-            font-style: italic;
-            font-weight: bold;
-            letter-spacing: 5px;
-            position: relative;
-        }
-
-        .about-Jo {
-            font-size: 3.5rem;
-            letter-spacing: 1.5rem;
-            font-family: 'Roboto', sans-serif;
-            margin: 40px 0 35px;
-            letter-spacing: 5px;
-            font-weight: bold;
-        }
-
-        .detail {
-            font-size: 1.6rem;
-            letter-spacing: 0.3rem;
-            font-family: 'Roboto', sans-serif;
-            line-height: 32px;
-            letter-spacing: 5px;
-        }
-    }
-
-    .main-one {
-        top: 150px;
-        width: 35%;
+    .one-of-drink {
+        // border: 5px red solid;
+        width: 100%;
         height: 100vh;
-        flex: 5;
-        height: 35vw;
-        background: #013B4F;
-        border-radius: 10% 45% 0% 45%;
-        overflow: hidden;
-        position: relative;
-        right: 1.5vw;
-        border: 1px black solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        img {
-            width: 70%;
+        #main-one-pic {
+            position: absolute;
+            width: 7rem;
+            left: 85%;
+            top: 13%;
+        }
+
+        .title-one {
+
+            position: absolute;
+            left: 62%;
+            top: 6.5%;
+            // border: 2px black solid;
+
+            .leave-one {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                top: 15px;
+                left: -75px;
+
+            }
+
+            .brand {
+                font-size: 70px;
+                font-family: Adobe Caslon Pro;
+                font-style: italic;
+                font-weight: bold;
+                letter-spacing: 5px;
+                position: relative;
+            }
+
+            .about-Jo {
+                font-size: 3rem;
+                letter-spacing: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+                margin: 40px 0 35px;
+                letter-spacing: 5px;
+                font-weight: bold;
+            }
+
+            .detail {
+                font-size: 1rem;
+                letter-spacing: 0.3rem;
+                font-family: 'Roboto', sans-serif;
+                line-height: 32px;
+                letter-spacing: 5px;
+            }
+
+            .leave-two {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                left: 280px;
+                top: 70px;
+            }
+        }
+
+        .main-one {
+            top: 150px;
+            width: 35%;
+            height: 100vh;
+            flex: 5;
+            height: 35vw;
+            background: #013B4F;
+            border-radius: 10% 45% 0% 45%;
+            overflow: hidden;
+            position: relative;
+            right: 1.5vw;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 70%;
+            }
         }
     }
 
+    .two-of-drink {
+        width: 100%;
+        height: 100vh;
+        // border: 5px red solid;
+        position: relative;
+
+        .leave-two {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            left: 600px;
+            top: 700px;
+        }
+
+        .leave-one {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 250px;
+            left: 100px;
+
+        }
+
+        .title-two {
+            position: absolute;
+            left: 10%;
+            top: 35%;
+
+            .o-one {
+                font-size: 70px;
+                font-family: Adobe Caslon Pro;
+                font-style: italic;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+
+            .share {
+                font-size: 3rem;
+                letter-spacing: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+                margin: 40px 0 35px;
+                letter-spacing: 5px;
+                font-weight: bold;
+            }
+
+            .hate {
+                font-size: 1rem;
+                letter-spacing: 0.3rem;
+                font-family: 'Roboto', sans-serif;
+                line-height: 32px;
+                letter-spacing: 5px;
+            }
+        }
+
+        .main-two {
+            top: 80px;
+            width: 35%;
+            height: 100vh;
+            flex: 5;
+            height: 35vw;
+            background: #f7b447;
+            overflow: hidden;
+            position: relative;
+            right: 1.5vw;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 0% 45% 10% 45%;
+            right: -64vw;
+            border: none;
+
+            img {
+                top: 50px;
+                position: absolute;
+                width: 70%;
+            }
+        }
+
+        #main-two-pic {
+            width: 150px;
+            position: absolute;
+            top: 48%;
+            left: 45%;
+        }
+    }
+
+    .three-of-drink {
+        width: 100%;
+        height: 100vh;
+        // border: 5px red solid;
+
+        #main-three-pic {
+            position: relative;
+            left: 780px;
+            top: 650px;
+        }
+
+        .leave-one {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 300px;
+            left: 950px;
+
+        }
+
+        .leave-two {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 650px;
+            left: 1300px;
+        }
+
+        .main-three {
+            top: -250px;
+            width: 35%;
+            height: 100vh;
+            flex: 5;
+            height: 35vw;
+            background: #bc6c25;
+            overflow: hidden;
+            position: relative;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 0% 45% 10% 45%;
+            border: none;
+            left: -5px;
+
+            img {
+                top: 50px;
+                position: relative;
+                width: 80%;
+                left: -60px;
+            }
+        }
+
+        .title-three {
+            position: relative;
+            left: 58%;
+            top: 300px;
+
+            .o-two {
+                font-size: 70px;
+                font-family: Adobe Caslon Pro;
+                font-style: italic;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+
+            .cheap {
+                font-size: 3rem;
+                letter-spacing: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+                margin: 40px 0 35px;
+                letter-spacing: 5px;
+                font-weight: bold;
+            }
+
+            .lovely {
+                font-size: 1rem;
+                letter-spacing: 0.3rem;
+                font-family: 'Roboto', sans-serif;
+                line-height: 32px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    .four-of-drink {
+        width: 100%;
+        height: 100vh;
+        border: none;
+
+        // border: 5px red solid;
+        .leave-two {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 450px;
+            left: 800px;
+        }
+
+        .leave-one {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 150px;
+            left: 160px;
+
+        }
+
+        .main-four {
+            top: 80px;
+            width: 35%;
+            height: 100vh;
+            height: 35vw;
+            background: #63CCC8;
+            overflow: hidden;
+            position: relative;
+            right: 1.5vw;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 0% 45% 10% 45%;
+            right: -64vw;
+            border: none;
+
+            .main-four-pic-one {
+                opacity: 0.5;
+            }
+
+            .main-four-pic-two {
+                position: absolute;
+                top: 280px;
+            }
+
+            .main-four-pic-three {
+                position: absolute;
+                top: 150px;
+            }
+        }
+
+        .title-four {
+            position: absolute;
+            left: 250px;
+            top: 250px;
+
+            .o-three {
+                font-size: 70px;
+                font-family: Adobe Caslon Pro;
+                font-style: italic;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+
+            .neighbor {
+                font-size: 3rem;
+                letter-spacing: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+                margin: 40px 0 35px;
+                letter-spacing: 5px;
+                font-weight: bold;
+            }
+
+            .friend {
+                font-size: 1rem;
+                letter-spacing: 0.3rem;
+                font-family: 'Roboto', sans-serif;
+                line-height: 32px;
+                letter-spacing: 5px;
+            }
+        }
+
+    }
 
 }
 
+iframe {
+    margin: 0;
+}
+
+.address {
+    width: 100%;
+    height: 40vh;
+    // border: 2px red solid;
+    background-color: #E5E3DD;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+
+    .leave-two-two {
+        position: relative;
+        left: -5%;
+        top: -15%;
+        width: 100px;
+    }
+
+    .leave-two {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        width: 60px;
+    }
+
+    .address-main {
+        width: 30%;
+        height: 70%;
+        // border: 2px red solid;
+        margin-top: 100px;
+
+        .information {
+            font-size: 2.0rem;
+            letter-spacing: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 35px;
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+
+        .time {
+            font-size: 1rem;
+            letter-spacing: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+            margin: 0 0 10px 0;
+        }
+
+        .phone {
+            font-size: 1rem;
+            letter-spacing: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+            margin: 0 0 10px 0;
+        }
+
+        .address-second {
+            font-size: 1rem;
+            letter-spacing: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #013b4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-main {
+        width: 65%;
+        height: 100%;
+        // border: 2px red solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer-mid {
+            display: flex;
+            // border: 1px red solid;
+            width: 400px;
+            justify-content: space-between;
+
+            a {
+                display: block;
+                font-size: 16px;
+                color: #b3925b;
+                font-weight: bold;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                text-decoration: none;
+
+            }
+
+        }
+
+        .footer-right {
+            // border: 1px red solid;
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
 
 @keyframes dropping {
     0% {

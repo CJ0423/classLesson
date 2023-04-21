@@ -207,21 +207,35 @@
 .four-of-drink {
   width: 100%;
   height: 400vh;
-  border: 1px black solid;
   background-color: #E5E3DD;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.four-of-drink #main-one-pic {
+.four-of-drink .one-of-drink {
+  width: 100%;
+  height: 100vh;
+}
+.four-of-drink .one-of-drink #main-one-pic {
   position: absolute;
-  left: 80%;
+  width: 7rem;
+  left: 85%;
   top: 13%;
 }
-.four-of-drink .title-one {
+.four-of-drink .one-of-drink .title-one {
   position: absolute;
-  left: 80%;
+  left: 62%;
+  top: 6.5%;
 }
-.four-of-drink .title-one .brand {
+.four-of-drink .one-of-drink .title-one .leave-one {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 15px;
+  left: -75px;
+}
+.four-of-drink .one-of-drink .title-one .brand {
   font-size: 70px;
   font-family: Adobe Caslon Pro;
   font-style: italic;
@@ -229,22 +243,29 @@
   letter-spacing: 5px;
   position: relative;
 }
-.four-of-drink .title-one .about-Jo {
-  font-size: 3.5rem;
+.four-of-drink .one-of-drink .title-one .about-Jo {
+  font-size: 3rem;
   letter-spacing: 1.5rem;
   font-family: "Roboto", sans-serif;
   margin: 40px 0 35px;
   letter-spacing: 5px;
   font-weight: bold;
 }
-.four-of-drink .title-one .detail {
-  font-size: 1.6rem;
+.four-of-drink .one-of-drink .title-one .detail {
+  font-size: 1rem;
   letter-spacing: 0.3rem;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
   letter-spacing: 5px;
 }
-.four-of-drink .main-one {
+.four-of-drink .one-of-drink .title-one .leave-two {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 280px;
+  top: 70px;
+}
+.four-of-drink .one-of-drink .main-one {
   top: 150px;
   width: 35%;
   height: 100vh;
@@ -260,8 +281,323 @@
   justify-content: center;
   align-items: center;
 }
-.four-of-drink .main-one img {
+.four-of-drink .one-of-drink .main-one img {
   width: 70%;
+}
+.four-of-drink .two-of-drink {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.four-of-drink .two-of-drink .leave-two {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 600px;
+  top: 700px;
+}
+.four-of-drink .two-of-drink .leave-one {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 250px;
+  left: 100px;
+}
+.four-of-drink .two-of-drink .title-two {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+}
+.four-of-drink .two-of-drink .title-two .o-one {
+  font-size: 70px;
+  font-family: Adobe Caslon Pro;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.four-of-drink .two-of-drink .title-two .share {
+  font-size: 3rem;
+  letter-spacing: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 40px 0 35px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.four-of-drink .two-of-drink .title-two .hate {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  letter-spacing: 5px;
+}
+.four-of-drink .two-of-drink .main-two {
+  top: 80px;
+  width: 35%;
+  height: 100vh;
+  flex: 5;
+  height: 35vw;
+  background: #f7b447;
+  overflow: hidden;
+  position: relative;
+  right: 1.5vw;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0% 45% 10% 45%;
+  right: -64vw;
+  border: none;
+}
+.four-of-drink .two-of-drink .main-two img {
+  top: 50px;
+  position: absolute;
+  width: 70%;
+}
+.four-of-drink .two-of-drink #main-two-pic {
+  width: 150px;
+  position: absolute;
+  top: 48%;
+  left: 45%;
+}
+.four-of-drink .three-of-drink {
+  width: 100%;
+  height: 100vh;
+}
+.four-of-drink .three-of-drink #main-three-pic {
+  position: relative;
+  left: 780px;
+  top: 650px;
+}
+.four-of-drink .three-of-drink .leave-one {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 300px;
+  left: 950px;
+}
+.four-of-drink .three-of-drink .leave-two {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 650px;
+  left: 1300px;
+}
+.four-of-drink .three-of-drink .main-three {
+  top: -250px;
+  width: 35%;
+  height: 100vh;
+  flex: 5;
+  height: 35vw;
+  background: #bc6c25;
+  overflow: hidden;
+  position: relative;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0% 45% 10% 45%;
+  border: none;
+  left: -5px;
+}
+.four-of-drink .three-of-drink .main-three img {
+  top: 50px;
+  position: relative;
+  width: 80%;
+  left: -60px;
+}
+.four-of-drink .three-of-drink .title-three {
+  position: relative;
+  left: 58%;
+  top: 300px;
+}
+.four-of-drink .three-of-drink .title-three .o-two {
+  font-size: 70px;
+  font-family: Adobe Caslon Pro;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.four-of-drink .three-of-drink .title-three .cheap {
+  font-size: 3rem;
+  letter-spacing: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 40px 0 35px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.four-of-drink .three-of-drink .title-three .lovely {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  letter-spacing: 5px;
+}
+.four-of-drink .four-of-drink {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+.four-of-drink .four-of-drink .leave-two {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 450px;
+  left: 800px;
+}
+.four-of-drink .four-of-drink .leave-one {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 150px;
+  left: 160px;
+}
+.four-of-drink .four-of-drink .main-four {
+  top: 80px;
+  width: 35%;
+  height: 100vh;
+  height: 35vw;
+  background: #63CCC8;
+  overflow: hidden;
+  position: relative;
+  right: 1.5vw;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 0% 45% 10% 45%;
+  right: -64vw;
+  border: none;
+}
+.four-of-drink .four-of-drink .main-four .main-four-pic-one {
+  opacity: 0.5;
+}
+.four-of-drink .four-of-drink .main-four .main-four-pic-two {
+  position: absolute;
+  top: 280px;
+}
+.four-of-drink .four-of-drink .main-four .main-four-pic-three {
+  position: absolute;
+  top: 150px;
+}
+.four-of-drink .four-of-drink .title-four {
+  position: absolute;
+  left: 250px;
+  top: 250px;
+}
+.four-of-drink .four-of-drink .title-four .o-three {
+  font-size: 70px;
+  font-family: Adobe Caslon Pro;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.four-of-drink .four-of-drink .title-four .neighbor {
+  font-size: 3rem;
+  letter-spacing: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 40px 0 35px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.four-of-drink .four-of-drink .title-four .friend {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  letter-spacing: 5px;
+}
+
+iframe {
+  margin: 0;
+}
+
+.address {
+  width: 100%;
+  height: 40vh;
+  background-color: #E5E3DD;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
+.address .leave-two-two {
+  position: relative;
+  left: -5%;
+  top: -15%;
+  width: 100px;
+}
+.address .leave-two {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 60px;
+}
+.address .address-main {
+  width: 30%;
+  height: 70%;
+  margin-top: 100px;
+}
+.address .address-main .information {
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 35px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.address .address-main .time {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 10px 0;
+}
+.address .address-main .phone {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 10px 0;
+}
+.address .address-main .address-second {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 10px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #013b4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-main {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-main .footer-mid {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.footer .footer-main .footer-mid a {
+  display: block;
+  font-size: 16px;
+  color: #b3925b;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.footer .footer-main .footer-right {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes dropping {
