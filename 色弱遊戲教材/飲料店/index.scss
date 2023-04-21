@@ -262,6 +262,16 @@
             width: 7rem;
             left: 85%;
             top: 13%;
+
+            @media (max-width:1350px) {
+                width: 4rem;
+            }
+
+            @media (max-width:1250px) {
+                top: 12%;
+                left: 89%;
+            }
+
         }
 
         .title-one {
@@ -313,6 +323,8 @@
                 left: 280px;
                 top: 70px;
             }
+
+
         }
 
         .main-one {
@@ -349,6 +361,10 @@
             position: relative;
             left: 600px;
             top: 700px;
+
+            @media (max-width:1350px) {
+                left: 400px;
+            }
         }
 
         .leave-one {
@@ -421,6 +437,11 @@
             position: absolute;
             top: 48%;
             left: 45%;
+
+            @media (max-width:1250px) {
+                width: 100px;
+                left: 55%;
+            }
         }
     }
 
@@ -482,6 +503,11 @@
             left: 58%;
             top: 300px;
 
+            @media (max-width:1250px) {
+                left: 40%;
+                top: 200px;
+            }
+
             .o-two {
                 font-size: 70px;
                 font-family: Adobe Caslon Pro;
@@ -521,6 +547,10 @@
             position: relative;
             top: 450px;
             left: 800px;
+
+            @media (max-width:1350px) {
+                left: 400px;
+            }
         }
 
         .leave-one {
@@ -568,6 +598,10 @@
             position: absolute;
             left: 250px;
             top: 250px;
+
+            @media (max-width:1250px) {
+                left: 110px;
+            }
 
             .o-three {
                 font-size: 70px;
@@ -641,6 +675,10 @@ iframe {
             margin-bottom: 35px;
             letter-spacing: 5px;
             font-weight: bold;
+
+            @media (max-width:1100px) {
+                font-size: 1.7rem;
+            }
         }
 
         .time {
@@ -648,6 +686,10 @@ iframe {
             letter-spacing: 0.5rem;
             font-family: 'Roboto', sans-serif;
             margin: 0 0 10px 0;
+
+            @media (max-width:1100px) {
+                font-size: 0.9rem;
+            }
         }
 
         .phone {
@@ -655,6 +697,10 @@ iframe {
             letter-spacing: 0.5rem;
             font-family: 'Roboto', sans-serif;
             margin: 0 0 10px 0;
+
+            @media (max-width:1100px) {
+                font-size: 0.9rem;
+            }
         }
 
         .address-second {
@@ -662,6 +708,10 @@ iframe {
             letter-spacing: 0.5rem;
             font-family: 'Roboto', sans-serif;
             margin: 0 0 10px 0;
+
+            @media (max-width:1100px) {
+                font-size: 0.9rem;
+            }
         }
     }
 }
