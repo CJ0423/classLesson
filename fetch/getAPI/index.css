@@ -8,8 +8,7 @@
   background-image: url("./65 NATURAL IPHONE WALLPAPERS FOR THE NATURE LOVERS_.... - Godfather Style");
   background-position: 0% 50%;
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+  background-size: 150%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -79,8 +78,8 @@
 }
 .main-all .city-all {
   border: 2px black solid;
-  width: 10%;
-  height: 30vh;
+  width: 20%;
+  height: 20vh;
   margin: 30px;
   display: flex;
   flex-direction: column;
@@ -91,8 +90,8 @@
   transform: translate(0px, -8px);
 }
 .main-all .city-all img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 .main-all .city-all .rain {
   font-size: 20px;
