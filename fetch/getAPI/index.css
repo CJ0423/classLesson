@@ -5,7 +5,7 @@
 }
 
 .main-all {
-  background-image: url("./65 NATURAL IPHONE WALLPAPERS FOR THE NATURE LOVERS_.... - Godfather Style");
+  background-image: url("https://www.inatori-ginsuiso.jp/ginnoshiori/_img/cpt_img_1.jpg");
   background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: 150%;
@@ -13,113 +13,55 @@
   flex-wrap: wrap;
   position: relative;
 }
-.main-all .water {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 50px;
-  animation: 3s infinite drip;
-}
-.main-all .water1 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 250px;
-  animation: 4s infinite drip;
-}
-.main-all .water2 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 550px;
-  animation: 6s infinite drip;
-}
-.main-all .water3 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 850px;
-  animation: 4s infinite drip;
-}
-.main-all .water4 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 1050px;
-  animation: 5s infinite drip;
-}
-.main-all .water5 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 750px;
-  animation: 8s infinite drip;
-}
-.main-all .water6 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  left: 1550px;
-  animation: 3s infinite drip;
-}
 .main-all .city-all {
-  border: 2px black solid;
+  border: 2px white solid;
   width: 20%;
   height: 20vh;
   margin: 30px;
   display: flex;
   flex-direction: column;
   transition: 0.2s;
-  box-shadow: 2px 2px 2px black;
-  background: linear-gradient(113.5889300888deg, rgb(231, 244, 245) 4.9270833333%, rgb(78, 240, 250) 97.84375%);
+  box-shadow: 2px 2px 10px black;
+  background: linear-gradient(113.5889300888deg, rgb(95, 95, 95) 4.9270833333%, rgb(0, 0, 0) 97.84375%);
   transition: 0.2s;
+  color: #fcfcfc;
+  font-family: inherit;
+  transition: 0.3s;
 }
 .main-all .city-all:hover {
   transform: translate(0px, -8px);
-  background: linear-gradient(113.5889300888deg, rgb(236, 236, 236) 4.9270833333%, rgb(195, 229, 248) 97.84375%);
+  box-shadow: 20px 20px 10px black;
+  background: linear-gradient(113.5889300888deg, rgb(95, 95, 95) 69.1944444444%, rgb(0, 0, 0) 97.84375%);
 }
 .main-all .city-all img {
   width: 50px;
   height: 50px;
 }
 .main-all .city-all .rain {
-  font-size: 20px;
+  font-size: 3px;
 }
 .main-all .city-all .city-name {
-  font-weight: bold;
-  font-size: 35px;
-  border-bottom: 2px black solid;
+  font-size: 30px;
+  border-bottom: 2px #fcfcfc solid;
+  letter-spacing: 4px;
 }
 .main-all .city-all .rain,
 .main-all .city-all .temperature {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 8px;
+  line-height: 30px;
 }
 
 .title {
   display: flex;
   border: 2px black solid;
-  font-size: 30px;
-  background: linear-gradient(113.5889300888deg, rgb(48, 245, 251) 4.9270833333%, rgb(23, 142, 203) 97.84375%);
-  color: rgb(20, 20, 20);
-  font-weight: bold;
-  font-family: Tahoma;
+  font-size: 10px;
+  background: linear-gradient(113.5889300888deg, rgb(0, 0, 0) 41.5130208333%, rgb(95, 95, 95) 89.5199652778%);
   color: #FFF6F6;
-  animation: 2s titleMove;
+  font-family: inherit;
+  letter-spacing: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 @keyframes ocean {

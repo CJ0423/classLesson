@@ -39,9 +39,9 @@ let temperature = document.querySelectorAll(".temperature");
 let imgPic = document.querySelectorAll(".img-pic");
 let title = document.querySelector(".title");
 
-let rainning = "./Raining Cloud Clipart PNG Images, Rain Icon Sky Filled With Cartoon Clouds, Cartoon Icons, Rain Icons, Clouds Icons PNG Image For Free Download.jpg"
+let rainning = "./—Pngtree—mbe weather thunderstorm commercial elements_4047696.png"
 let clown = "./Cloud free icons designed by iconixar.png"
-let sun = "./Sun Icon Clipart PNG Images, Sun Icon Design, Sun Icons, Hot, Day PNG Image For Free Download.jpg"
+let sun = "./—Pngtree—mbe weather icon sunny_4048669.png"
 
 let temp = [];
 fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AA300EC1-31BA-465E-B669-6CA2C320A195")
@@ -74,7 +74,8 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorizati
             }
         }
 
-        title.innerHTML = `中央氣象局預測時間為<br>${myJson.records.location[0].weatherElement[0].time[0].startTime}~${myJson.records.location[0].weatherElement[0].time[0].endTime}`
+        title.innerHTML = `${myJson.records.location[0].weatherElement[0].time[0].startTime}~${myJson.records.location[0].weatherElement[0].time[0].endTime}
+        &copy;`
     });
 
 
