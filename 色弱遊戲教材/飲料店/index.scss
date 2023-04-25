@@ -94,7 +94,7 @@
 .header-background {
     height: 100vh;
     width: 100%;
-    border: 2px black solid;
+    // border: 2px black solid;
     background-color: #63CCC8;
     display: flex;
     align-items: flex-end;
@@ -145,7 +145,7 @@
     .circle {
         width: 80%;
         height: 60%;
-        border: 1px black solid;
+        // border: 1px black solid;
         position: absolute;
         top: 20%;
         left: 10%;
@@ -154,7 +154,8 @@
 
         @media (max-width:950px) {
             position: static;
-
+            justify-content: center;
+            padding-top: 50px;
         }
 
         div {
@@ -184,6 +185,10 @@
             @media (max-width:1200px) {
                 width: 5rem;
                 height: 7rem;
+            }
+
+            @media (max-width:950px) {
+                position: static;
             }
         }
 
@@ -272,7 +277,7 @@
             height: 90%;
 
             @media (max-width:1200px) {
-                top: 50px;
+
                 width: 38%;
                 height: 430px;
 
@@ -282,15 +287,19 @@
                 // position: relative;
                 // top: 20%;
                 // left: 0;
-                width: 45%;
-                height: 430px;
+                margin-top: 50px;
+                width: 40%;
+                height: 400px;
             }
         }
 
         .jo-in-950px {
             position: absolute;
             left: 60%;
-            width: 200px;
+            top: 20%;
+            width: 150px;
+            height: 150px;
+            // border: 1px red solid;
         }
     }
 
@@ -340,10 +349,18 @@
     display: flex;
     flex-direction: column;
 
+
+
     .one-of-drink {
         // border: 5px red solid;
         width: 100%;
         height: 100vh;
+        border: 1px red solid;
+
+        @media (max-width:950px) {
+            display: flex;
+        }
+
 
         #main-one-pic {
             position: absolute;
@@ -358,6 +375,10 @@
             @media (max-width:1250px) {
                 top: 12%;
                 left: 89%;
+            }
+
+            @media (max-width:950px) {
+                display: none;
             }
 
         }
@@ -376,6 +397,9 @@
                 top: 15px;
                 left: -75px;
 
+                @media (max-width:950px) {
+                    display: none;
+                }
             }
 
             .brand {
@@ -410,6 +434,10 @@
                 position: relative;
                 left: 280px;
                 top: 70px;
+
+                @media (max-width:950px) {
+                    display: none;
+                }
             }
 
 
@@ -426,13 +454,19 @@
             overflow: hidden;
             position: relative;
             right: 1.5vw;
-            border: 1px black solid;
+            border: 5px black solid;
             display: flex;
             justify-content: center;
             align-items: center;
 
             img {
                 width: 70%;
+            }
+
+            @media (max-width:950px) {
+                position: static;
+                width: 30%;
+                height: 40%;
             }
         }
     }
