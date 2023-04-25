@@ -94,13 +94,17 @@
 .header-background {
     height: 100vh;
     width: 100%;
-    // border: 2px black solid;
+    border: 2px black solid;
     background-color: #63CCC8;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
-
     position: relative;
+
+    @media (max-width:950px) {
+        align-items: center;
+        justify-content: center;
+    }
 
     .drop {
         position: relative;
@@ -147,6 +151,11 @@
         left: 10%;
         display: flex;
         z-index: 2;
+
+        @media (max-width:950px) {
+            position: static;
+
+        }
 
         div {
             width: 120px;
@@ -263,14 +272,18 @@
             height: 90%;
 
             @media (max-width:1200px) {
-                top: 10%;
-                width: 280px;
-                height: 75%;
+                top: 50px;
+                width: 38%;
+                height: 430px;
+
             }
 
             @media (max-width:950px) {
-                top: 15%;
-
+                // position: relative;
+                // top: 20%;
+                // left: 0;
+                width: 45%;
+                height: 430px;
             }
         }
 
