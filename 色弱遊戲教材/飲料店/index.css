@@ -317,11 +317,13 @@
 .four-of-drink .one-of-drink {
   width: 100%;
   height: 100vh;
-  border: 1px red solid;
 }
 @media (max-width: 950px) {
   .four-of-drink .one-of-drink {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
 }
 .four-of-drink .one-of-drink #main-one-pic {
@@ -351,6 +353,15 @@
   left: 62%;
   top: 6.5%;
 }
+@media (max-width: 950px) {
+  .four-of-drink .one-of-drink .title-one {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .four-of-drink .one-of-drink .title-one .leave-one {
   width: 80px;
   height: 80px;
@@ -371,6 +382,11 @@
   letter-spacing: 5px;
   position: relative;
 }
+@media (max-width: 950px) {
+  .four-of-drink .one-of-drink .title-one .brand {
+    font-size: 50px;
+  }
+}
 .four-of-drink .one-of-drink .title-one .about-Jo {
   font-size: 3rem;
   letter-spacing: 1.5rem;
@@ -379,12 +395,25 @@
   letter-spacing: 5px;
   font-weight: bold;
 }
+@media (max-width: 950px) {
+  .four-of-drink .one-of-drink .title-one .about-Jo {
+    font-size: 1.6rem;
+  }
+}
 .four-of-drink .one-of-drink .title-one .detail {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
   letter-spacing: 5px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .one-of-drink .title-one .detail {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .four-of-drink .one-of-drink .title-one .leave-two {
   width: 50px;
@@ -409,24 +438,31 @@
   overflow: hidden;
   position: relative;
   right: 1.5vw;
-  border: 5px black solid;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 950px) {
+  .four-of-drink .one-of-drink .main-one {
+    width: 40%;
+    height: 40%;
+    flex: none;
+    position: static;
+    margin-bottom: 20px;
+  }
 }
 .four-of-drink .one-of-drink .main-one img {
   width: 70%;
 }
 @media (max-width: 950px) {
-  .four-of-drink .one-of-drink .main-one {
-    position: static;
-    width: 30%;
-    height: 40%;
+  .four-of-drink .one-of-drink .main-one img {
+    width: 60%;
   }
 }
 .four-of-drink .two-of-drink {
   width: 100%;
   height: 100vh;
+  border: 5px red solid;
   position: relative;
 }
 .four-of-drink .two-of-drink .leave-two {
@@ -441,12 +477,22 @@
     left: 400px;
   }
 }
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .leave-two {
+    display: none;
+  }
+}
 .four-of-drink .two-of-drink .leave-one {
   width: 80px;
   height: 80px;
   position: relative;
   top: 250px;
   left: 100px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .leave-one {
+    display: none;
+  }
 }
 .four-of-drink .two-of-drink .title-two {
   position: absolute;
@@ -508,6 +554,11 @@
   .four-of-drink .two-of-drink #main-two-pic {
     width: 100px;
     left: 55%;
+  }
+}
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink #main-two-pic {
+    display: none;
   }
 }
 .four-of-drink .three-of-drink {

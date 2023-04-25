@@ -355,10 +355,13 @@
         // border: 5px red solid;
         width: 100%;
         height: 100vh;
-        border: 1px red solid;
+        // border: 1px red solid;
 
         @media (max-width:950px) {
             display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
         }
 
 
@@ -379,6 +382,7 @@
 
             @media (max-width:950px) {
                 display: none;
+
             }
 
         }
@@ -389,6 +393,15 @@
             left: 62%;
             top: 6.5%;
             // border: 2px black solid;
+            // border: 2px red solid;
+
+            @media (max-width:950px) {
+                position: static;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             .leave-one {
                 width: 80px;
@@ -399,6 +412,7 @@
 
                 @media (max-width:950px) {
                     display: none;
+
                 }
             }
 
@@ -409,6 +423,10 @@
                 font-weight: bold;
                 letter-spacing: 5px;
                 position: relative;
+
+                @media (max-width:950px) {
+                    font-size: 50px;
+                }
             }
 
             .about-Jo {
@@ -418,6 +436,10 @@
                 margin: 40px 0 35px;
                 letter-spacing: 5px;
                 font-weight: bold;
+
+                @media (max-width:950px) {
+                    font-size: 1.6rem;
+                }
             }
 
             .detail {
@@ -426,6 +448,14 @@
                 font-family: 'Roboto', sans-serif;
                 line-height: 32px;
                 letter-spacing: 5px;
+
+                @media (max-width:950px) {
+                    font-size: .8rem;
+                    // border: 1px red solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
 
             .leave-two {
@@ -454,27 +484,37 @@
             overflow: hidden;
             position: relative;
             right: 1.5vw;
-            border: 5px black solid;
+            // border: 5px red solid;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            img {
-                width: 70%;
+            @media (max-width:950px) {
+                width: 40%;
+                height: 40%;
+                flex: none;
+                position: static;
+                margin-bottom: 20px;
             }
 
-            @media (max-width:950px) {
-                position: static;
-                width: 30%;
-                height: 40%;
+            img {
+                width: 70%;
+
+
+                @media (max-width:950px) {
+                    width: 60%;
+
+                }
             }
+
+
         }
     }
 
     .two-of-drink {
         width: 100%;
         height: 100vh;
-        // border: 5px red solid;
+        border: 5px red solid;
         position: relative;
 
         .leave-two {
@@ -487,6 +527,10 @@
             @media (max-width:1350px) {
                 left: 400px;
             }
+
+            @media (max-width:950px) {
+                display: none;
+            }
         }
 
         .leave-one {
@@ -496,6 +540,9 @@
             top: 250px;
             left: 100px;
 
+            @media (max-width:950px) {
+                display: none;
+            }
         }
 
         .title-two {
@@ -563,6 +610,10 @@
             @media (max-width:1250px) {
                 width: 100px;
                 left: 55%;
+            }
+
+            @media (max-width:950px) {
+                display: none;
             }
         }
     }
