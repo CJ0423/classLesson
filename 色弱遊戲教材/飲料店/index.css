@@ -271,7 +271,7 @@
 @media (max-width: 950px) {
   .header-background .circle #latte {
     margin-top: 50px;
-    width: 40%;
+    width: 45%;
     height: 400px;
   }
 }
@@ -410,9 +410,7 @@
 @media (max-width: 950px) {
   .four-of-drink .one-of-drink .title-one .detail {
     font-size: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 }
 .four-of-drink .one-of-drink .title-one .leave-two {
@@ -444,8 +442,8 @@
 }
 @media (max-width: 950px) {
   .four-of-drink .one-of-drink .main-one {
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 45%;
     flex: none;
     position: static;
     margin-bottom: 20px;
@@ -462,8 +460,15 @@
 .four-of-drink .two-of-drink {
   width: 100%;
   height: 100vh;
-  border: 5px red solid;
   position: relative;
+}
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .four-of-drink .two-of-drink .leave-two {
   width: 50px;
@@ -499,12 +504,23 @@
   left: 10%;
   top: 35%;
 }
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .title-two {
+    position: static;
+    text-align: center;
+  }
+}
 .four-of-drink .two-of-drink .title-two .o-one {
   font-size: 70px;
   font-family: Adobe Caslon Pro;
   font-style: italic;
   font-weight: bold;
   letter-spacing: 5px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .title-two .o-one {
+    font-size: 50px;
+  }
 }
 .four-of-drink .two-of-drink .title-two .share {
   font-size: 3rem;
@@ -514,12 +530,22 @@
   letter-spacing: 5px;
   font-weight: bold;
 }
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .title-two .share {
+    font-size: 1.6rem;
+  }
+}
 .four-of-drink .two-of-drink .title-two .hate {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
   letter-spacing: 5px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .title-two .hate {
+    font-size: 0.8rem;
+  }
 }
 .four-of-drink .two-of-drink .main-two {
   top: 80px;
@@ -539,10 +565,24 @@
   right: -64vw;
   border: none;
 }
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .main-two {
+    width: 45%;
+    height: 45%;
+    flex: none;
+    position: static;
+    margin-bottom: 20px;
+  }
+}
 .four-of-drink .two-of-drink .main-two img {
   top: 50px;
   position: absolute;
   width: 70%;
+}
+@media (max-width: 950px) {
+  .four-of-drink .two-of-drink .main-two img {
+    width: 60%;
+  }
 }
 .four-of-drink .two-of-drink #main-two-pic {
   width: 150px;
@@ -565,10 +605,23 @@
   width: 100%;
   height: 100vh;
 }
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .four-of-drink .three-of-drink #main-three-pic {
   position: relative;
   left: 780px;
   top: 650px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink #main-three-pic {
+    display: none;
+  }
 }
 .four-of-drink .three-of-drink .leave-one {
   width: 80px;
@@ -577,12 +630,22 @@
   top: 300px;
   left: 950px;
 }
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .leave-one {
+    display: none;
+  }
+}
 .four-of-drink .three-of-drink .leave-two {
   width: 50px;
   height: 50px;
   position: relative;
   top: 650px;
   left: 1300px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .leave-two {
+    display: none;
+  }
 }
 .four-of-drink .three-of-drink .main-three {
   top: -250px;
@@ -601,11 +664,27 @@
   border: none;
   left: -5px;
 }
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .main-three {
+    width: 45%;
+    height: 45%;
+    flex: none;
+    position: static;
+    margin-bottom: 20px;
+  }
+}
 .four-of-drink .three-of-drink .main-three img {
   top: 50px;
   position: relative;
   width: 80%;
   left: -60px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .main-three img {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }
 .four-of-drink .three-of-drink .title-three {
   position: relative;
@@ -618,12 +697,23 @@
     top: 200px;
   }
 }
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .title-three {
+    position: static;
+    text-align: center;
+  }
+}
 .four-of-drink .three-of-drink .title-three .o-two {
   font-size: 70px;
   font-family: Adobe Caslon Pro;
   font-style: italic;
   font-weight: bold;
   letter-spacing: 5px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .title-three .o-two {
+    font-size: 50px;
+  }
 }
 .four-of-drink .three-of-drink .title-three .cheap {
   font-size: 3rem;
@@ -633,6 +723,11 @@
   letter-spacing: 5px;
   font-weight: bold;
 }
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .title-three .cheap {
+    font-size: 1.6rem;
+  }
+}
 .four-of-drink .three-of-drink .title-three .lovely {
   font-size: 1rem;
   letter-spacing: 0.3rem;
@@ -640,10 +735,23 @@
   line-height: 32px;
   letter-spacing: 5px;
 }
+@media (max-width: 950px) {
+  .four-of-drink .three-of-drink .title-three .lovely {
+    font-size: 0.8rem;
+  }
+}
 .four-of-drink .four-of-drink {
   width: 100%;
   height: 100vh;
   border: none;
+}
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .four-of-drink .four-of-drink .leave-two {
   width: 50px;
@@ -657,12 +765,22 @@
     left: 400px;
   }
 }
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .leave-two {
+    display: none;
+  }
+}
 .four-of-drink .four-of-drink .leave-one {
   width: 80px;
   height: 80px;
   position: relative;
   top: 150px;
   left: 160px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .leave-one {
+    display: none;
+  }
 }
 .four-of-drink .four-of-drink .main-four {
   top: 80px;
@@ -680,6 +798,15 @@
   border-radius: 0% 45% 10% 45%;
   right: -64vw;
   border: none;
+}
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .main-four {
+    width: 45%;
+    height: 45%;
+    flex: none;
+    position: static;
+    margin-bottom: 20px;
+  }
 }
 .four-of-drink .four-of-drink .main-four .main-four-pic-one {
   opacity: 0.5;
@@ -702,12 +829,23 @@
     left: 110px;
   }
 }
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .title-four {
+    position: static;
+    text-align: center;
+  }
+}
 .four-of-drink .four-of-drink .title-four .o-three {
   font-size: 70px;
   font-family: Adobe Caslon Pro;
   font-style: italic;
   font-weight: bold;
   letter-spacing: 5px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .title-four .o-three {
+    font-size: 50px;
+  }
 }
 .four-of-drink .four-of-drink .title-four .neighbor {
   font-size: 3rem;
@@ -717,12 +855,22 @@
   letter-spacing: 5px;
   font-weight: bold;
 }
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .title-four .neighbor {
+    font-size: 1.6rem;
+  }
+}
 .four-of-drink .four-of-drink .title-four .friend {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
   letter-spacing: 5px;
+}
+@media (max-width: 950px) {
+  .four-of-drink .four-of-drink .title-four .friend {
+    font-size: 0.8rem;
+  }
 }
 
 iframe {
@@ -739,11 +887,27 @@ iframe {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 950px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 950px) {
+  .address .bottom-pic {
+    width: 35%;
+  }
+}
 .address .leave-two-two {
   position: relative;
   left: -5%;
   top: -15%;
   width: 100px;
+}
+@media (max-width: 950px) {
+  .address .leave-two-two {
+    display: none;
+  }
 }
 .address .leave-two {
   position: absolute;
@@ -751,10 +915,24 @@ iframe {
   top: 70%;
   width: 60px;
 }
+@media (max-width: 950px) {
+  .address .leave-two {
+    display: none;
+  }
+}
 .address .address-main {
   width: 30%;
   height: 70%;
   margin-top: 100px;
+}
+@media (max-width: 950px) {
+  .address .address-main {
+    text-align: center;
+    width: 50%;
+    height: 70%;
+    margin-top: 20px;
+    text-align: start;
+  }
 }
 .address .address-main .information {
   font-size: 2rem;
@@ -763,10 +941,16 @@ iframe {
   margin-bottom: 35px;
   letter-spacing: 5px;
   font-weight: bold;
+  text-align: center;
 }
 @media (max-width: 1100px) {
   .address .address-main .information {
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 950px) {
+  .address .address-main .information {
+    letter-spacing: 0;
   }
 }
 .address .address-main .time {
@@ -818,10 +1002,20 @@ iframe {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 950px) {
+  .footer .footer-main {
+    width: 80%;
+  }
+}
 .footer .footer-main .footer-mid {
   display: flex;
   width: 400px;
   justify-content: space-between;
+}
+@media (max-width: 950px) {
+  .footer .footer-main .footer-mid {
+    display: none;
+  }
 }
 .footer .footer-main .footer-mid a {
   display: block;
