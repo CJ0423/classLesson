@@ -1036,6 +1036,10 @@ iframe {
                 letter-spacing: .2rem;
 
             }
+
+            img {
+                @media (max-width:950px) {}
+            }
         }
 
         .phone {
