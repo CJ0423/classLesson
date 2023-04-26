@@ -931,7 +931,6 @@ iframe {
     width: 50%;
     height: 70%;
     margin-top: 20px;
-    text-align: start;
   }
 }
 .address .address-main .information {
@@ -951,6 +950,7 @@ iframe {
 @media (max-width: 950px) {
   .address .address-main .information {
     letter-spacing: 0;
+    font-size: 2.5rem;
   }
 }
 .address .address-main .time {
@@ -964,6 +964,11 @@ iframe {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 950px) {
+  .address .address-main .time {
+    letter-spacing: 0.2rem;
+  }
+}
 .address .address-main .phone {
   font-size: 1rem;
   letter-spacing: 0.5rem;
@@ -975,6 +980,11 @@ iframe {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 950px) {
+  .address .address-main .phone {
+    letter-spacing: 0.2rem;
+  }
+}
 .address .address-main .address-second {
   font-size: 1rem;
   letter-spacing: 0.5rem;
@@ -984,6 +994,11 @@ iframe {
 @media (max-width: 1100px) {
   .address .address-main .address-second {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 950px) {
+  .address .address-main .address-second {
+    letter-spacing: 0.2rem;
   }
 }
 
