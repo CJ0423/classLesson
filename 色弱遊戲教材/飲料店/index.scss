@@ -291,15 +291,24 @@
                 width: 45%;
                 height: 400px;
             }
+
+            @media (max-width:550px) {
+                width: 60%;
+            }
         }
 
         .jo-in-950px {
-            position: absolute;
-            left: 60%;
-            top: 20%;
-            width: 150px;
-            height: 150px;
+            display: none;
+
             // border: 1px red solid;
+            @media (max-width:950px) {
+                display: flex;
+                position: absolute;
+                left: 60%;
+                top: 20%;
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 
@@ -496,6 +505,12 @@
                 margin-bottom: 20px;
             }
 
+            @media (max-width:550px) {
+                width: 60%;
+                height: 30%;
+
+            }
+
             img {
                 width: 70%;
 
@@ -627,6 +642,12 @@
 
             }
 
+            @media (max-width:550px) {
+                width: 60%;
+                height: 30%;
+
+            }
+
             img {
                 top: 50px;
                 position: absolute;
@@ -727,6 +748,12 @@
                 flex: none;
                 position: static;
                 margin-bottom: 20px;
+            }
+
+            @media (max-width:550px) {
+                width: 60%;
+                height: 30%;
+
             }
 
             img {
@@ -867,6 +894,12 @@
                 margin-bottom: 20px;
             }
 
+            @media (max-width:550px) {
+                width: 60%;
+                height: 30%;
+
+            }
+
             .main-four-pic-one {
                 opacity: 0.5;
             }
@@ -874,11 +907,21 @@
             .main-four-pic-two {
                 position: absolute;
                 top: 280px;
+
+                @media (max-width:550px) {
+                    top: 150px;
+                    width: 80%;
+                }
             }
 
             .main-four-pic-three {
                 position: absolute;
                 top: 150px;
+
+                @media (max-width:550px) {
+                    top: 50px;
+
+                }
             }
         }
 
