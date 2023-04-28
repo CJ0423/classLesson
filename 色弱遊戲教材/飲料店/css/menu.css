@@ -213,9 +213,9 @@
 
 .main-class {
   width: 100%;
-  height: 90vh;
   background-color: #E5E3DD;
   padding-top: 80px;
+  padding-bottom: 120px;
 }
 .main-class .shopping {
   width: 130px;
@@ -240,11 +240,11 @@
 }
 .main-class .menu {
   width: 65%;
-  height: 90%;
   background-color: #63CCC8;
   border-radius: 25px;
   margin: 0 auto;
   color: #013B4F;
+  padding-bottom: 80px;
 }
 @media (max-width: 1450px) {
   .main-class .menu {
@@ -274,9 +274,20 @@
 .main-class .menu .detail-class-all {
   display: flex;
 }
+@media (max-width: 1025px) {
+  .main-class .menu .detail-class-all {
+    flex-direction: column;
+  }
+}
 .main-class .menu .detail-class-all .detail-class-left {
   width: calc((100% - 200px) / 3);
   margin: 0px 50px;
+}
+@media (max-width: 1025px) {
+  .main-class .menu .detail-class-all .detail-class-left {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .main-class .menu .detail-class-all .detail-class-left .detail-class {
   font-size: 1.6rem;
@@ -513,6 +524,12 @@
   width: calc((100% - 200px) / 3);
   margin-right: 50px;
 }
+@media (max-width: 1025px) {
+  .main-class .menu .detail-class-all .detail-class-mid {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .main-class .menu .detail-class-all .detail-class-mid .detail-class-two {
   font-size: 1.6rem;
   letter-spacing: 1rem;
@@ -711,6 +728,12 @@
 }
 .main-class .menu .detail-class-all .detail-class-right {
   width: calc((100% - 200px) / 3);
+}
+@media (max-width: 1025px) {
+  .main-class .menu .detail-class-all .detail-class-right {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .main-class .menu .detail-class-all .detail-class-right .detail-class-three {
   font-size: 1.6rem;
