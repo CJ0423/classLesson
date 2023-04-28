@@ -89,26 +89,56 @@
   background-color: #E5E3DD;
   padding-top: 250px;
 }
+@media (max-width: 1025px) {
+  .top-class {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+  }
+}
 .top-class .top-class-left {
   width: 40%;
+}
+@media (max-width: 1025px) {
+  .top-class .top-class-left {
+    margin-bottom: 80px;
+  }
 }
 .top-class .top-class-left .drink-menu {
   font-size: 30px;
   letter-spacing: 1.3rem;
   color: #013B4F;
   margin-bottom: 40px;
+  white-space: nowrap;
+}
+@media (max-width: 1025px) {
+  .top-class .top-class-left .drink-menu {
+    font-size: 25px;
+  }
 }
 .top-class .top-class-left .order {
   letter-spacing: 0.5rem;
   color: #013B4F;
   margin: 10px 0px 20px 20px;
   font-size: 20px;
+  white-space: nowrap;
+}
+@media (max-width: 1025px) {
+  .top-class .top-class-left .order {
+    font-size: 15px;
+  }
 }
 .top-class .top-class-left .qrCode {
   letter-spacing: 0.5rem;
   color: #013B4F;
   margin: 10px 0px 20px 20px;
   font-size: 20px;
+  white-space: nowrap;
+}
+@media (max-width: 1025px) {
+  .top-class .top-class-left .qrCode {
+    font-size: 15px;
+  }
 }
 .top-class .top-class-left .information {
   letter-spacing: 0.2rem;
@@ -116,12 +146,24 @@
   font-weight: 700;
   margin: 10px 0px 20px 20px;
   font-size: 20px;
+  white-space: nowrap;
+}
+@media (max-width: 1025px) {
+  .top-class .top-class-left .information {
+    font-size: 15px;
+  }
 }
 .top-class .top-class-left .cups {
   letter-spacing: 0.7rem;
   color: #013B4F;
   margin: 10px 0px 5px 40px;
   font-size: 18px;
+  white-space: nowrap;
+}
+@media (max-width: 1025px) {
+  .top-class .top-class-left .cups {
+    font-size: 15px;
+  }
 }
 .top-class .top-class-left .cups div {
   margin-bottom: 15px;
