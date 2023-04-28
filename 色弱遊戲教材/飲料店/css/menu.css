@@ -13,21 +13,25 @@
   position: fixed;
   z-index: 100;
 }
+
 .header .x-mark {
   display: none;
   width: 30px;
   cursor: pointer;
 }
+
 .header .hamburger {
   display: none;
   cursor: pointer;
 }
+
 @media (max-width: 950px) {
   .header .hamburger {
     display: flex;
     width: 30px;
   }
 }
+
 .header .header-main {
   width: 80%;
   height: 100%;
@@ -36,17 +40,21 @@
   align-items: center;
   justify-content: space-around;
 }
+
 @media (max-width: 950px) {
   .header .header-main {
     width: 100%;
   }
 }
+
 .header .header-main .jo-in {
   width: 60px;
 }
+
 .header .header-main .water-all {
   display: flex;
 }
+
 @media (max-width: 950px) {
   .header .header-main .water-all {
     position: absolute;
@@ -60,6 +68,7 @@
     display: none;
   }
 }
+
 .header .header-main .water-all .water {
   text-decoration: none;
   color: white;
@@ -67,6 +76,7 @@
   margin: 20px;
   padding-top: 10px;
 }
+
 @media (max-width: 950px) {
   .header .header-main .water-all .water {
     padding-bottom: 30px;
@@ -74,9 +84,11 @@
     margin-top: 5px;
   }
 }
+
 .header .header-main .water-all .water:hover {
   text-shadow: -2px 2px 10px white, 2px 2px 10px white;
 }
+
 .header .header-main .water-all .water-other {
   padding-top: 20px;
 }
@@ -89,6 +101,7 @@
   background-color: #E5E3DD;
   padding-top: 250px;
 }
+
 @media (max-width: 1025px) {
   .top-class {
     flex-direction: column;
@@ -96,14 +109,17 @@
     padding-top: 150px;
   }
 }
+
 .top-class .top-class-left {
   width: 40%;
 }
+
 @media (max-width: 1025px) {
   .top-class .top-class-left {
     margin-bottom: 80px;
   }
 }
+
 .top-class .top-class-left .drink-menu {
   font-size: 30px;
   letter-spacing: 1.3rem;
@@ -111,11 +127,13 @@
   margin-bottom: 40px;
   white-space: nowrap;
 }
+
 @media (max-width: 1025px) {
   .top-class .top-class-left .drink-menu {
     font-size: 25px;
   }
 }
+
 .top-class .top-class-left .order {
   letter-spacing: 0.5rem;
   color: #013B4F;
@@ -123,11 +141,13 @@
   font-size: 20px;
   white-space: nowrap;
 }
+
 @media (max-width: 1025px) {
   .top-class .top-class-left .order {
     font-size: 15px;
   }
 }
+
 .top-class .top-class-left .qrCode {
   letter-spacing: 0.5rem;
   color: #013B4F;
@@ -135,11 +155,13 @@
   font-size: 20px;
   white-space: nowrap;
 }
+
 @media (max-width: 1025px) {
   .top-class .top-class-left .qrCode {
     font-size: 15px;
   }
 }
+
 .top-class .top-class-left .information {
   letter-spacing: 0.2rem;
   color: #013B4F;
@@ -148,11 +170,13 @@
   font-size: 20px;
   white-space: nowrap;
 }
+
 @media (max-width: 1025px) {
   .top-class .top-class-left .information {
     font-size: 15px;
   }
 }
+
 .top-class .top-class-left .cups {
   letter-spacing: 0.7rem;
   color: #013B4F;
@@ -160,20 +184,25 @@
   font-size: 18px;
   white-space: nowrap;
 }
+
 @media (max-width: 1025px) {
   .top-class .top-class-left .cups {
     font-size: 15px;
   }
 }
+
 .top-class .top-class-left .cups div {
   margin-bottom: 15px;
 }
+
 .top-class .top-class-left .cups span {
   font-weight: 700;
 }
+
 .top-class .top-class-right {
   position: relative;
 }
+
 .top-class .top-class-right .right-order {
   width: 114px;
   height: 114px;
@@ -195,10 +224,12 @@
   transition: 0.3s;
   background-position: 100% 0;
 }
+
 .top-class .top-class-right .right-order:hover {
   transform: translateY(-6px);
   background-position: 100% 0;
 }
+
 .top-class .top-class-right .right-order::after {
   content: "";
   position: absolute;
@@ -217,6 +248,7 @@
   padding-top: 80px;
   padding-bottom: 120px;
 }
+
 .main-class .shopping {
   width: 130px;
   height: 130px;
@@ -238,6 +270,7 @@
   align-items: center;
   cursor: pointer;
 }
+
 .main-class .menu {
   width: 65%;
   background-color: #63CCC8;
@@ -246,21 +279,25 @@
   color: #013B4F;
   padding-bottom: 80px;
 }
+
 @media (max-width: 1450px) {
   .main-class .menu {
     width: 75%;
   }
 }
+
 @media (max-width: 1250px) {
   .main-class .menu {
     width: 85%;
   }
 }
+
 @media (max-width: 1100px) {
   .main-class .menu {
     width: 90%;
   }
 }
+
 .main-class .menu .title {
   color: white;
   font-size: 2.5rem;
@@ -271,50 +308,60 @@
   justify-content: center;
   padding: 30px 0px;
 }
+
 .main-class .menu .detail-class-all {
   display: flex;
 }
+
 @media (max-width: 1025px) {
   .main-class .menu .detail-class-all {
     flex-direction: column;
   }
 }
+
 .main-class .menu .detail-class-all .detail-class-left {
   width: calc((100% - 200px) / 3);
   margin: 0px 50px;
 }
+
 @media (max-width: 1025px) {
   .main-class .menu .detail-class-all .detail-class-left {
     width: 90%;
     margin: 0 auto;
   }
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail-class {
   font-size: 1.6rem;
   letter-spacing: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .line {
   border-bottom: 1px white solid;
   margin: 20px 0px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .size {
   display: flex;
   justify-content: flex-end;
   font-size: 1.4rem;
   margin-bottom: 25px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .size div {
   width: 50px;
   text-align: center;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-one {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-one .plus {
   border-radius: 50%;
   background-color: white;
@@ -326,6 +373,7 @@
   margin: 0px 10px;
   color: black;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-one .latte {
   padding: 0;
   letter-spacing: 5px;
@@ -333,24 +381,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-one .dollar-1 {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-one .dollar-2 {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-two {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-two .plus-two {
   border-radius: 50%;
   background-color: white;
@@ -361,6 +413,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-two .milk {
   padding: 0;
   letter-spacing: 5px;
@@ -368,24 +421,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-two .dollar-one-milk {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-two .dollar-two-milk {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-three {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-three .plus-three {
   border-radius: 50%;
   background-color: white;
@@ -396,6 +453,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-three .black-tea-latte {
   padding: 0;
   letter-spacing: 5px;
@@ -403,24 +461,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-three .dollar-one-latte {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-three .dollar-two-latte {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-four {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-four .plus-four {
   border-radius: 50%;
   background-color: white;
@@ -431,6 +493,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-four .fresh-milk-tea {
   padding: 0;
   letter-spacing: 5px;
@@ -438,24 +501,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-four .dollar-one-fresh {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-four .dollar-two-fresh {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-five {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-five .plus-five {
   border-radius: 50%;
   background-color: white;
@@ -466,6 +533,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-five .wulong-latte {
   padding: 0;
   letter-spacing: 5px;
@@ -473,24 +541,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-five .dollar-one-wulong {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-five .dollar-two-wulong {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-six {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-six .plus-six {
   border-radius: 50%;
   background-color: white;
@@ -501,6 +573,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-six .pearl {
   padding: 0;
   letter-spacing: 5px;
@@ -508,54 +581,64 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-six .dollar-one-pearl {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-left .detail .detail-six .dollar-two-pearl {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid {
   width: calc((100% - 200px) / 3);
   margin-right: 50px;
 }
+
 @media (max-width: 1025px) {
   .main-class .menu .detail-class-all .detail-class-mid {
     width: 90%;
     margin: 0 auto;
   }
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-class-two {
   font-size: 1.6rem;
   letter-spacing: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .line-2 {
   border-bottom: 1px white solid;
   margin: 20px 0px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .size-2 {
   display: flex;
   justify-content: flex-end;
   font-size: 1.4rem;
   margin-bottom: 25px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .size-2 div {
   width: 50px;
   text-align: center;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-one {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-one .plus {
   border-radius: 50%;
   background-color: white;
@@ -567,6 +650,7 @@
   margin: 0px 10px;
   color: black;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-one .jian-black-tea {
   padding: 0;
   letter-spacing: 5px;
@@ -574,24 +658,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-one .dollar-1 {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-one .dollar-2 {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-two {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-two .plus-two {
   border-radius: 50%;
   background-color: white;
@@ -602,6 +690,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-two .molly {
   padding: 0;
   letter-spacing: 5px;
@@ -609,24 +698,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-two .dollar-one-molly {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-two .dollar-two-molly {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-three {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-three .plus-three {
   border-radius: 50%;
   background-color: white;
@@ -637,6 +730,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-three .wulong {
   padding: 0;
   letter-spacing: 5px;
@@ -644,24 +738,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-three .dollar-one-wulong {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-three .dollar-two-wulong {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-four {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-four .plus-four {
   border-radius: 50%;
   background-color: white;
@@ -672,6 +770,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-four .spring {
   padding: 0;
   letter-spacing: 5px;
@@ -679,24 +778,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-four .dollar-one-spring {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-four .dollar-two-spring {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-five {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-five .plus-five {
   border-radius: 50%;
   background-color: white;
@@ -707,6 +810,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-five .king {
   padding: 0;
   letter-spacing: 5px;
@@ -714,53 +818,63 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-five .dollar-one-king {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-mid .detail-five .dollar-two-king {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right {
   width: calc((100% - 200px) / 3);
 }
+
 @media (max-width: 1025px) {
   .main-class .menu .detail-class-all .detail-class-right {
     width: 90%;
     margin: 0 auto;
   }
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail-class-three {
   font-size: 1.6rem;
   letter-spacing: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .line-3 {
   border-bottom: 1px white solid;
   margin: 20px 0px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .size-3 {
   display: flex;
   justify-content: flex-end;
   font-size: 1.4rem;
   margin-bottom: 25px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .size-3 div {
   width: 50px;
   text-align: center;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-one {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-one .plus {
   border-radius: 50%;
   background-color: white;
@@ -772,6 +886,7 @@
   margin: 0px 10px;
   color: black;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-one .liuTing {
   padding: 0;
   letter-spacing: 5px;
@@ -779,24 +894,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-one .dollar-1 {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-one .dollar-2 {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-two {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-two .plus-two {
   border-radius: 50%;
   background-color: white;
@@ -807,6 +926,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-two .chin {
   padding: 0;
   letter-spacing: 5px;
@@ -814,24 +934,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-two .dollar-one-chin {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-two .dollar-two-chin {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-three {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-three .plus-three {
   border-radius: 50%;
   background-color: white;
@@ -842,6 +966,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-three .xiangYu {
   padding: 0;
   letter-spacing: 5px;
@@ -849,24 +974,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-three .dollar-one-xiangYu {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-three .dollar-two-xiangYu {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-four {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-four .plus-four {
   border-radius: 50%;
   background-color: white;
@@ -877,6 +1006,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-four .lemon {
   padding: 0;
   letter-spacing: 5px;
@@ -884,24 +1014,28 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-four .dollar-one-lemon {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-four .dollar-two-lemon {
   color: white;
   font-size: 1.3rem;
   margin-right: 6px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-five {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   cursor: pointer;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-five .plus-five {
   border-radius: 50%;
   background-color: white;
@@ -912,6 +1046,7 @@
   align-items: center;
   margin: 0px 10px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-five .greenTea {
   padding: 0;
   letter-spacing: 5px;
@@ -919,12 +1054,14 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-five .dollar-one-greenTea {
   color: white;
   font-size: 1.3rem;
   margin-right: 12px;
   letter-spacing: 3px;
 }
+
 .main-class .menu .detail-class-all .detail-class-right .detail .detail-five .dollar-two-greenTea {
   color: white;
   font-size: 1.3rem;
@@ -940,6 +1077,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .footer .footer-main {
   width: 65%;
   height: 100%;
@@ -947,21 +1085,25 @@
   align-items: center;
   justify-content: space-between;
 }
+
 @media (max-width: 950px) {
   .footer .footer-main {
     width: 80%;
   }
 }
+
 .footer .footer-main .footer-mid {
   display: flex;
   width: 400px;
   justify-content: space-between;
 }
+
 @media (max-width: 950px) {
   .footer .footer-main .footer-mid {
     display: none;
   }
 }
+
 .footer .footer-main .footer-mid a {
   display: block;
   font-size: 16px;
@@ -971,8 +1113,11 @@
   letter-spacing: 2px;
   text-decoration: none;
 }
+
 .footer .footer-main .footer-right {
   width: 100px;
   display: flex;
   justify-content: space-between;
-}/*# sourceMappingURL=menu.css.map */
+}
+
+/*# sourceMappingURL=menu.css.map */
