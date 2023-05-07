@@ -18,7 +18,7 @@
 
 
     // // 函數中
-    function exampleFunction () {
+    function exampleFunction() {
       console.log(this)
     }
 
@@ -41,7 +41,7 @@
 
 
     // 構造函數和類中 簡單來說，就是利用對象的函數
-    function Person (name) {
+    function Person(name) {
       this.name = name
     }
 
@@ -64,11 +64,18 @@
       text.call(button)
     })
 
-    function text () {
+    function text() {
       console.log(this)
     }
 
     // 基於以上我們可以確定，當函數找函數的時候，就會變成不知道this到底是誰
+
+    // 使用 apply 调用函数并传入一个数组作为参数
+    function myFunction(a, b, c) {
+      console.log(a + b + c);
+    }
+    const arr = [1, 2, 3];
+    myFunction.apply(null, arr); // 输出 6
 
     // // 箭頭函數中
     const objWithArrowFunction = {
@@ -81,7 +88,7 @@
     objWithArrowFunction.sayHello() // window (瀏覽器) 或 global (Node.js)
 
     // 使用 call、apply 和 bind
-    function exampleFunction2 () {
+    function exampleFunction2() {
       console.log(this)
     }
 
