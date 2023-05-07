@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>測試按鈕</button>
+  <script>
+    // 全局上下文
+    // console.log(this) // window (瀏覽器) 或 global (Node.js) 
+
+    // 當所有東西都沒有指定的時，this只會指向最大的物件，也就是整個瀏覽器視窗
+
+
+    // // 函數中
+    function exampleFunction () {
+      console.log(this)
+    }
+
+    exampleFunction() // window (瀏覽器) 或 global (Node.js)
+
+    // 不指定的時候一樣式this，
+
+
+    // // 這是很特別的做法，將函數塞在物件裡面，這時我們會叫這個函數的名字是”方法“
+
+    // 最特別的地方是，這個sayHello他並沒有寫成他是函數卻變成了函數
+    const obj = {
+      name: "John",
+      sayHello: function () {
+        console.log(this)
+      }
+    }
+
+    obj.sayHello() // { name: "John", sayHello: ƒ }
+
+
+    // 構造函數和類中 簡單來說，就是利用對象的函數
+    function Person (name) {
+      this.name = name
+    }
+
+    const john = new Person("John")
+    console.log(john) // Person { name: "John" }
+
+
+
+
+    // 事件處理器中
+    // const button = document.querySelector("button")
+    // button.addEventListener("click", function () {
+    //   console.log(this) // <button> 元素
+    // })
+
+
+    // 我們來看看不同版本的function
+    const button = document.querySelector("button")
+    button.addEventListener("click", function () { // <button> 元素
+      text.call(button)
+    })
+
+    function text () {
+      console.log(this)
+    }
+
+    // 基於以上我們可以確定，當函數找函數的時候，就會變成不知道this到底是誰
+
+    // // 箭頭函數中
+    const objWithArrowFunction = {
+      name: "John",
+      sayHello: () => {
+        console.log(this)
+      }
+    }
+
+    objWithArrowFunction.sayHello() // window (瀏覽器) 或 global (Node.js)
+
+    // 使用 call、apply 和 bind
+    function exampleFunction2 () {
+      console.log(this)
+    }
+
+    const obj2 = { name: "John" }
+
+    exampleFunction2.call(obj2) // { name: "John" }
+
+
+    // 這三個看起來都一樣，回家作業是找出差別在哪，他們很像卻有不同的結果 真的是在搞
+    exampleFunction2.apply(obj2) // { name: "John" }
+
+    const boundFunction = exampleFunction2.bind(obj2)
+    boundFunction() // { name: "John" }
+
+
+
+  </script>
+</body>
+
+</html>

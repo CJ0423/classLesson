@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>rpg小遊戲的原理</title>
+</head>
+
+<body>
+  <h1>rpg小遊戲的原理</h1>
+  <p>和怪物戰鬥</p>
+  <button id="attackButton">攻擊！!</button>
+  <script>
+    class Player {
+      constructor(name, health, attackPower) {
+        this.name = name
+        this.health = health
+        this.attackPower = attackPower
+      }
+
+      attack (target) {
+        const damage = Math.floor(Math.random() * this.attackPower)
+        target.health -= damage
+        if (target.health <= 0) {
+          console.log(`${target.name}死亡${this.name}贏了`)
+          return
+        }
+        console.log(`${this.name} 攻擊 ${target.name} 造成 ${damage} 傷害!`)
+        console.log(`${target.name} 剩餘 ${target.health} 生命`)
+      }
+    }
+
+    class Monster {
+      constructor(name, health, attackPower) {
+        this.name = name
+        this.health = health
+        this.attackPower = attackPower
+      }
+
+      attack (target) {
+        const damage = Math.floor(Math.random() * this.attackPower)
+        target.health -= damage
+        if (target.health <= 0) {
+          console.log(`${target.name}死亡${this.name}贏了`)
+          return
+        }
+        console.log(`${this.name} 攻擊 ${target.name} 造成 ${damage} 傷害!`)
+        console.log(`${target.name} 剩餘 ${target.health} 生命`)
+      }
+    }
+
+    const player = new Player('超級英雄', 100, 10)
+
+    const monster = new Monster('怪物', 120, 10)
+
+    const attackButton = document.querySelector('#attackButton')
+
+    attackButton.addEventListener('click', () => {
+
+      player.attack(monster)
+      monster.attack(player)
+    })
+
+
+
+
+    for (let i = 0; i < 20; i++) {
+      console.log(Math.floor(Math.random() * 10)) //這邊表示的是0~9  那如果要取得
+    }
+
+    let j = 1
+    do {
+      console.log("這是do-while")
+    } while (j < 1) //最少執行一次的迴圈，就是do while
+
+    while (j < 10) {
+      console.log("這是while迴圈")
+      j++
+    }
+
+
+
+
+    // 二到12
+
+
+
+    // 玩家1:梅花3、黑桃2.....
+    // 玩家2:梅花4、黑桃7.....
+    // 玩家3:梅花13、黑桃6.....
+    // 玩家4:梅花1、黑桃5.....
+  </script>
+</body>
+
+</html>

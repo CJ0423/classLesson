@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="doit">1</div>
+  <div class="doit">2</div>
+  <div class="doit">3</div>
+  <script>
+    let tex = ["文字1", "文字2", "文字3"]
+
+
+    // doits = Array.from(document.querySelectorAll(".doit"))
+    // doits.forEach((element, index) => {
+    //   element.addEventListener("click", () => {
+    //     text.call(element, index, tex[index]) //告訴函數這邊的this請指向誰.call(this是誰  其他你想傳過去的數字  )
+    //   })
+    // })
+
+    // function text (i, tex) {
+    //   console.log(this) // 將輸出當前 element
+    //   console.log(i)
+    //   console.log(tex)
+    // }
+
+
+
+    doits2 = Array.from(document.querySelectorAll(".doit"))
+    doits2.forEach((element, index) => {
+      element.addEventListener("click", () => text(element, index, tex[index]))
+    })
+    function text (element, i, tex) {
+      console.log(element)
+      console.log(this)
+      console.log(i)
+      console.log(tex)
+    }
+  </script>
+</body>
+
+</html>

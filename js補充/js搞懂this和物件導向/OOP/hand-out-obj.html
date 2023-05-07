@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class MyClass {
+      // 先初始化，讓這個myProperty變成hello
+      constructor() {
+        this.myProperty = 'Hello'
+      }
+      // 注意，這裡沒有使用 "function" 關鍵字
+      myMethod () {
+        console.log(this.myProperty)
+      }
+    }
+
+
+    class MyClass2 {
+      // 先初始化，讓這個myProperty變成hello
+      constructor(width, height) {
+        this.width = width
+        this.height = height
+      }
+      // 注意，這裡沒有使用 "function" 關鍵字，所以他應該叫做方法
+      area () {
+        return this.width * this.height
+      }
+    }
+
+    const myInstance = new MyClass()
+    myInstance.myMethod() // 輸出 "Hello"
+
+    const area = new MyClass2(30, 20)
+    console.log(area.area())
+
+
+
+    const area2 = new MyClass2(90, 120)
+    console.log(area2.area())
+
+    // 物件導向的核心觀念
+    /*
+    1.類（Class）：在這個例子中，MyClass2 是一個類，它定義了一個矩形的結構和行為。類是物件導向編程的基本組件之一。
+
+    2.對象（Object）：使用 new MyClass2(30, 20) 創建的實例 area 是一個對象。對象是類的實例，它包含類中定義的屬性和方法。
+
+    3.方法（Method）：area() 是 MyClass2 類的一個方法。方法是類的功能，它們通常對類的實例進行操作或計算。
+
+    4.封裝（Encapsulation）：將數據（如 width 和 height 屬性）和操作（如 area() 方法）封裝在類中，以便更易於管理和維護。
+    
+    Gpt寫的很詳細，但其實真正的意思是
+    class:物件導向中最主要，要做些什麼，可以看到他的寫法跟物件是一樣的，但是在這個時候我們則會叫他"類"
+    物件：
+    
+    */
+  </script>
+</body>
+
+</html>
