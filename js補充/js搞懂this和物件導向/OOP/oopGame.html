@@ -91,6 +91,100 @@
     }
 
 
+    const color = ["梅花", "黑桃", "愛心", "菱形"];
+    const cnum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
+    let may = [];
+    let tao = [];
+    let love = [];
+    let linShin = [];
+
+    let allCards = [];
+
+    for (let i = 0; i < cnum.length; i++) {
+      may.push(`${color[0]}${cnum[i]}`)
+    }
+    for (let i = 0; i < cnum.length; i++) {
+      tao.push(`${color[1]}${cnum[i]}`)
+    }
+    for (let i = 0; i < cnum.length; i++) {
+      love.push(`${color[2]}${cnum[i]}`)
+    }
+    for (let i = 0; i < cnum.length; i++) {
+      linShin.push(`${color[3]}${cnum[i]}`)
+    }
+    for (let i = 0; i < may.length; i++) {
+      allCards.push(may[i], tao[i], love[i], linShin[i])
+    }
+    allCards.sort(() => Math.random() - 0.5)
+    console.log(allCards)
+
+
+    let playerOne = [];
+    let playerTwo = [];
+    let playerThree = [];
+    let playerFour = [];
+
+    for (let i = 0; i < allCards.length - 1; i++) {
+      if (playerOne.length < 13) {
+        playerOne.push(allCards[i])
+      } else if (playerTwo.length < 13) {
+        playerTwo.push(allCards[i])
+      } else if (playerThree.length < 13) {
+        playerThree.push(allCards[i])
+      } else if (playerFour.length < 13) {
+        playerFour.push(allCards[i])
+      }
+    }
+    console.log("玩家一的手牌有")
+    console.log(playerOne)
+    console.log("玩家二的手牌有")
+    console.log(playerTwo)
+    console.log("玩家三的手牌有")
+    console.log(playerThree)
+    console.log("玩家四的手牌有")
+    console.log(playerFour)
+    // color.sort(() => Math.random() - 0.5);
+    // cnum.sort(() => Math.random() - 0.5);
+    // console.log(color)
+    // console.log(cnum)
+    // for (let i = 0; i < color.length - 1; i++) {
+    //   for (let j = 0; j < cnum.length - 1; j++) {
+    //     if (playerOne.length < 13) {
+    //       playerOne.push(`${color[i]}${cnum[j]}`)
+    //     } else if (playerTwo.length < 13) {
+    //       playerTwo.push(`${color[i]}${cnum[j]}`)
+    //     } else if (playerThree.length < 13) {
+    //       playerThree.push(`${color[i]}${cnum[j]}`)
+    //     } else if (playerFour.length < 13) {
+    //       playerFour.push(`${color[i]}${cnum[j]}`)
+    //     }
+    //   }
+    // }
+
+    // for (let i = 0; i < color.length - 1; i++) {
+    //   // console.log(color[i])
+    //   for (let j = 0; j < cnum.length - 1; j++) {
+    //     let card = `${color[i]} ${cnum[j]}`;
+    //     let resetTheNum = Math.floor(Math.random() * 4);
+    //     while (playerOne.length != 13 && playerTwo.length != 13 && playerThree.length != 13 && playerFour.length != 13) {
+    //3      resetTheNum;
+    //     }
+    //     if (resetTheNum == 0 && playerOne.length <= 13) {
+    //       playerOne.push(card)
+    //     } else if (resetTheNum == 1 && playerTwo.length <= 13) {
+    //       playerTwo.push(card)
+    //     } else if (resetTheNum == 2 && playerThree.length <= 13) {
+    //       playerThree.push(card)
+    //     } else if (resetTheNum == 3 && playerFour.length <= 13) {
+    //       playerFour.push(card)
+    //     }
+    //   }
+    // }
+    // console.log(playerOne)
+    // console.log(playerTwo)
+    // console.log(playerThree)
+    // console.log(playerFour)
+
 
 
     // 二到12
