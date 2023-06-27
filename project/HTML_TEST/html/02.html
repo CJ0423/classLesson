@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D123</title>
+</head>
+<body>
+    <h1>類選取器 - 何謂僞類選取器</h1>
+
+    <p>
+        如果有在跟金魚系列的朋友，到目前為止一些基本的選取方式大概都看完了，前面我們從基本的 Tag、class、ID、屬性(Attribute Selector )、親代選取、後代選取(Descendant combinator)、子代選取(Child combinator)，到後面提到個選取器之間的觀念、搭配應用與 CSS scope 的部份，接下來要介紹的會是 CSS 選取器中最大一類的選取器 - 偽類選取器(pseudo-class)。
+    </p>
+    
+    <h2>偽類選取器的特性</h2>
+    
+    <p>
+        從語法結構上面來看，偽類選取器是由單一一個「:」冒號作為開頭，接著緊接著偽類選取器的名稱，例如 :hover 或是 :first-child 或 :nth-child，偽類的原文是 pseudo-class ，如同 CSS class 一樣都屬於 class 的一種，如果說 class 是自訂的分類的話，那麼 pseudo-class 就是 CSS 本身就提供的分類，所以我們也能直接想成偽類(pseudo-class)就是一種 CSS 內建的分類選取器，也因為偽類 (pseudo-class) 本身就是一個 class 的類型，相對的他的優先權也就跟 class 是一樣的。
+    </p>
+    
+    <ol>
+        <li>狀態分類選取</li>
+        <li>順向選取</li>
+        <li>逆向選取</li>
+        <li>空值選取</li>
+        <li>獨子選取</li>
+    </ol>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, aperiam.</h1>
+    <p>Lorem ipsum, dolor sit amet </p>
+
+    <img src="../img/02.jfif" alt="123">
+    <img src="../01.jfif" alt="" style="width: 200px;">
+
+    <img src="/img/02.jfif" alt="">
+    <img src="/01.jfif" alt="" style="width: 200px;">
+
+    <!-- <figure>
+        <img src="../img/02.jfif" alt="">
+        <figcaption>star bucks</figcaption>
+    </figure> -->
+
+    <!-- <video src="https://www.youtube.com/watch?v=UThTz4hpHls"></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UThTz4hpHls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+    <table width="800"; border="2";>
+        <thead>
+            <tr>
+                <th>標題一</th>
+                <th>標題二</th>
+                <th>標題三</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>內容一</th>
+                <td>內容二</td>
+                <td>內容三</td>
+            </tr>
+            <tr>
+                <th>內容一</th>
+                <td>內容二</td>
+                <td>內容三</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>尾1</th>
+                <td colspan="2" rowspan="2">尾2</td>
+                <!-- <td>尾3</td> -->
+            </tr>
+            <tr>
+                <th>尾1</th>       
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

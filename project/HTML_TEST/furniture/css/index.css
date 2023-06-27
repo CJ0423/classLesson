@@ -1,0 +1,452 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left img {
+  width: 60px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div a:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div a:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .banner {
+  position: relative; /* 添加相对定位 */
+  z-index: -1;
+}
+header .banner img {
+  max-width: 1280px;
+  position: relative;
+  top: -110px;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  z-index: -1;
+}
+
+main .posts-all {
+  max-width: 1300px;
+}
+main .posts-all .news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 100vh;
+}
+main .posts-all .news .news-top {
+  letter-spacing: 8px;
+  color: #423e44;
+  display: flex;
+}
+main .posts-all .news .news-top .news-top-first {
+  font-size: 42px;
+  font-weight: 300;
+}
+main .posts-all .news .news-top .news-top-second {
+  padding-left: 12px;
+  padding-top: 18px;
+  font-size: 18px;
+}
+main .posts-all .news .news-bottom {
+  display: flex;
+}
+main .posts-all .news .news-bottom .news-bottom-first img {
+  width: 400px;
+}
+main .posts-all .news .news-bottom .news-bottom-second {
+  padding-top: 95px;
+  padding-left: 100px;
+  padding-right: 80px;
+  position: relative;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-top {
+  display: flex;
+  padding-bottom: 12px;
+  white-space: nowrap;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-top .title-one {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 42px;
+  letter-spacing: 7.2px;
+  margin-right: 10px;
+  color: #423e44;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-top .title-one span {
+  margin-left: 5px;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-bottom {
+  color: #34495e;
+  letter-spacing: 5px;
+  font-size: 16px;
+  line-height: 28px;
+}
+main .posts-all .news .news-bottom .news-bottom-third {
+  border-bottom: 1.6px solid #b4a169;
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  display: flex;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  color: #b4a169;
+}
+main .posts-all .news .news-bottom .news-bottom-third:hover {
+  animation: 1.5s viewMoreBtn forwards;
+}
+main .posts-all .news .news-bottom .news-bottom-third .news-bottom-third-second {
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+main .posts-all .all-customers-response {
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: 120px;
+  background-color: #b0a89f;
+}
+main .posts-all .all-customers-response .customers-width-control {
+  width: 100%;
+  margin-bottom: 70px;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #423e44;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-one {
+  font-size: 35px;
+  font-weight: 300;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-second {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-left: 15px;
+}
+main .posts-all .all-customers-response .customers-all-pics {
+  width: 100%;
+}
+main .posts-all .all-customers-response .customers-all-pics .top-lane-pic {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+main .posts-all .all-customers-response .customers-all-pics .top-lane-pic .single-pic {
+  width: 400px;
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+main .posts-all .all-customers-response .customers-all-pics .top-lane-pic .single-pic:first-child {
+  margin-right: 120px;
+}
+main .posts-all .all-customers-response .customers-all-pics .bottom-lane-pic {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+main .posts-all .all-customers-response .customers-all-pics .bottom-lane-pic .single-pic {
+  width: 400px;
+  position: relative;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+main .posts-all .all-customers-response .customers-all-pics .bottom-lane-pic .single-pic:first-child {
+  margin-right: 120px;
+}
+main .posts-all .all-traffic-information {
+  width: 100%;
+  height: 180vh;
+  background: linear-gradient(180deg, rgb(176, 168, 159), rgb(255, 255, 255));
+}
+main .posts-all .all-traffic-information .traffic-width-control {
+  padding-top: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all {
+  display: flex;
+  letter-spacing: 8px;
+  color: #423e44;
+  margin-bottom: 50px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all .traffic-title-one {
+  font-size: 42px;
+  font-weight: 300;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all .traffic-title-second {
+  padding-left: 12px;
+  padding-top: 18px;
+  font-size: 18px;
+  font-weight: 350;
+}
+main .posts-all .all-traffic-information .traffic-width-control iframe {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text {
+  display: flex;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left {
+  margin-right: 70px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left h4 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 15px 0;
+  letter-spacing: 4px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right div {
+  letter-spacing: 8px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right h4 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 6px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right .address {
+  margin-bottom: 12px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us {
+  margin-top: 20px;
+  height: 80px;
+  padding-top: 20px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a {
+  position: relative;
+  border: 1px #b4a169 solid;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: #b4a169;
+  font-size: 18px;
+  letter-spacing: 6px;
+  padding: 17px 27px 17px 27px;
+  border-radius: 28px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a:hover {
+  background-color: #b4a169;
+  color: white;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5px;
+  top: 42px;
+  transition: 0.6s;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a:hover::before {
+  height: 2px;
+  width: 70%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #cec5ba;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@keyframes viewMoreBtn {
+  0% {
+    border: none;
+  }
+  100% {
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 70px;
+    background-color: #b4a169;
+    color: white;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,178 @@
+.tibameStudy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  margin-bottom: 150px;
+}
+.tibameStudy p {
+  margin: 0px 0px;
+}
+.tibameStudy h2 {
+  color: rgb(9, 173, 191);
+}
+.tibameStudy .tibameStudy-title-span {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background-color: rgb(9, 173, 191);
+  padding: 0px 8px;
+  margin-right: 8px;
+}
+.tibameStudy .tibameStudy-pic-text {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+.tibameStudy .tibameStudy-pic-text .tibameStudy-pic-text-parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(33.3333333333% - 100px);
+}
+.tibameStudy .tibameStudy-pic-text .tibameStudy-pic-text-parts img {
+  width: 200px;
+}
+.tibameStudy .tibameStudy-pic-text .tibameStudy-pic-text-parts-second-parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eight-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+  border: 1px red solid;
+}
+.eight-article .all-posts {
+  display: flex;
+}
+.eight-article .all-posts .left-posts .left-single-post {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.eight-article .all-posts .left-posts .left-single-post:last-child {
+  border-bottom: none;
+}
+.eight-article .all-posts .left-posts .left-single-post .every-posts-num {
+  padding-right: 15px;
+  -webkit-text-stroke: 1px rgb(140, 140, 140);
+  color: transparent;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 0.8;
+  font-style: italic;
+  flex-shrink: 0;
+  width: 35px;
+  text-align: center;
+}
+.eight-article .all-posts .left-posts .left-single-post .left-single-title {
+  color: rgb(9, 173, 191);
+  font-size: 0.9rem;
+}
+.eight-article .all-posts .left-posts .left-single-post .left-single-title span {
+  margin-right: 5px;
+}
+.eight-article .all-posts .left-posts .left-single-post .left-post {
+  display: block;
+}
+.eight-article .all-posts .left-posts .left-single-post .left-post a {
+  text-decoration: none;
+  color: inherit;
+}
+.eight-article .all-posts .left-posts .left-single-post .left-post a:hover {
+  color: rgb(9, 173, 191);
+}
+.eight-article .all-posts .right-posts .right-single-post {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.eight-article .all-posts .right-posts .right-single-post:last-child {
+  border-bottom: none;
+}
+.eight-article .all-posts .right-posts .right-single-post .every-posts-num {
+  padding-right: 15px;
+  -webkit-text-stroke: 1px rgb(140, 140, 140);
+  color: transparent;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 0.8;
+  font-style: italic;
+  flex-shrink: 0;
+  width: 35px;
+  text-align: center;
+}
+.eight-article .all-posts .right-posts .right-single-post .right-single-title {
+  color: rgb(9, 173, 191);
+  font-size: 0.9rem;
+}
+.eight-article .all-posts .right-posts .right-single-post .right-single-title span {
+  margin-right: 5px;
+}
+.eight-article .all-posts .right-posts .right-single-post .right-post {
+  display: block;
+}
+.eight-article .all-posts .right-posts .right-single-post .right-post a {
+  text-decoration: none;
+  color: inherit;
+}
+.eight-article .all-posts .right-posts .right-single-post .right-post a:hover {
+  color: rgb(9, 173, 191);
+}
+
+.the-footer-lists {
+  display: flex;
+  border: 1px red solid;
+}
+.the-footer-lists .the-footer-threeParts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+.the-footer-lists .the-footer-threeParts .threeParts-title {
+  font-weight: bold;
+}
+.the-footer-lists .the-footer-threeParts .the-footer-ul {
+  list-style: none;
+}
+.the-footer-lists .the-footer-threeParts .the-footer-ul li {
+  margin-bottom: 10px;
+}
+.the-footer-lists .the-footer-threeParts .the-footer-ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.the-footer-lists .the-footer-threeParts .the-footer-ul li a:hover {
+  text-decoration: underline;
+}
+.the-footer-lists .aboutUs {
+  margin-right: 50px;
+}
+.the-footer-lists .aboutUs .aboutUs-link a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px black solid;
+  background-color: black;
+  color: white;
+}
+.the-footer-lists .chinese {
+  display: inline-block;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}/*# sourceMappingURL=hw2.css.map */
