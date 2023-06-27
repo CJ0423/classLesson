@@ -15,6 +15,7 @@ header .header-all {
   z-index: 100;
 }
 header .header-all .header-control-width {
+  overflow: visible;
   width: 1280px;
   margin: 0 auto;
   padding-left: 150px;
@@ -52,6 +53,9 @@ header .header-all .header-control-width .header-right div a {
 header .header-all .header-control-width .header-right div a:hover {
   color: rgb(197, 188, 188);
 }
+header .header-all .header-control-width .header-right div a:hover ~ .under-case {
+  display: flex;
+}
 header .header-all .header-control-width .header-right div a::before {
   content: "";
   position: absolute;
@@ -76,6 +80,7 @@ header .header-all .header-control-width .header-right .all-case .under-case {
   overflow: white-space;
   white-space: nowrap;
   z-index: 101;
+  display: none;
 }
 header .header-all .header-control-width .header-right .all-case .under-case a {
   overflow: white-space;

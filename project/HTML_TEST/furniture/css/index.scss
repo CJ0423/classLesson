@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 header {
   .header-all {
@@ -13,6 +13,8 @@ header {
     color: white;
     z-index: 100;
     .header-control-width {
+      overflow: visible;
+
       width: 1280px;
       // height: 40vh;
       margin: 0 auto;
@@ -56,8 +58,13 @@ header {
             &:hover {
               color: rgb(197, 188, 188);
             }
+
+            &:hover ~ .under-case {
+              display: flex;
+            }
+
             &::before {
-              content: "";
+              content: '';
               position: absolute;
               // left: 70%;
               bottom: 10px; /* 调整下划线的位置 */
@@ -91,6 +98,8 @@ header {
             overflow: white-space;
             white-space: nowrap;
             z-index: 101;
+            display: none;
+
             a {
               overflow: white-space;
               white-space: nowrap;
@@ -421,7 +430,7 @@ main {
               color: white;
             }
             &::before {
-              content: "";
+              content: '';
               position: absolute;
               background-color: white;
               width: 0;
