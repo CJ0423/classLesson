@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/6f32696c13.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1200px;
+      }
+
+      header {
+        background: #333;
+        height: 50px;
+        box-shadow: 0px 4px 8px #222;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+      #check_box {
+        position: absolute;
+        /* opacity: 0; */
+      }
+
+      .logo i {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+      }
+
+      .check-btn {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        background: #aaa;
+        top: 7px;
+        right: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .check-btn span {
+        opacity: 0;
+      }
+
+      .check-btn::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 8px;
+        box-shadow: 0 8px 0 #333, 0 -8px 0 #333;
+      }
+
+      .navbar {
+        position: fixed;
+        width: 80%;
+        height: calc(100vh - 50px);
+        background: #aaa;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+      }
+
+      .navbar a {
+        display: block;
+        padding: 20px 15px;
+        text-decoration: none;
+        color: #333;
+        background: #aaa;
+        border-bottom: 1.5px solid #333;
+        transition: all 0.3s ease-in;
+      }
+
+      .navbar a:hover {
+        background: #333;
+        color: #aaa;
+      }
+
+      #check_box:checked ~ header .navbar {
+        left: 0;
+      }
+
+      .banner img {
+        width: 100%;
+        height: auto;
+      }
+
+      .path li {
+        display: inline;
+        position: relative;
+        padding: 6px 8px;
+      }
+
+      .path li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #aaa;
+      }
+
+      .path li + li::before {
+        position: absolute;
+        content: "/";
+        left: -5px;
+        color: #aaa;
+        font-size: 16px;
+        top: 11.5px;
+      }
+
+      h2 {
+        font-size: 58px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 38px;
+      }
+
+      .item {
+        margin-bottom: 40px;
+      }
+
+      .title {
+        margin-bottom: 25px;
+      }
+
+      .about,
+      .product,
+      .service {
+        padding: 0 20px;
+        max-width: 1200px;
+      }
+
+      .img {
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .about h2 {
+        margin-top: 10px;
+      }
+
+      .item-group h3,
+      .item-group p {
+        text-align: center;
+      }
+
+      .about img {
+        border-radius: 50%;
+        width: 100%;
+      }
+
+      .product {
+        background: #333;
+      }
+
+      .product .item-group {
+        padding: 20px 0;
+      }
+
+      .product .img,
+      .product img {
+        width: 100%;
+      }
+
+      .product .text {
+        color: #aaa;
+      }
+
+      .service img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+      }
+
+      .service .item {
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in;
+        padding: 0;
+        border-radius: 20px;
+      }
+
+      .service .item:hover {
+        top: -15px;
+        left: -15px;
+        box-shadow: 4px 8px 8px #aaa;
+      }
+
+      footer {
+        background: #333;
+        color: #aaa;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .navbar {
+          width: 30%;
+        }
+
+        .container {
+          position: relative;
+          margin: auto;
+        }
+
+        .item-group {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .about .item {
+          width: 33%;
+          padding: 0 10px;
+        }
+
+        .product .img,
+        .product .text {
+          width: 50%;
+        }
+
+        .product .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 15px;
+        }
+
+        .service .item-group {
+          flex-wrap: wrap;
+        }
+
+        .service .item {
+          width: 46%;
+        }
+
+        .service .text {
+          padding: 10px;
+        }
+      }
+
+      @media screen and (min-width: 1201px) {
+        .banner img {
+          display: block;
+          height: 60vh;
+        }
+
+        .about,
+        .service,
+        .product {
+          position: relative;
+          margin: auto;
+        }
+
+        .container {
+          position: relative;
+          margin: auto;
+        }
+
+        .check-btn {
+          opacity: 0;
+        }
+
+        .navbar {
+          background: none;
+          display: flex;
+          position: relative;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 50px;
+          justify-content: end;
+          align-items: center;
+        }
+
+        .navbar a {
+          color: #aaa;
+          border-bottom: none;
+          background: none;
+        }
+
+        .item-group {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .about .item {
+          width: 33%;
+          padding: 0 20px;
+        }
+
+        .product {
+          max-width: 100%;
+        }
+
+        .product .container {
+          max-width: 960px;
+        }
+
+        .product .img,
+        .product .text {
+          width: 50%;
+          padding: 20px 20px;
+        }
+
+        .product .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .service .item-group {
+          flex-wrap: wrap;
+        }
+
+        .service .item {
+          width: 22%;
+        }
+
+        .service .text {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---------------------------------------- navbar ------------------------------------------>
+    <input type="checkbox" name="check_box" id="check_box" />
+    <header>
+      <div class="wrap">
+        <div class="logo">
+          <a href="#">
+            <i
+              class="fa-solid fa-ghost fa-fade fa-2xl"
+              style="color: #cccccc"
+            ></i>
+          </a>
+        </div>
+
+        <label for="check_box" class="check-btn">
+          <span>嗨</span>
+        </label>
+
+        <nav class="navbar">
+          <a href="#">商品</a>
+          <a href="#">服務</a>
+          <a href="#">關於我們</a>
+          <a href="#">最新消息</a>
+          <a href="#">聯絡我們</a>
+        </nav>
+      </div>
+    </header>
+
+    <!------------------------------------------- banner&path -------------------------------------------->
+    <div class="banner">
+      <img src="https://picsum.photos/id/26/1200/800" alt="" />
+    </div>
+    <ul class="path">
+      <li><a href="">home</a></li>
+      <li><a href="">news</a></li>
+    </ul>
+
+    <!------------------------------------------- 內容 -------------------------------------------->
+    <div class="about">
+      <div class="container">
+        <div class="title">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae
+            quidem saepe voluptat
+          </p>
+        </div>
+
+        <div class="item-group">
+          <div class="item">
+            <div class="img">
+              <img src="https://picsum.photos/id/40/300/300" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                aperiam asperiores similique nobis aliquid vel quod totam,
+                tempore minus magnam autem? Laudantium debitis quos numquam
+                voluptatibus labore ab qui obcaecati?
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="https://picsum.photos/id/56/300/300" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                aperiam asperiores similique nobis aliquid vel quod totam,
+                tempore minus magnam autem? Laudantium debiti
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
