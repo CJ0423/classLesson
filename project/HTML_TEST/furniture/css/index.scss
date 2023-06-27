@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 header {
   .header-all {
@@ -13,11 +13,10 @@ header {
     color: white;
     z-index: 100;
     .header-control-width {
-      overflow: visible;
-
       width: 1280px;
       // height: 40vh;
       margin: 0 auto;
+      overflow: visible;
       // border: 1px red solid;
       padding-left: 150px;
       padding-right: 200px;
@@ -47,7 +46,7 @@ header {
               width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
             }
           }
-          a {
+          .line-design {
             // position: relative;
             color: white;
             margin: 0 10px;
@@ -58,9 +57,8 @@ header {
             &:hover {
               color: rgb(197, 188, 188);
             }
-
             &::before {
-              content: '';
+              content: "";
               position: absolute;
               // left: 70%;
               bottom: 10px; /* 调整下划线的位置 */
@@ -87,22 +85,35 @@ header {
           font-size: 10px;
         }
         .all-case {
-          &:hover > .under-case {
-            display: flex;
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
           }
-
           .under-case {
-            display: flex;
+            display: none;
             flex-direction: column;
             position: absolute;
             overflow: white-space;
             white-space: nowrap;
             z-index: 101;
-            display: none;
-
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
             a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
               overflow: white-space;
               white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
             }
           }
         }
@@ -120,6 +131,8 @@ header {
       width: 100%;
       height: 120vh;
       z-index: -1;
+      transition: 2s;
+      // opacity: 0;
     }
   }
 }
@@ -196,6 +209,7 @@ main {
           }
         }
         .news-bottom-third {
+          // border: 2px red solid;
           border-bottom: 1.6px solid #b4a169;
           position: absolute;
           top: 300px;
@@ -430,7 +444,7 @@ main {
               color: white;
             }
             &::before {
-              content: '';
+              content: "";
               position: absolute;
               background-color: white;
               width: 0;
@@ -538,22 +552,12 @@ footer {
 }
 @keyframes viewMoreBtn {
   0% {
-    border: none;
-
-    // padding: 10px 0;
+    border: 1px #b4a169 solid;
   }
   100% {
-    border-radius: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    padding-right: 70px;
-    // border: 2px solid #b4a169;
-    background-color: #b4a169;
     color: white;
+    background-color: #b4a169;
+    padding: 5px 10px;
+    border-radius: 25px;
   }
-  // 100% {
-  //   background-color: #b4a169;
-  //   color: white;
-  // }
 }

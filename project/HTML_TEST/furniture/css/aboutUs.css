@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 header .header-all {
@@ -91,6 +93,8 @@ header .banner-text h1 {
   font-weight: 300;
 }
 header .banner-text p {
+  height: 10vh;
+  white-space: nowrap;
   position: relative;
   margin-top: 20px;
   font-size: 14px;
@@ -118,6 +122,7 @@ header .banner-text2 h2 {
   font-weight: 300;
 }
 header .banner-text2 p {
+  height: 10vh;
   position: relative;
   margin-top: 20px;
   font-size: 14px;
@@ -263,7 +268,7 @@ main .concact-us a {
   color: #b4a169;
   font-size: 18px;
   letter-spacing: 6px;
-  padding: 17px 27px 17px 27px;
+  padding: 15px 30px 0px 30px;
   border-radius: 28px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, padding 0.5s ease-in-out;
 }
@@ -272,8 +277,8 @@ main .concact-us a:hover {
   color: white;
   padding-top: 17px;
   padding-bottom: 10px;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 120px;
+  padding-left: 120px;
 }
 
 footer {

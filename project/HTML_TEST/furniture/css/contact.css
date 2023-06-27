@@ -4,8 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
+header {
+  overflow: visible;
+}
 header .header-all {
   width: 100%;
   position: fixed;
@@ -64,6 +68,41 @@ header .header-all .header-control-width .header-right div a:hover::before {
   height: 2px;
   width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
 }
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case {
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right .all-case .top-case {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-color: rgba(30, 29, 29, 0.8);
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a:hover {
+  color: rgba(223, 218, 218, 0.928);
+}
 header .banner {
   width: 100%;
   height: 100vh;
@@ -92,7 +131,7 @@ header .banner .contact-us::after {
   position: absolute;
   right: 50%;
   left: 50%;
-  top: 90%;
+  top: 100%;
   border-bottom: 1px solid black;
   transition: 0.3s;
 }
@@ -114,8 +153,10 @@ header .banner .contact-us h2 span {
 }
 
 main .form-all {
-  width: 100%;
+  width: 80%;
   height: 100vh;
+  margin: 0 auto;
+  transition: 0.3s;
 }
 main .form-all .form-btn {
   width: 80%;
@@ -179,6 +220,7 @@ main .form-all .input-note {
   padding-bottom: 20px;
   outline: none;
   margin-top: 50px;
+  margin-bottom: 50px;
   transition: 0.3s;
 }
 main .form-all .input-submit {

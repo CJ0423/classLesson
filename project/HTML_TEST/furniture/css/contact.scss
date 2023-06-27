@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 header {
+  overflow: visible;
   .header-all {
     width: 100%;
     position: fixed;
@@ -69,6 +71,43 @@ header {
             }
           }
         }
+        .human-icon,
+        .home {
+          font-size: 10px;
+        }
+        .all-case {
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          .under-case {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            overflow: white-space;
+            white-space: nowrap;
+            z-index: 101;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
+            a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
+              overflow: white-space;
+              white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -104,7 +143,7 @@ header {
         right: 50%;
         left: 50%;
         //   bottom: -5px;
-        top: 90%;
+        top: 100%;
         border-bottom: 1px solid black;
         transition: 0.3s;
       }
@@ -131,8 +170,10 @@ header {
 }
 main {
   .form-all {
-    width: 100%;
+    width: 80%;
     height: 100vh;
+    margin: 0 auto;
+    transition: 0.3s;
     // border: 2px red solid;
     .form-btn {
       width: 80%;
@@ -202,6 +243,7 @@ main {
       padding-bottom: 20px;
       outline: none;
       margin-top: 50px;
+      margin-bottom: 50px;
       //   border: 1px red solid;
       transition: 0.3s;
     }

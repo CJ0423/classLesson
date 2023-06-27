@@ -14,8 +14,16 @@ let checkMail = document.querySelector(".check-mail");
 let inputSubmit = document.querySelector(".input-submit");
 let submitBtnCheck = 0;
 
+let contactUs = document.querySelector(".contact-us");
+let formAll = document.querySelector(".form-all");
+
 let formFurniture = document.querySelectorAll(".formFurniture");
 let formFurnitureChecked = 0;
+
+let topCase = document.querySelector(".top-case");
+let underCase = document.querySelector(".under-case");
+let underCaseTrueOrFalse = false;
+
 let inputAll = [inputName, inputPhone, inputMail];
 let checkAll = [checkName, checkPhone, checkMail];
 let RegexAll = [checkNameRegex, checkPhoneRegex, checkMailRegex];
@@ -44,5 +52,21 @@ inputSubmit.addEventListener("click", function () {
     alert("有資料尚未填寫正確");
   } else {
     alert("成功送出!!");
+  }
+});
+
+contactUs.addEventListener("mouseover", function () {
+  setTimeout(() => {
+    formAll.style.borderRight = " 1px solid #000";
+    formAll.style.borderLeft = " 1px solid #000";
+  }, 500);
+});
+
+topCase.addEventListener("click", function () {
+  underCaseTrueOrFalse = !underCaseTrueOrFalse;
+  if (underCaseTrueOrFalse) {
+    underCase.style.display = "flex";
+  } else {
+    underCase.style.display = "none";
   }
 });

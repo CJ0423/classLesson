@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/aboutUs.css" />
   </head>
@@ -42,7 +60,11 @@
         <div class="main-first-pic">
           <img src="../../furniture_img/aboutUsPic1.jpg" alt="" />
         </div>
-        <div class="main-first-text">
+        <div
+          class="main-first-text"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h3>初見</h3>
           <p>透過成熟的規劃與敏銳的概念，倒映出心中理想的模樣</p>
         </div>
@@ -51,7 +73,11 @@
         <div class="main-second-pic">
           <div><img src="../../furniture_img/aboutUsPic22.jpg" alt="" /></div>
         </div>
-        <div class="main-second-text">
+        <div
+          class="main-second-text"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <h3>相識</h3>
           <p>彼此了解互相討論需求，打造出最理想的藍圖</p>
         </div>
@@ -60,7 +86,11 @@
         <div class="main-third-pic">
           <div><img src="../../furniture_img/aboutUsPic3.jpg" alt="" /></div>
         </div>
-        <div class="main-third-text">
+        <div
+          class="main-third-text"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h3>延續</h3>
           <p>實際建構出一個理想願景是我們的初衷，並把客戶的信任傳遞下去</p>
         </div>
@@ -96,5 +126,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
