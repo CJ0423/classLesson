@@ -53,9 +53,6 @@ header .header-all .header-control-width .header-right div a {
 header .header-all .header-control-width .header-right div a:hover {
   color: rgb(197, 188, 188);
 }
-header .header-all .header-control-width .header-right div a:hover ~ .under-case {
-  display: flex;
-}
 header .header-all .header-control-width .header-right div a::before {
   content: "";
   position: absolute;
@@ -72,6 +69,9 @@ header .header-all .header-control-width .header-right div a:hover::before {
 header .header-all .header-control-width .header-right .human-icon,
 header .header-all .header-control-width .header-right .home {
   font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case:hover > .under-case {
+  display: flex;
 }
 header .header-all .header-control-width .header-right .all-case .under-case {
   display: flex;

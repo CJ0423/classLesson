@@ -59,10 +59,6 @@ header {
               color: rgb(197, 188, 188);
             }
 
-            &:hover ~ .under-case {
-              display: flex;
-            }
-
             &::before {
               content: '';
               position: absolute;
@@ -91,6 +87,10 @@ header {
           font-size: 10px;
         }
         .all-case {
+          &:hover > .under-case {
+            display: flex;
+          }
+
           .under-case {
             display: flex;
             flex-direction: column;
