@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -126,22 +125,9 @@ header .banner .contact-us {
   align-items: center;
   background: linear-gradient(-180deg, rgb(206, 197, 186), rgb(255, 255, 255));
 }
-header .banner .contact-us::after {
-  content: "";
-  position: absolute;
-  right: 50%;
-  left: 50%;
-  top: 100%;
-  border-bottom: 1px solid black;
+header .banner .contact-us .contact-us-t {
+  display: inline-block;
   transition: 0.3s;
-}
-header .banner .contact-us:hover::after {
-  right: 10%;
-  left: 10%;
-}
-header .banner .contact-us:focus::after {
-  right: 10%;
-  left: 10%;
 }
 header .banner .contact-us h2 {
   font-size: 31px;
@@ -159,6 +145,7 @@ main .form-all {
   transition: 0.3s;
 }
 main .form-all .form-btn {
+  list-style: none;
   width: 80%;
   padding-left: 30px;
   margin: 0 auto 50px;

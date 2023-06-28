@@ -4,6 +4,7 @@ let topCase = document.querySelector(".top-case");
 let underCaseTrueOrFalse = false;
 let underCase = document.querySelector(".under-case");
 let bannerPic = document.querySelector(".banner-pic");
+
 let bannerPicAll = [
   "../../furniture_img/banner1.jpg",
   "../../furniture_img/banner2.jpg",
@@ -21,7 +22,7 @@ setInterval(() => {
 
     bannerPic.style.opacity = 1;
   }, 1200);
-}, 5000);
+}, 3500);
 
 fetch(
   "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AA300EC1-31BA-465E-B669-6CA2C320A195"

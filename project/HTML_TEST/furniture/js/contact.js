@@ -15,6 +15,7 @@ let inputSubmit = document.querySelector(".input-submit");
 let submitBtnCheck = 0;
 
 let contactUs = document.querySelector(".contact-us");
+let contactUsT = document.querySelector(".contact-us-t");
 let formAll = document.querySelector(".form-all");
 
 let formFurniture = document.querySelectorAll(".formFurniture");
@@ -55,12 +56,12 @@ inputSubmit.addEventListener("click", function () {
   }
 });
 
-contactUs.addEventListener("mouseover", function () {
-  setTimeout(() => {
-    formAll.style.borderRight = " 1px solid #000";
-    formAll.style.borderLeft = " 1px solid #000";
-  }, 500);
-});
+// contactUs.addEventListener("mouseover", function () {
+//   setTimeout(() => {
+//     formAll.style.borderRight = " 1px solid #000";
+//     formAll.style.borderLeft = " 1px solid #000";
+//   }, 500);
+// });
 
 topCase.addEventListener("click", function () {
   underCaseTrueOrFalse = !underCaseTrueOrFalse;
