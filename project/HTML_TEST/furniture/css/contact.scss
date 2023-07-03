@@ -269,6 +269,49 @@ main {
     }
   }
 }
+.window {
+  display: none;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  width: 450px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px rgb(114, 112, 112) solid;
+  background: linear-gradient(-180deg, rgb(176, 168, 159), rgb(255, 255, 255));
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  left: 33%;
+  z-index: 200;
+  top: 20%;
+
+  .close-title {
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    border-bottom: 1px solid #cec5ba;
+    div {
+      .fa-circle {
+        font-size: 3px;
+      }
+    }
+    .fa-xmark {
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+  .window-text {
+    // border: 1px red solid;
+    font-size: 20px;
+    border-bottom: #524d55 1px solid;
+    letter-spacing: 3px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
 footer {
   width: 100%;
   .footer-width-control {

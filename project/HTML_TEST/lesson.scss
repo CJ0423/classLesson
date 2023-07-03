@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+// .all {
+//   display: flex;
+//   border: 1px black solid;
+//   flex-wrap: wrap;
+//   li {
+//     width: 200px;
+//     height: 200px;
+//     border: 1px red solid;
+//     &:nth-of-type(2n) {
+//       background-color: aqua;
+//     }
+//     // &:nth-of-type(odd) {
+//     //   background-color: rgb(132, 255, 0);
+//     // }
+//   }
+// }
+span {
+  display: block;
+}
+// .all-2 {
+//   span {
+//     &:first-child {
+//       background-color: aqua;
+//     }
+//   }
+// }
+
+.all-2 {
+  //   span:first-of-type {
+  //     background-color: aqua;
+  //   }
+  :first-of-type {
+    background-color: aqua;
+  }
+}

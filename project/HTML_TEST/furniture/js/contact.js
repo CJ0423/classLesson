@@ -21,9 +21,15 @@ let formAll = document.querySelector(".form-all");
 let formFurniture = document.querySelectorAll(".formFurniture");
 let formFurnitureChecked = 0;
 
+let onlyForm = document.querySelector(".only-form");
+
 let topCase = document.querySelector(".top-case");
 let underCase = document.querySelector(".under-case");
 let underCaseTrueOrFalse = false;
+
+let windowClose = document.querySelector(".window");
+let faXmark = document.querySelector(".fa-xmark");
+let windowText = document.querySelector(".window-text");
 
 let inputAll = [inputName, inputPhone, inputMail];
 let checkAll = [checkName, checkPhone, checkMail];
@@ -50,12 +56,17 @@ inputSubmit.addEventListener("click", function () {
     }
   }
   if (submitBtnCheck < 3 || formFurnitureChecked == 0) {
-    alert("有資料尚未填寫正確");
+    windowText.innerHTML = "有資料尚未填寫正確唷";
+    windowClose.style.display = "block";
   } else {
-    alert("成功送出!!");
+    windowText.innerHTML = "成功送出!!";
+    windowClose.style.display = "block";
   }
 });
 
+faXmark.addEventListener("click", function () {
+  windowClose.style.display = "none";
+});
 // contactUs.addEventListener("mouseover", function () {
 //   setTimeout(() => {
 //     formAll.style.borderRight = " 1px solid #000";
@@ -70,4 +81,7 @@ topCase.addEventListener("click", function () {
   } else {
     underCase.style.display = "none";
   }
+});
+onlyForm.addEventListener("submit", function (e) {
+  e.preventDefault;
 });
