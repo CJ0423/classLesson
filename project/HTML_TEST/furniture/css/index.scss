@@ -5,6 +5,20 @@
   // overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.count-to-hundred {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  background-color: rgb(42, 58, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: white;
+  // transition: 1s;
+}
 header {
   .header-all {
     width: 100%;
@@ -22,13 +36,21 @@ header {
       padding-right: 200px;
       display: flex;
       justify-content: space-between;
+      // align-items: center;
       position: fixed;
-      background: rgba(0, 0, 0, 0);
+      background: rgba(0, 0, 0, 0.5);
       z-index: 100;
       transition: 0.5s;
       .header-left {
+        display: flex;
+        align-items: center;
         img {
-          width: 60px;
+          margin-top: 10px;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          // border: 1px red solid;
+          width: 100px;
         }
       }
       .header-right {
@@ -41,6 +63,11 @@ header {
           padding-bottom: 8px;
           // border: 1px red solid;
           .first-page {
+            // border: 1px red solid;
+            i {
+              font-size: 16px;
+              margin-left: 3px;
+            }
             &:hover::before {
               height: 2px;
               width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
@@ -135,6 +162,16 @@ header {
       transition: 1.5s;
       // opacity: 0;
     }
+    // &::after {
+    //   content: "HU furniture";
+    //   position: absolute;
+    //   top: 40%;
+    //   left: 25%;
+    //   font-size: 50px;
+    //   letter-spacing: 3px;
+    //   color: rgba(187, 174, 174, 0.3);
+    //   z-index: -2;
+    // }
   }
 }
 main {
@@ -161,6 +198,19 @@ main {
         .news-top-first {
           font-size: 42px;
           font-weight: 300;
+          .spanN {
+            color: rgba(222, 28, 28, 0.6);
+          }
+          .spanE {
+            background-image: linear-gradient(
+              to right,
+              rgba(222, 28, 28, 0.6),
+              white
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
         }
         .news-top-second {
           padding-left: 12px;
@@ -264,6 +314,7 @@ main {
           border-bottom: 1px white solid;
           margin-bottom: 5px;
           transition: 0.3s;
+
           // &:hover {
           //   transform: rotate(90deg);
           //   animation: none;
@@ -281,12 +332,14 @@ main {
       align-items: center;
       // padding-top: 100px;
       // margin-top: 120px;
-      border-top: 1px white solid;
+      border-top: 1px rgba(255, 215, 0, 0.5) solid;
       background-color: rgb(49, 48, 48);
       .customers-width-control {
         width: 100%;
         padding-top: 70px;
-        margin-bottom: 70px;
+        // margin-bottom: 70px;
+        padding-bottom: 70px;
+        background-color: rgba(71, 68, 68, 0.4);
         // border: 1px red solid;
         .customers-title-all {
           display: flex;
@@ -295,10 +348,24 @@ main {
           letter-spacing: 5px;
           color: #423e44;
           margin-bottom: 60px;
+
           .customers-title-one {
             font-size: 35px;
             font-weight: 300;
             color: white;
+            .spanD {
+              color: rgba(222, 28, 28, 0.6);
+            }
+            .spanG {
+              background-image: linear-gradient(
+                to right,
+                rgba(222, 28, 28, 0.6),
+                white
+              );
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            }
           }
           .customers-title-second {
             font-size: 18px;
@@ -338,6 +405,49 @@ main {
             transition: 0.3s;
             animation: showDesign 2s forwards;
           }
+          .show-link-one {
+            transition: 0.6s;
+            &:hover {
+              background-image: url(../../furniture_img/index-link-pic1.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 135%;
+              writing-mode: horizontal-tb;
+              align-items: flex-end;
+              font-weight: bold;
+              color: rgb(235, 231, 231);
+            }
+          }
+          .show-link-two {
+            transition: 0.6s;
+            // border: 1px red solid;
+            &:hover {
+              justify-content: center;
+              background-image: url(../../furniture_img/index-link-pic2.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 135%;
+              writing-mode: horizontal-tb;
+              align-items: flex-end;
+              font-weight: bold;
+              color: rgb(47, 46, 46);
+            }
+          }
+          .show-link-three {
+            transition: 0.6s;
+            // border: 1px red solid;
+            &:hover {
+              justify-content: center;
+              background-image: url(../../furniture_img/index-link-pic3.png);
+              background-repeat: no-repeat;
+              background-position: 15% 100%;
+              background-size: 145%;
+              writing-mode: horizontal-tb;
+              align-items: flex-end;
+              font-weight: bold;
+              color: rgb(248, 247, 247);
+            }
+          }
         }
         .hamburger-all {
           // border: 1px white solid;
@@ -370,8 +480,8 @@ main {
       // height: 180vh;
       background-color: rgb(49, 48, 48);
       // background: linear-gradient(179deg, rgb(49, 48, 48), rgb(255, 255, 255));
-      border-top: 1px white solid;
-      border-bottom: 1px white solid;
+      border-top: 1px rgba(255, 215, 0, 0.5) solid;
+      border-bottom: 1px rgba(255, 215, 0, 0.5) solid;
       //   border: 1px red solid;
       //   overflow: hidden;
       .traffic-width-control {
@@ -393,6 +503,14 @@ main {
           .traffic-title-one {
             font-size: 42px;
             font-weight: 300;
+            background-image: linear-gradient(
+              to right,
+              rgba(222, 28, 28, 0.6),
+              white
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
           }
           .traffic-title-second {
             padding-left: 12px;
@@ -615,6 +733,10 @@ main {
       font-size: 30px;
       cursor: pointer;
     }
+    .maxT,
+    .isRainning {
+      font-size: 14px;
+    }
   }
   .fake-message-bottom {
     border-top: 2px black solid;
@@ -710,6 +832,10 @@ footer {
     width: 100%;
     height: 50vh;
     background-color: #cec5ba;
+    // background-image: url(../../furniture_img/Group\ 3.svg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: -30px;
     // border: 1px red solid;
     .footer-all {
       display: flex;

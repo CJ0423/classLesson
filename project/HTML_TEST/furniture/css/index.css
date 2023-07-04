@@ -6,6 +6,20 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.count-to-hundred {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  background-color: rgb(42, 58, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: white;
+}
+
 header .header-all {
   width: 100%;
   position: fixed;
@@ -22,12 +36,20 @@ header .header-all .header-control-width {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 100;
   transition: 0.5s;
 }
+header .header-all .header-control-width .header-left {
+  display: flex;
+  align-items: center;
+}
 header .header-all .header-control-width .header-left img {
-  width: 60px;
+  margin-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100px;
 }
 header .header-all .header-control-width .header-right {
   display: flex;
@@ -37,6 +59,10 @@ header .header-all .header-control-width .header-right {
 }
 header .header-all .header-control-width .header-right div {
   padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
 }
 header .header-all .header-control-width .header-right div .first-page:hover::before {
   height: 2px;
@@ -139,6 +165,15 @@ main .posts-all .news .news-top .news-top-first {
   font-size: 42px;
   font-weight: 300;
 }
+main .posts-all .news .news-top .news-top-first .spanN {
+  color: rgba(222, 28, 28, 0.6);
+}
+main .posts-all .news .news-top .news-top-first .spanE {
+  background-image: linear-gradient(to right, rgba(222, 28, 28, 0.6), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 main .posts-all .news .news-top .news-top-second {
   padding-left: 12px;
   padding-top: 18px;
@@ -220,13 +255,14 @@ main .posts-all .all-customers-response {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px white solid;
+  border-top: 1px rgba(255, 215, 0, 0.5) solid;
   background-color: rgb(49, 48, 48);
 }
 main .posts-all .all-customers-response .customers-width-control {
   width: 100%;
   padding-top: 70px;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(71, 68, 68, 0.4);
 }
 main .posts-all .all-customers-response .customers-width-control .customers-title-all {
   display: flex;
@@ -240,6 +276,15 @@ main .posts-all .all-customers-response .customers-width-control .customers-titl
   font-size: 35px;
   font-weight: 300;
   color: white;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-one .spanD {
+  color: rgba(222, 28, 28, 0.6);
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-one .spanG {
+  background-image: linear-gradient(to right, rgba(222, 28, 28, 0.6), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-second {
   font-size: 18px;
@@ -279,6 +324,47 @@ main .posts-all .all-customers-response .customers-width-control .design-links-a
   transition: 0.3s;
   animation: showDesign 2s forwards;
 }
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-one {
+  transition: 0.6s;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-one:hover {
+  background-image: url(../../furniture_img/index-link-pic1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  writing-mode: horizontal-tb;
+  align-items: flex-end;
+  font-weight: bold;
+  color: rgb(235, 231, 231);
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-two {
+  transition: 0.6s;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-two:hover {
+  justify-content: center;
+  background-image: url(../../furniture_img/index-link-pic2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  writing-mode: horizontal-tb;
+  align-items: flex-end;
+  font-weight: bold;
+  color: rgb(47, 46, 46);
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-three {
+  transition: 0.6s;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-three:hover {
+  justify-content: center;
+  background-image: url(../../furniture_img/index-link-pic3.png);
+  background-repeat: no-repeat;
+  background-position: 15% 100%;
+  background-size: 145%;
+  writing-mode: horizontal-tb;
+  align-items: flex-end;
+  font-weight: bold;
+  color: rgb(248, 247, 247);
+}
 main .posts-all .all-customers-response .customers-width-control .hamburger-all {
   display: flex;
   flex-direction: column;
@@ -295,8 +381,8 @@ main .posts-all .all-customers-response .customers-width-control .hamburger-all 
 main .posts-all .all-traffic-information {
   width: 100%;
   background-color: rgb(49, 48, 48);
-  border-top: 1px white solid;
-  border-bottom: 1px white solid;
+  border-top: 1px rgba(255, 215, 0, 0.5) solid;
+  border-bottom: 1px rgba(255, 215, 0, 0.5) solid;
 }
 main .posts-all .all-traffic-information .traffic-width-control {
   padding-bottom: 50px;
@@ -315,6 +401,10 @@ main .posts-all .all-traffic-information .traffic-width-control .traffic-title-a
 main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all .traffic-title-one {
   font-size: 42px;
   font-weight: 300;
+  background-image: linear-gradient(to right, rgba(222, 28, 28, 0.6), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all .traffic-title-second {
   padding-left: 12px;
@@ -512,6 +602,10 @@ main .posts-all .all-traffic-information .traffic-width-control .hamburger-all .
   color: black;
   font-size: 30px;
   cursor: pointer;
+}
+.fake-message .fake-message-top .maxT,
+.fake-message .fake-message-top .isRainning {
+  font-size: 14px;
 }
 .fake-message .fake-message-bottom {
   border-top: 2px black solid;

@@ -6,6 +6,9 @@ let underCase = document.querySelector(".under-case");
 let bannerPic = document.querySelector(".banner-pic");
 let postsAll = document.querySelector(".posts-all");
 let header = document.querySelector("header");
+let footer = document.querySelector("footer");
+let main = document.querySelector("main");
+
 let newsBottom = document.querySelector(".news-bottom");
 let hamburgerNews = document.querySelector(".hamburger-news");
 let newsTrueFalse = false;
@@ -27,6 +30,11 @@ let messageTrueFalse = false;
 let peopleSaying = document.querySelector(".people-saying");
 let peopleInput = document.querySelector(".people-input");
 let submitBtn = document.querySelector(".submitBtn");
+let maxT = document.querySelector(".maxT");
+let isRainning = document.querySelector(".isRainning");
+let countToHundred = document.querySelector(".count-to-hundred");
+let countToHundredNum = 1;
+let footerWidthControl = document.querySelector(".footer-width-control");
 
 let bannerPicAll = [
   "../../furniture_img/banner1.jpg",
@@ -61,6 +69,7 @@ fetch(
       myJson.records.location[13].weatherElement[4].time[0].parameter
         .parameterName
     );
+    maxT.textContent = `今日氣溫:${myJson.records.location[13].weatherElement[4].time[0].parameter.parameterName}度`;
     temperature =
       myJson.records.location[13].weatherElement[4].time[0].parameter
         .parameterName;
@@ -69,6 +78,8 @@ fetch(
       myJson.records.location[13].weatherElement[1].time[0].parameter
         .parameterName
     );
+
+    isRainning.textContent = `降雨機率:${myJson.records.location[13].weatherElement[1].time[0].parameter.parameterName}%`;
     rain =
       myJson.records.location[13].weatherElement[1].time[0].parameter
         .parameterName;
@@ -168,4 +179,36 @@ document.addEventListener("keydown", function (e) {
       peopleInput.value = "";
     }
   }
+});
+
+window.addEventListener("load", function () {
+  let countToHundredNum = 0; // 設定初始數字為 0
+
+  const incrementNumber = () => {
+    countToHundred.innerHTML = `${countToHundredNum}%`;
+    countToHundredNum++;
+
+    if (countToHundredNum <= 100) {
+      header.style.display = "none";
+      main.style.display = "none";
+      footerWidthControl.style.display = "none";
+      setTimeout(incrementNumber, 20); // 延遲 10 毫秒後執行增加數字的函式
+    } else if (countToHundredNum <= 60) {
+      countToHundred.style.opacity = "0";
+    } else {
+      countToHundred.style.display = "none";
+      header.style.display = "block";
+      main.style.display = "block";
+      footerWidthControl.style.display = "flex";
+    }
+  };
+
+  incrementNumber(); // 開始執行增加數字的函式
+
+  // 監聽 opacity 的 transitionend 事件
+  // countToHundred.addEventListener("transitionend", function () {
+  //   if (countToHundred.style.opacity <= "1") {
+  //     countToHundred.style.display = "none";
+  //   }
+  // });
 });
