@@ -8,7 +8,6 @@
 .biggest-div {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +15,7 @@
 .biggest-div .center-div {
   width: 70%;
   height: 70%;
+  background-image: url(../pic/dog1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
