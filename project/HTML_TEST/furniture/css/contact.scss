@@ -27,7 +27,12 @@ header {
       transition: 0.5s;
       .header-left {
         img {
-          width: 60px;
+          margin-top: 10px;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          // border: 1px red solid;
+          width: 100px;
         }
       }
       .header-right {
@@ -44,6 +49,10 @@ header {
               height: 2px;
               width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
             }
+          }
+          .home {
+            font-size: 16px;
+            margin-left: 3px;
           }
           a {
             color: white;

@@ -180,6 +180,18 @@ document.addEventListener("keydown", function (e) {
     }
   }
 });
+let signInProgram = document.querySelector(".sign-in-program");
+let acc = "CHD106";
+let password1 = 123456;
+let account = document.querySelector("#account");
+let pass = document.querySelector("#pass");
+let send = document.querySelector(".send");
+let inPageNavigation = document.querySelector(".in-page-navigation");
+let signInTimes = 3;
+let labelAccount = document.querySelector(".label-account");
+let labelPassword = document.querySelector(".label-password");
+let threeTimes = document.querySelector(".three-times");
+let forGrayBkc = document.querySelector(".for-gray-bkc");
 
 window.addEventListener("load", function () {
   let countToHundredNum = 0; // 設定初始數字為 0
@@ -192,15 +204,18 @@ window.addEventListener("load", function () {
       header.style.display = "none";
       main.style.display = "none";
       footerWidthControl.style.display = "none";
-      setTimeout(incrementNumber, 20); // 延遲 10 毫秒後執行增加數字的函式
-    } else if (countToHundredNum <= 60) {
-      countToHundred.style.opacity = "0";
-    } else {
+      inPageNavigation.style.display = "none";
+      setTimeout(incrementNumber, 30); // 延遲 10 毫秒後執行增加數字的函式
+    } else if (countToHundredNum >= 100) {
       countToHundred.style.display = "none";
-      header.style.display = "block";
-      main.style.display = "block";
-      footerWidthControl.style.display = "flex";
+      signInProgram.style.display = "flex";
     }
+    // else {
+    //   countToHundred.style.display = "none";
+    //   header.style.display = "block";
+    //   main.style.display = "block";
+    //   footerWidthControl.style.display = "flex";
+    // }
   };
 
   incrementNumber(); // 開始執行增加數字的函式
@@ -211,4 +226,38 @@ window.addEventListener("load", function () {
   //     countToHundred.style.display = "none";
   //   }
   // });
+});
+
+send.addEventListener("click", function () {
+  if (account.value == acc && pass.value == password1) {
+    // countToHundred.style.display = "none";
+    signInProgram.style.display = "none";
+    header.style.display = "block";
+    main.style.display = "block";
+    footerWidthControl.style.display = "flex";
+    inPageNavigation.style.display = "flex";
+  } else if (account.value == "" || pass.value == "") {
+    threeTimes.innerHTML = `Account or password cannot be empty`;
+    threeTimes.style.color = "red";
+    threeTimes.style.animation = "notCorrect 0.1s 0s linear 2 alternate";
+    setTimeout(() => {
+      threeTimes.style.animation = "none";
+    }, 500);
+  } else if (account.value !== acc || pass.value !== password1) {
+    signInTimes -= 1;
+    threeTimes.innerHTML = `
+    only ${signInTimes} chances`;
+    threeTimes.style.color = "black";
+    // alert(`次數剩餘${signInTimes}次`);
+  }
+  if (signInTimes <= 0) {
+    account.disabled = true;
+    pass.disabled = true;
+    labelAccount.style.color = "gray";
+    labelPassword.style.color = "gray";
+    send.style.display = "none";
+    threeTimes.innerHTML = "登入次數已達上限,此帳戶已遭鎖定";
+    threeTimes.style.color = "red";
+    forGrayBkc.style.display = "block";
+  }
 });

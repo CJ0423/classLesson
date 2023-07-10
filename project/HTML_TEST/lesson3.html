@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .all {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+
+        outline: 2px red solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 400px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        transform-style: preserve-3d;
+        outline: 5px blue solid;
+        transform: rotateX(60deg);
+      }
+      .box > * {
+        outline: 2px black solid;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 120px;
+        position: absolute;
+        color: #0008;
+      }
+      .f {
+        transform: rotate(0deg) translateZ(100deg);
+      }
+      .bb {
+        transform: rotateY(90deg) translateZ(100deg);
+      }
+      .l {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .r {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .d {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .t {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div class="box">
+        <div class="f">F</div>
+        <div class="bb">B</div>
+        <div class="l">L</div>
+        <div class="r">R</div>
+        <div class="t">T</div>
+        <div class="d">D</div>
+      </div>
+    </div>
+  </body>
+</html>

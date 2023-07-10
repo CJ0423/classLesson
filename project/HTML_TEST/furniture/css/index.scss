@@ -19,6 +19,59 @@
   color: white;
   // transition: 1s;
 }
+.sign-in-program {
+  width: 100%;
+  display: none;
+  position: relative;
+  background-image: url("../../furniture_img/sign-in-pic2.jpg"),
+    url("../../furniture_img/sign-in-pic-3.jpg"),
+    url("../../furniture_img/sign-in-pic-4.jpg");
+  background-position: left, top 50% left 60%, right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, contain;
+  .sign-in-border {
+    // border: 1px #ff0000 solid;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .send {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px white solid;
+      background-color: black;
+      color: white;
+      width: 100px;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    .sign-in-title {
+      font-size: 30px;
+    }
+    .sign-in-type {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .three-times {
+      animation: none;
+    }
+  }
+  .for-gray-bkc {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.4);
+    position: absolute;
+    content: "";
+    display: none;
+  }
+}
 header {
   .header-all {
     width: 100%;
@@ -44,6 +97,7 @@ header {
       .header-left {
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
         img {
           margin-top: 10px;
           padding-bottom: 0;
@@ -120,6 +174,14 @@ header {
             color: white;
             text-decoration: none;
             margin-right: 5px;
+            // border: 1px red solid;
+          }
+          .fa-solid {
+            font-size: 10px;
+            vertical-align: center;
+            animation: caseMove 2s infinite;
+            // border: 1px red solid;
+            // padding-bottom: 5px;
           }
           .under-case {
             display: none;
@@ -305,6 +367,7 @@ main {
         display: flex;
         flex-direction: column;
         margin-top: 50px;
+        cursor: pointer;
         div {
           animation: 2s moveUp infinite;
           // cursor: pointer;
@@ -332,14 +395,14 @@ main {
       align-items: center;
       // padding-top: 100px;
       // margin-top: 120px;
-      border-top: 1px rgba(255, 215, 0, 0.5) solid;
+      border-top: 1px white solid;
       background-color: rgb(49, 48, 48);
       .customers-width-control {
         width: 100%;
         padding-top: 70px;
         // margin-bottom: 70px;
         padding-bottom: 70px;
-        background-color: rgba(71, 68, 68, 0.4);
+        // background-color: rgba(71, 68, 68, 0.4);
         // border: 1px red solid;
         .customers-title-all {
           display: flex;
@@ -453,6 +516,7 @@ main {
           // border: 1px white solid;
           display: flex;
           flex-direction: column;
+          cursor: pointer;
           div {
             animation: 2s moveUp infinite;
             // cursor: pointer;
@@ -475,13 +539,294 @@ main {
         }
       }
     }
+    .design-projects {
+      width: 100%;
+      // height: 100vh;
+      // border: 1px red solid;
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      background-color: rgb(49, 48, 48);
+      .line-one-pic-all,
+      .line-two-pic-all,
+      .line-three-pic-all {
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        justify-content: space-evenly;
+        // border: 1px red solid;
+        margin-bottom: 50px;
+        // position: relative;
+        div {
+          // border: 1px red solid;
+          width: 30%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            transform: scale(1.8);
+          }
+        }
+        .line-one-pic1 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "墨䔳情境 紳灰";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic2 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "坐設計 若杉牧水";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic3 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "禾宇 秋穗山嵐";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic4 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "拾葉 彰化L宅";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic5 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "豐聚 微粉寓所";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic6 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "安藤 美術花園";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic7 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "映荷空間 和 煦";
+            font-size: 18px;
+            letter-spacing: 3px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic8 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "豐聚 Waltz 圓舞曲";
+            font-size: 18px;
+            letter-spacing: 2px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+        .line-one-pic9 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            content: "大也 仁山協和 ";
+            font-size: 18px;
+            letter-spacing: 2px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          &:hover::after {
+            display: flex;
+          }
+          &:hover img {
+            animation: scalePic 20s infinite;
+          }
+        }
+      }
+    }
     .all-traffic-information {
       width: 100%;
       // height: 180vh;
       background-color: rgb(49, 48, 48);
       // background: linear-gradient(179deg, rgb(49, 48, 48), rgb(255, 255, 255));
-      border-top: 1px rgba(255, 215, 0, 0.5) solid;
-      border-bottom: 1px rgba(255, 215, 0, 0.5) solid;
+      border-top: 1px white solid;
+      border-bottom: 1px white solid;
       //   border: 1px red solid;
       //   overflow: hidden;
       .traffic-width-control {
@@ -616,6 +961,7 @@ main {
           display: flex;
           flex-direction: column;
           margin-top: 50px;
+          cursor: pointer;
           .forChangeToBlack {
             animation: 2s moveUp infinite;
             // cursor: pointer;
@@ -644,7 +990,7 @@ main {
   align-items: center;
   border-radius: 15px;
   // border: 1px black solid;
-  top: 40%;
+  top: 70%;
   left: 93%;
   // background-color: black;
   z-index: 300;
@@ -709,7 +1055,7 @@ main {
   height: 62vh;
   width: 45%;
   border: 1px rgb(158, 157, 157) solid;
-  background-color: rgba(250, 248, 248, 0.8);
+  background-color: rgba(250, 248, 248, 1);
   border-radius: 15px;
   // div {
   //   border: 1px white solid;
@@ -963,5 +1309,35 @@ footer {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes notCorrect {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes caseMove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes scalePic {
+  0% {
+    transform: scale(1.8);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(1.8);
   }
 }
