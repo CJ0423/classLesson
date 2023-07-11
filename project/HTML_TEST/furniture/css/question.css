@@ -184,7 +184,8 @@ main .question-title {
   color: white;
   display: flex;
   justify-content: flex-start;
-  font-size: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 main .question-title .question-furniture {
   color: rgb(49, 48, 48);
@@ -561,7 +562,8 @@ main .paper1 .sendBtn {
 
 .show-result {
   position: fixed;
-  border: 3px rgb(255, 180, 6) solid;
+  border: 2px black solid;
+  border-radius: 20px;
   width: 60%;
   height: 50%;
   top: 30%;
@@ -579,7 +581,7 @@ main .paper1 .sendBtn {
   padding-top: 10px;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  border-bottom: 1px black solid;
+  border-bottom: 1px black dotted;
 }
 .show-result .score {
   display: flex;
@@ -588,7 +590,7 @@ main .paper1 .sendBtn {
   align-items: center;
   height: 70%;
   letter-spacing: 4px;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 @keyframes shinning {
