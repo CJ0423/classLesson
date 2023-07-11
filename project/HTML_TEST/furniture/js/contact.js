@@ -31,22 +31,26 @@ let windowClose = document.querySelector(".window");
 let faXmark = document.querySelector(".fa-xmark");
 let windowText = document.querySelector(".window-text");
 
+let bannerTxt = document.querySelector(".banner-txt");
+let bannerTxtArr = ["C", "o", "n", "t", "a", "c", "t", "U", "s"];
+let bannerTxtNum = 0;
+
 let inputAll = [inputName, inputPhone, inputMail];
 let checkAll = [checkName, checkPhone, checkMail];
 let RegexAll = [checkNameRegex, checkPhoneRegex, checkMailRegex];
 //姓名 手機 信箱正則
-for (let i = 0; i < inputAll.length; i++) {
-  inputAll[i].addEventListener("input", function () {
-    if (!RegexAll[i].test(inputAll[i].value)) {
-      inputAll[i].style.border = "red 1px solid";
-      checkAll[i].style.display = "block";
-    } else {
-      inputAll[i].style.border = "black 1px solid";
-      checkAll[i].style.display = "none";
-      submitBtnCheck++;
-    }
-  });
-}
+// for (let i = 0; i < inputAll.length; i++) {
+//   inputAll[i].addEventListener("input", function () {
+//     if (!RegexAll[i].test(inputAll[i].value)) {
+//       inputAll[i].style.border = "red 1px solid";
+//       checkAll[i].style.display = "block";
+//     } else {
+//       inputAll[i].style.border = "black 1px solid";
+//       checkAll[i].style.display = "none";
+//       submitBtnCheck++;
+//     }
+//   });
+// }
 //驗證radio按鈕是否有按 以及資料都是否填寫
 inputSubmit.addEventListener("click", function () {
   for (let i = 0; i < formFurniture.length; i++) {
@@ -61,6 +65,16 @@ inputSubmit.addEventListener("click", function () {
   } else {
     windowText.innerHTML = "成功送出!!";
     windowClose.style.display = "block";
+  }
+  for (let i = 0; i < inputAll.length; i++) {
+    if (!RegexAll[i].test(inputAll[i].value)) {
+      inputAll[i].style.border = "red 1px solid";
+      checkAll[i].style.display = "block";
+    } else {
+      inputAll[i].style.border = "black 1px solid";
+      checkAll[i].style.display = "none";
+      submitBtnCheck++;
+    }
   }
 });
 
@@ -84,4 +98,13 @@ topCase.addEventListener("click", function () {
 });
 onlyForm.addEventListener("submit", function (e) {
   e.preventDefault;
+});
+
+window.addEventListener("load", function () {
+  setInterval(() => {
+    if (bannerTxtNum < bannerTxtArr.length) {
+      bannerTxt.innerHTML += bannerTxtArr[bannerTxtNum];
+      bannerTxtNum++;
+    }
+  }, 300);
 });

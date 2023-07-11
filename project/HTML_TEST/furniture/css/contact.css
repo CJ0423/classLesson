@@ -6,9 +6,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-header {
-  overflow: visible;
-}
 header .header-all {
   width: 100%;
   position: fixed;
@@ -19,14 +16,20 @@ header .header-all {
 header .header-all .header-control-width {
   width: 1280px;
   margin: 0 auto;
+  overflow: visible;
   padding-left: 150px;
   padding-right: 200px;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 100;
   transition: 0.5s;
+}
+header .header-all .header-control-width .header-left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 header .header-all .header-control-width .header-left img {
   margin-top: 10px;
@@ -44,25 +47,17 @@ header .header-all .header-control-width .header-right {
 header .header-all .header-control-width .header-right div {
   padding-bottom: 8px;
 }
-header .header-all .header-control-width .header-right div .first-page:hover::before {
-  height: 2px;
-  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
-}
-header .header-all .header-control-width .header-right div .home {
-  font-size: 16px;
-  margin-left: 3px;
-}
-header .header-all .header-control-width .header-right div a {
+header .header-all .header-control-width .header-right div .first-page {
   color: white;
   margin: 0 10px;
   text-decoration: none;
   padding-bottom: 3px;
   transition: 0.2s;
 }
-header .header-all .header-control-width .header-right div a:hover {
+header .header-all .header-control-width .header-right div .first-page:hover {
   color: rgb(197, 188, 188);
 }
-header .header-all .header-control-width .header-right div a::before {
+header .header-all .header-control-width .header-right div .first-page::before {
   content: "";
   position: absolute;
   bottom: 10px; /* 调整下划线的位置 */
@@ -71,7 +66,34 @@ header .header-all .header-control-width .header-right div a::before {
   background-color: white;
   transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
 }
-header .header-all .header-control-width .header-right div a:hover::before {
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
+}
+header .header-all .header-control-width .header-right div .line-design {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div .line-design:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div .line-design::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div .line-design:hover::before {
   height: 2px;
   width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
 }
@@ -87,6 +109,11 @@ header .header-all .header-control-width .header-right .all-case .top-case {
   color: white;
   text-decoration: none;
   margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .fa-solid {
+  font-size: 10px;
+  vertical-align: center;
+  animation: caseMove 2s infinite;
 }
 header .header-all .header-control-width .header-right .all-case .under-case {
   display: none;
@@ -110,45 +137,38 @@ header .header-all .header-control-width .header-right .all-case .under-case a {
 header .header-all .header-control-width .header-right .all-case .under-case a:hover {
   color: rgba(223, 218, 218, 0.928);
 }
-header .banner {
-  width: 100%;
+header .contact-banner {
   height: 100vh;
-}
-header .banner .banner-pic {
-  position: relative;
   width: 100%;
-  height: 60%;
-  overflow: hidden;
-}
-header .banner .banner-pic img {
-  position: absolute;
-  top: -55%;
-  width: 100%;
-}
-header .banner .contact-us {
-  width: 100%;
-  height: 40%;
+  background-image: url("../../furniture_img/contactUsPic1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: linear-gradient(-180deg, rgb(206, 197, 186), rgb(255, 255, 255));
 }
-header .banner .contact-us .contact-us-t {
-  display: inline-block;
-  transition: 0.3s;
-}
-header .banner .contact-us h2 {
-  font-size: 31px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-header .banner .contact-us h2 span {
-  letter-spacing: 4px;
+header .contact-banner .banner-txt {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  letter-spacing: 3px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
+main {
+  padding-bottom: 50px;
+}
 main .form-all {
   width: 80%;
   height: 100vh;
+  padding-top: 50px;
   margin: 0 auto;
   transition: 0.3s;
 }
@@ -162,7 +182,11 @@ main .form-all .form-btn {
 main .form-all .form-btn li {
   margin-right: 30px;
 }
-main .form-all .input-name {
+main .form-all .span-name {
+  position: relative;
+  margin-bottom: 50px;
+}
+main .form-all .span-name .input-name {
   margin: 0 auto;
   display: block;
   width: 80%;
@@ -172,6 +196,27 @@ main .form-all .input-name {
   padding-bottom: 20px;
   outline: none;
   transition: 0.3s;
+  border-top: 1px black solid;
+  border-bottom: 1px transparent solid;
+  border-left: 1px black solid;
+  border-right: 1px transparent solid;
+  position: relative;
+  display: block;
+}
+main .form-all .span-name .input-name:hover {
+  border-right: 1px black solid;
+}
+main .form-all .span-name::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 10%;
+  border-bottom: 1px black solid;
+  transition: 0.6s;
+}
+main .form-all .span-name:hover::before {
+  width: 80%;
 }
 main .form-all .check-name,
 main .form-all .check-mail,
@@ -181,7 +226,11 @@ main .form-all .check-phone {
   color: red;
   display: none;
 }
-main .form-all .input-phone {
+main .form-all .span-phone {
+  position: relative;
+  cursor: text;
+}
+main .form-all .span-phone .input-phone {
   margin: 0 auto;
   display: block;
   width: 80%;
@@ -190,8 +239,33 @@ main .form-all .input-phone {
   padding-top: 20px;
   padding-bottom: 20px;
   outline: none;
-  margin-top: 50px;
   transition: 0.3s;
+  margin-top: 50px;
+  border-top: 1px black solid;
+  border-bottom: 1px transparent solid;
+  border-left: 1px black solid;
+  border-right: 1px transparent solid;
+  position: relative;
+  display: block;
+}
+main .form-all .span-phone .input-phone:hover {
+  border-right: 1px black solid;
+}
+main .form-all .span-phone:hover .input-phone {
+  border-right: 1px black solid;
+}
+main .form-all .span-phone::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+  position: absolute;
+  transition: 0.4s;
+  border-bottom: 1px black solid;
+}
+main .form-all .span-phone:hover::after {
+  width: 80%;
 }
 main .form-all .input-mail {
   margin: 0 auto;
@@ -204,6 +278,10 @@ main .form-all .input-mail {
   outline: none;
   margin-top: 50px;
   transition: 0.3s;
+  border-top: 1px transparent solid;
+  border-bottom: 1px transparent solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
 }
 main .form-all .input-note {
   margin: 0 auto;
@@ -217,6 +295,10 @@ main .form-all .input-note {
   margin-top: 50px;
   margin-bottom: 50px;
   transition: 0.3s;
+  border-top: 1px transparent solid;
+  border-bottom: 1px transparent solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
 }
 main .form-all .input-submit {
   cursor: pointer;

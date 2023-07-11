@@ -121,10 +121,10 @@ mapHamburger.addEventListener("click", function () {
     iframe.style.display = "block";
     trafficInformationText.style.display = "flex";
     contactUs.style.display = "flex";
-    allTrafficInformation.style.background =
-      "linear-gradient(179deg, rgb(49, 48, 48), rgb(255, 255, 255))";
+    // allTrafficInformation.style.background =
+    //   "linear-gradient(179deg, rgb(49, 48, 48), rgb(255, 255, 255))";
     for (let i = 0; i < forChangeToBlack.length; i++) {
-      forChangeToBlack[i].style.borderBottom = "1px black solid";
+      forChangeToBlack[i].style.borderBottom = "1px white solid";
     }
   } else {
     iframe.style.display = "none";

@@ -117,14 +117,33 @@ header {
           padding-bottom: 8px;
           // border: 1px red solid;
           .first-page {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: 0.2s;
             // border: 1px red solid;
-            i {
-              font-size: 16px;
-              margin-left: 3px;
+            &:hover {
+              color: rgb(197, 188, 188);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              // left: 70%;
+              bottom: 10px; /* 调整下划线的位置 */
+              width: 0;
+              height: 4px;
+              background-color: white;
+              transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
             }
             &:hover::before {
               height: 2px;
               width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+            // border: 1px red solid;
+            i {
+              font-size: 16px;
+              margin-left: 3px;
             }
           }
           .line-design {
@@ -875,6 +894,7 @@ main {
           .information-text-left {
             // border: 1px red solid;
             margin-right: 70px;
+            color: white;
             h3 {
               font-size: 30px;
               font-weight: 700;
@@ -899,6 +919,7 @@ main {
           //   justify-content: center;
           align-items: center;
           flex-direction: column;
+          color: white;
           h3 {
             font-size: 30px;
             font-weight: 700;
@@ -924,16 +945,19 @@ main {
           height: 80px;
           //   border: 1px red solid;
           padding-top: 20px;
+          color: white;
           a {
             position: relative;
             border: 1px black solid;
             text-decoration: none;
+            background-color: white;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            color: black;
-            font-size: 18px;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: bold;
             letter-spacing: 6px;
-            padding: 17px 27px 17px 27px;
-            border-radius: 5px;
+            padding: 20px 27px 17px 27px;
+            border-radius: 20px;
             transition: color 0.2s ease-in-out,
               background-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
             &:hover {
@@ -961,6 +985,7 @@ main {
           display: flex;
           flex-direction: column;
           margin-top: 50px;
+          color: white;
           cursor: pointer;
           .forChangeToBlack {
             animation: 2s moveUp infinite;

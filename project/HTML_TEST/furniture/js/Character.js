@@ -17,11 +17,14 @@ let showTxtArr = [
   "t",
   "e",
   "r",
-  "人",
-  "物",
-  "介",
-  "紹",
+  "設",
+  "計",
+  "師",
+  "們",
 ];
+let homeShowAll = document.querySelector(".home-show-all");
+let designersTxt = document.querySelector(".designers-txt");
+let designersTxtArr = ["D", "e", "s", "i", "g", "n", "e", "r", "s"];
 let allhuman = document.querySelectorAll(".allhuman");
 let human1 = document.querySelector(".human1");
 let human2 = document.querySelector(".human2");
@@ -36,14 +39,17 @@ let bannerTop = document.querySelector(".banner-top");
 let viewMore = document.querySelector(".view-more");
 let viewMore2 = document.querySelector(".view-more2");
 let viewMore3 = document.querySelector(".view-more3");
+let viewMore4 = document.querySelector(".view-more4");
 
 let janeClose = document.querySelector(".jane-close");
 let justinClose = document.querySelector(".justin-close");
 let nelsonClose = document.querySelector(".nelson-close");
+let dandyClose = document.querySelector(".dandy-close");
 
 let janeIntroduce = document.querySelector(".jane-introduce");
 let justinIntroduce = document.querySelector(".justin-introduce");
 let nelsonIntroduce = document.querySelector(".nelson-introduce");
+let dandyIntroduce = document.querySelector(".dandy-introduce");
 
 let close1 = document.querySelectorAll(".close1");
 let startAll = document.querySelectorAll(".start-all");
@@ -73,6 +79,13 @@ let nelsonPic4 = document.querySelector(".nelson-pic4");
 let nelsonBtn1 = document.querySelector(".nelson-btn1");
 let nelsonBtn2 = document.querySelector(".nelson-btn2");
 // ------------------------------------
+let dandyPic1 = document.querySelector(".dandy-pic1");
+let dandyPic2 = document.querySelector(".dandy-pic2");
+let dandyPic3 = document.querySelector(".dandy-pic3");
+let dandyPic4 = document.querySelector(".dandy-pic4");
+let dandyBtn1 = document.querySelector(".dandy-btn1");
+let dandyBtn2 = document.querySelector(".dandy-btn2");
+// -------------------------------------
 topCase.addEventListener("click", function () {
   underCaseTrueOrFalse = !underCaseTrueOrFalse;
   if (underCaseTrueOrFalse) {
@@ -83,6 +96,9 @@ topCase.addEventListener("click", function () {
 });
 let header = document.querySelector("header");
 // --------------------------------------------
+viewMore4.addEventListener("click", function () {
+  dandyIntroduce.style.display = "flex";
+});
 viewMore3.addEventListener("click", function () {
   nelsonIntroduce.style.display = "flex";
 });
@@ -100,6 +116,30 @@ justinClose.addEventListener("click", function () {
 });
 nelsonClose.addEventListener("click", function () {
   nelsonIntroduce.style.display = "none";
+});
+dandyClose.addEventListener("click", function () {
+  dandyIntroduce.style.display = "none";
+});
+// ----------------------------
+dandyBtn1.addEventListener("click", function () {
+  dandyPic1.style.display = "flex";
+  dandyPic2.style.display = "flex";
+  dandyPic3.style.display = "none";
+  dandyPic4.style.display = "none";
+  dandyBtn1.style.color = "black";
+  dandyBtn1.style.backgroundColor = "white";
+  dandyBtn2.style.color = "white";
+  dandyBtn2.style.backgroundColor = "black";
+});
+dandyBtn2.addEventListener("click", function () {
+  dandyPic1.style.display = "none";
+  dandyPic2.style.display = "none";
+  dandyPic3.style.display = "flex";
+  dandyPic4.style.display = "flex";
+  dandyBtn1.style.color = "white";
+  dandyBtn1.style.backgroundColor = "black";
+  dandyBtn2.style.color = "black";
+  dandyBtn2.style.backgroundColor = "white";
 });
 // ----------------------------
 nelsonBtn1.addEventListener("click", function () {
@@ -193,6 +233,7 @@ window.addEventListener("load", function () {
           startShow.style.display = "none";
           header.style.display = "flex";
           bannerTeam.style.display = "flex";
+          homeShowAll.style.display = "flex";
         }, 3000); // 1秒後執行關閉操作
       }
     }, 300);
@@ -205,3 +246,16 @@ bannerTeam.addEventListener("mouseover", function () {
     bannerTop.style.opacity = "1";
   }, 1000);
 });
+
+let countDesignersTxt = 0;
+
+setInterval(() => {
+  if (countDesignersTxt < designersTxtArr.length) {
+    designersTxt.innerHTML += designersTxtArr[countDesignersTxt];
+  }
+  countDesignersTxt++;
+}, 500);
+setInterval(() => {
+  countDesignersTxt = 0;
+  designersTxt.innerHTML = "";
+}, 5500);

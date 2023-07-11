@@ -112,13 +112,32 @@ header .header-all .header-control-width .header-right {
 header .header-all .header-control-width .header-right div {
   padding-bottom: 8px;
 }
-header .header-all .header-control-width .header-right div .first-page i {
-  font-size: 16px;
-  margin-left: 3px;
+header .header-all .header-control-width .header-right div .first-page {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div .first-page:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div .first-page::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
 }
 header .header-all .header-control-width .header-right div .first-page:hover::before {
   height: 2px;
   width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
 }
 header .header-all .header-control-width .header-right div .line-design {
   color: white;
@@ -823,6 +842,7 @@ main .posts-all .all-traffic-information .traffic-width-control .traffic-informa
 }
 main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left {
   margin-right: 70px;
+  color: white;
 }
 main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left h3 {
   font-size: 30px;
@@ -844,6 +864,7 @@ main .posts-all .all-traffic-information .traffic-width-control .information-tex
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 main .posts-all .all-traffic-information .traffic-width-control .information-text-right h3 {
   font-size: 30px;
@@ -868,17 +889,20 @@ main .posts-all .all-traffic-information .traffic-width-control .contact-us {
   margin-top: 20px;
   height: 80px;
   padding-top: 20px;
+  color: white;
 }
 main .posts-all .all-traffic-information .traffic-width-control .contact-us a {
   position: relative;
   border: 1px black solid;
   text-decoration: none;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  color: black;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
   letter-spacing: 6px;
-  padding: 17px 27px 17px 27px;
-  border-radius: 5px;
+  padding: 20px 27px 17px 27px;
+  border-radius: 20px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
 }
 main .posts-all .all-traffic-information .traffic-width-control .contact-us a:hover {
@@ -902,6 +926,7 @@ main .posts-all .all-traffic-information .traffic-width-control .hamburger-all {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  color: white;
   cursor: pointer;
 }
 main .posts-all .all-traffic-information .traffic-width-control .hamburger-all .forChangeToBlack {
