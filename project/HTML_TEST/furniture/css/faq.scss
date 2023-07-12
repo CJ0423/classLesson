@@ -2,4 +2,221 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  // background-color: rgb(153, 153, 153);
+  overflow: visible;
+  .header-all {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    color: white;
+    z-index: 100;
+
+    // border: 1px red solid;
+    .header-control-width {
+      width: 1280px;
+
+      margin: 0 auto;
+      // border: 1px red solid;
+      padding-left: 150px;
+      padding-right: 150px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: 0.5s;
+      .header-left {
+        margin-bottom: 10px;
+        img {
+          margin-top: 10px;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          // border: 1px red solid;
+          width: 100px;
+        }
+      }
+      .header-right {
+        display: flex;
+        // border: 1px red solid;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        text-shadow: #666 2px 1px 5px;
+        div {
+          padding-bottom: 8px;
+          // border: 1px red solid;
+          .first-page {
+            &:hover::before {
+              height: 2px;
+              width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+            i {
+              font-size: 16px;
+              margin-left: 3px;
+            }
+          }
+          a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: 0.2s;
+            // border: 1px red solid;
+            &:hover {
+              color: rgb(197, 188, 188);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              // left: 70%;
+              bottom: 10px; /* 调整下划线的位置 */
+              width: 0;
+              height: 4px;
+              background-color: white;
+              transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+            }
+            &:hover::before {
+              height: 2px;
+              width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+          }
+        }
+        .human-icon,
+        .home {
+          font-size: 10px;
+        }
+        .all-case {
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          .under-case {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            overflow: white-space;
+            white-space: nowrap;
+            z-index: 101;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
+            a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
+              overflow: white-space;
+              white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // border: 2px red solid;
+    background-image: url(../../furniture_img/faq.banner4.jpg);
+    background-size: contain, contain;
+    background-repeat: no-repeat, repeat;
+    background-position: top left, center;
+    background-color: rgb(49, 48, 48);
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    padding-left: 50px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    .faq {
+      // padding-left: 80px;
+      opacity: 0;
+      transition: 1s;
+      animation: bling 7s forwards;
+    }
+    .faq-chinese {
+      font-size: 20px;
+    }
+  }
+}
+
+.main1 {
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px;
+  // border: 10px red solid;
+  background-color: rgb(49, 48, 48);
+  .main-control-width {
+    width: 80%;
+    height: 100%;
+    // border-top: 1px white dotted;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .line-show {
+      width: 100%;
+      border-top: 1px white dotted;
+      transition: 0.3s;
+      margin-bottom: 50px;
+    }
+    .question1 {
+      color: white;
+      font-size: 28px;
+      letter-spacing: 3px;
+      border-bottom: 1px white dotted;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 15px;
+      .question1-drop {
+        cursor: pointer;
+        border-top: 10px black solid;
+        // border-bottom: 20px blue solid;
+        border-left: 10px transparent solid;
+        border-right: 10px transparent solid;
+      }
+    }
+  }
+}
+@keyframes bling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes widthLong {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

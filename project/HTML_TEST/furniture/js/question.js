@@ -308,6 +308,7 @@ sendBtn.addEventListener("click", function () {
       score.innerHTML = `總共獲得${paperScore1}分哦!!<div>您對家具的喜愛程度屬於非常喜歡!</div>`;
       showResult.style.display = "flex";
     }
+    document.getElementById("myForm").reset();
   } else {
     score.innerHTML = `有問題尚未填寫完成哦!!`;
     showResult.style.display = "flex";
@@ -383,3 +384,11 @@ questionSpace.addEventListener("click", function () {
 xMark.addEventListener("click", function () {
   showResult.style.display = "none";
 });
+
+// window.addEventListener("load", function () {
+//   this.document
+//     .getElementById("btnSend")
+//     .addEventListener("click", function () {
+//       document.getElementById("myForm").submit();
+//     });
+// });
