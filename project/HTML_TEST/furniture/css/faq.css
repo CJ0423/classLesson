@@ -145,8 +145,8 @@ header article .faq-chinese {
 
 .main1 {
   width: 100%;
-  height: 100vh;
   padding-top: 20px;
+  padding-bottom: 50px;
   background-color: rgb(49, 48, 48);
 }
 .main1 .main-control-width {
@@ -170,6 +170,7 @@ header article .faq-chinese {
   font-size: 28px;
   letter-spacing: 3px;
   border-bottom: 1px white dotted;
+  padding-bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -178,9 +179,384 @@ header article .faq-chinese {
 }
 .main1 .main-control-width .question1 .question1-drop {
   cursor: pointer;
-  border-top: 10px black solid;
+  border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question1-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question2 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question2 .question2-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question2-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question3 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question3 .question3-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question3-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question4 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question4 .question4-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question4-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question5 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question5 .question5-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question5-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question6 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question6 .question6-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question6-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question7 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question7 .question7-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+}
+.main1 .main-control-width .question7-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.for-black-bkc {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(49, 48, 48);
+}
+
+.bottom-pic-all {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../furniture_img/faq.banner5.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(49, 48, 48);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: white;
+}
+.bottom-pic-all .other-question {
+  width: 50%;
+  height: 8%;
+  border-radius: 20px;
+  padding-left: 10px;
+  transition: 1s;
+}
+.bottom-pic-all .other-question-run {
+  position: relative;
+}
+.bottom-pic-all .other-question-run .dot {
+  color: transparent;
+}
+.bottom-pic-all .other-question-run::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  border-right: 1px white solid;
+  animation: shine 2s infinite;
+}
+.bottom-pic-all .send {
+  border: 1px white solid;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.bottom-pic-all .send:hover {
+  background-color: rgb(154, 152, 152);
+}
+
+.pass-msg {
+  width: 60%;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 60vh;
+  border: 1px black solid;
+  transition: 0.4s;
+}
+.pass-msg .close-msg {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: black;
+  border: 1px black solid;
+  background-color: white;
+}
+.pass-msg .msg-txt {
+  width: 100%;
+  height: 80%;
+  border: 1px black solid;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.pass-msg .msg-txt .expect {
+  display: flex;
+  transition: 1s;
+}
+.pass-msg .msg-txt .letter {
+  transition: 1s;
+  position: relative;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #cec5ba;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 @keyframes bling {
@@ -189,6 +565,17 @@ header article .faq-chinese {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes shine {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes widthLong {
