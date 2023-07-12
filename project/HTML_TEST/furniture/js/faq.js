@@ -242,16 +242,22 @@ question7Drop.addEventListener("click", function () {
 });
 // -----------------------------------------
 send.addEventListener("click", function () {
-  otherQuestion.style.width = "0";
-  setTimeout(() => {
-    otherQuestion.style.transform = "translateY(-150px)";
-  }, 300);
-  setTimeout(() => {
-    otherQuestion.style.opacity = "0";
-  }, 600);
-  setTimeout(() => {
-    passMsg.style.display = "flex";
-  }, 1200);
+  if (!otherQuestion.value.trim() == "") {
+    otherQuestion.value = "";
+    otherQuestion.style.width = "0";
+
+    setTimeout(() => {
+      otherQuestion.style.transform = "translateY(-150px)";
+    }, 300);
+    setTimeout(() => {
+      otherQuestion.style.opacity = "0";
+    }, 600);
+    setTimeout(() => {
+      passMsg.style.display = "flex";
+    }, 1200);
+  } else {
+    alert("內容不可為空");
+  }
 });
 
 closeMsg.addEventListener("click", function () {
@@ -264,6 +270,12 @@ closeMsg.addEventListener("click", function () {
     otherQuestion.style.opacity = "1";
     otherQuestion.style.transform = "translateY(0px)";
   }, 500);
+  setTimeout(() => {
+    passMsg.style.display = "none";
+    expect.style.display = "flex";
+    letter.style.display = "none";
+    passMsg.style.transform = "translateX(-50%) translateY(-50%)";
+  }, 800);
 });
 
 setInterval(() => {

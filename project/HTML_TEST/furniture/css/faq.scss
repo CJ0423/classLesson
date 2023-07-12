@@ -199,6 +199,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question1-ans {
@@ -230,6 +231,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question2-ans {
@@ -261,6 +263,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question3-ans {
@@ -292,6 +295,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question4-ans {
@@ -323,6 +327,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question5-ans {
@@ -354,6 +359,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question6-ans {
@@ -386,6 +392,7 @@ header {
         // border-bottom: 20px blue solid;
         border-left: 10px transparent solid;
         border-right: 10px transparent solid;
+        animation: arrMove 1.2s infinite;
       }
     }
     .question7-ans {
@@ -453,6 +460,7 @@ header {
     background-color: white;
     color: black;
     font-weight: bold;
+    letter-spacing: 1px;
     &:hover {
       background-color: rgb(154, 152, 152);
     }
@@ -649,5 +657,17 @@ footer {
   }
   100% {
     width: 100%;
+  }
+}
+
+@keyframes arrMove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

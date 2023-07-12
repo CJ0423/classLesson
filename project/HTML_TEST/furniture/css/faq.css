@@ -182,6 +182,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question1-ans {
   color: white;
@@ -211,6 +212,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question2-ans {
   color: white;
@@ -240,6 +242,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question3-ans {
   color: white;
@@ -269,6 +272,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question4-ans {
   color: white;
@@ -298,6 +302,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question5-ans {
   color: white;
@@ -327,6 +332,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question6-ans {
   color: white;
@@ -356,6 +362,7 @@ header article .faq-chinese {
   border-top: 10px white solid;
   border-left: 10px transparent solid;
   border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
 }
 .main1 .main-control-width .question7-ans {
   color: white;
@@ -420,6 +427,7 @@ header article .faq-chinese {
   background-color: white;
   color: black;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .bottom-pic-all .send:hover {
   background-color: rgb(154, 152, 152);
@@ -587,5 +595,16 @@ footer .footer-width-control .last-text {
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes arrMove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }/*# sourceMappingURL=faq.css.map */
