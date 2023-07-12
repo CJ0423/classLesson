@@ -85,6 +85,8 @@ let dandyPic3 = document.querySelector(".dandy-pic3");
 let dandyPic4 = document.querySelector(".dandy-pic4");
 let dandyBtn1 = document.querySelector(".dandy-btn1");
 let dandyBtn2 = document.querySelector(".dandy-btn2");
+
+let footerWidthControl = document.querySelector(".footer-width-control");
 // -------------------------------------
 topCase.addEventListener("click", function () {
   underCaseTrueOrFalse = !underCaseTrueOrFalse;
@@ -234,6 +236,7 @@ window.addEventListener("load", function () {
           header.style.display = "flex";
           bannerTeam.style.display = "flex";
           homeShowAll.style.display = "flex";
+          footerWidthControl.style.display = "flex";
         }, 3000); // 1秒後執行關閉操作
       }
     }, 300);
@@ -248,7 +251,7 @@ bannerTeam.addEventListener("mouseover", function () {
 });
 
 let countDesignersTxt = 0;
-
+designersTxt.innerHTML = `<span>The </span>`;
 setInterval(() => {
   if (countDesignersTxt < designersTxtArr.length) {
     designersTxt.innerHTML += designersTxtArr[countDesignersTxt];
@@ -257,5 +260,5 @@ setInterval(() => {
 }, 500);
 setInterval(() => {
   countDesignersTxt = 0;
-  designersTxt.innerHTML = "";
-}, 5500);
+  designersTxt.innerHTML = "<span>The </span>";
+}, 4500);

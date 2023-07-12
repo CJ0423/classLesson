@@ -35,23 +35,28 @@ let bannerTxt = document.querySelector(".banner-txt");
 let bannerTxtArr = ["C", "o", "n", "t", "a", "c", "t", "U", "s"];
 let bannerTxtNum = 0;
 
+let minute = document.querySelector(".minute");
+let second = document.querySelector(".second");
+let minuteNum = 20;
+let secondNum = 12;
+
 let inputAll = [inputName, inputPhone, inputMail];
 let checkAll = [checkName, checkPhone, checkMail];
 let RegexAll = [checkNameRegex, checkPhoneRegex, checkMailRegex];
-//姓名 手機 信箱正則
-// for (let i = 0; i < inputAll.length; i++) {
-//   inputAll[i].addEventListener("input", function () {
-//     if (!RegexAll[i].test(inputAll[i].value)) {
-//       inputAll[i].style.border = "red 1px solid";
-//       checkAll[i].style.display = "block";
-//     } else {
-//       inputAll[i].style.border = "black 1px solid";
-//       checkAll[i].style.display = "none";
-//       submitBtnCheck++;
-//     }
-//   });
-// }
-//驗證radio按鈕是否有按 以及資料都是否填寫
+// 姓名 手機 信箱正則
+for (let i = 0; i < inputAll.length; i++) {
+  inputAll[i].addEventListener("input", function () {
+    if (!RegexAll[i].test(inputAll[i].value)) {
+      inputAll[i].style.border = "red 1px solid";
+      checkAll[i].style.display = "block";
+    } else {
+      inputAll[i].style.border = "black 1px solid";
+      checkAll[i].style.display = "none";
+      submitBtnCheck++;
+    }
+  });
+}
+// 驗證radio按鈕是否有按 以及資料都是否填寫
 inputSubmit.addEventListener("click", function () {
   for (let i = 0; i < formFurniture.length; i++) {
     if (formFurniture[i].checked) {
@@ -65,15 +70,11 @@ inputSubmit.addEventListener("click", function () {
   } else {
     windowText.innerHTML = "成功送出!!";
     windowClose.style.display = "block";
-  }
-  for (let i = 0; i < inputAll.length; i++) {
-    if (!RegexAll[i].test(inputAll[i].value)) {
-      inputAll[i].style.border = "red 1px solid";
-      checkAll[i].style.display = "block";
-    } else {
-      inputAll[i].style.border = "black 1px solid";
-      checkAll[i].style.display = "none";
-      submitBtnCheck++;
+    for (let i = 0; i < inputAll.length; i++) {
+      inputAll[i].value = "";
+    }
+    for (let i = 0; i < formFurniture.length; i++) {
+      formFurniture[i].checked = false;
     }
   }
 });
@@ -108,3 +109,17 @@ window.addEventListener("load", function () {
     }
   }, 300);
 });
+
+setInterval(() => {
+  secondNum++;
+  if (secondNum >= 60) {
+    secondNum = 0;
+    minuteNum++;
+    minute.innerHTML = minuteNum;
+  }
+  if (secondNum < 10) {
+    second.innerHTML = `0${secondNum}`;
+  } else {
+    second.innerHTML = secondNum;
+  }
+}, 1000);

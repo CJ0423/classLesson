@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
         i++;
       } else {
         clearInterval(interval);
-        element.innerHTML = "";
+        element.innerHTML = '<span class="dot">.</span>';
         callback();
       }
     }, 300);

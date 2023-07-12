@@ -182,6 +182,13 @@ main .form-all .form-btn {
 main .form-all .form-btn li {
   margin-right: 30px;
 }
+main .form-all .form-btn .time {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #666;
+  margin-left: auto;
+  margin-top: 4px;
+}
 main .form-all .span-name {
   position: relative;
   margin-bottom: 50px;
@@ -267,7 +274,11 @@ main .form-all .span-phone::after {
 main .form-all .span-phone:hover::after {
   width: 80%;
 }
-main .form-all .input-mail {
+main .form-all .span-mail {
+  position: relative;
+  cursor: text;
+}
+main .form-all .span-mail .input-mail {
   margin: 0 auto;
   display: block;
   width: 80%;
@@ -276,14 +287,39 @@ main .form-all .input-mail {
   padding-top: 20px;
   padding-bottom: 20px;
   outline: none;
-  margin-top: 50px;
   transition: 0.3s;
-  border-top: 1px transparent solid;
+  margin-top: 50px;
+  border-top: 1px black solid;
   border-bottom: 1px transparent solid;
   border-left: 1px black solid;
+  border-right: 1px transparent solid;
+  position: relative;
+  display: block;
+}
+main .form-all .span-mail .input-mail:hover {
   border-right: 1px black solid;
 }
-main .form-all .input-note {
+main .form-all .span-mail:hover .input-mail {
+  border-right: 1px black solid;
+}
+main .form-all .span-mail::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+  position: absolute;
+  transition: 0.4s;
+  border-bottom: 1px black solid;
+}
+main .form-all .span-mail:hover::after {
+  width: 80%;
+}
+main .form-all .span-note {
+  position: relative;
+  cursor: text;
+}
+main .form-all .span-note .input-note {
   margin: 0 auto;
   display: block;
   width: 80%;
@@ -292,13 +328,33 @@ main .form-all .input-note {
   padding-top: 20px;
   padding-bottom: 20px;
   outline: none;
-  margin-top: 50px;
-  margin-bottom: 50px;
   transition: 0.3s;
-  border-top: 1px transparent solid;
+  margin-top: 50px;
+  border-top: 1px black solid;
   border-bottom: 1px transparent solid;
   border-left: 1px black solid;
+  border-right: 1px transparent solid;
+  position: relative;
+  display: block;
+}
+main .form-all .span-note .input-note:hover {
   border-right: 1px black solid;
+}
+main .form-all .span-note:hover .input-note {
+  border-right: 1px black solid;
+}
+main .form-all .span-note::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+  position: absolute;
+  transition: 0.4s;
+  border-bottom: 1px black solid;
+}
+main .form-all .span-note:hover::after {
+  width: 80%;
 }
 main .form-all .input-submit {
   cursor: pointer;
@@ -307,12 +363,19 @@ main .form-all .input-submit {
   width: 80%;
   height: 10vh;
   padding-top: 10px;
+  margin-top: 50px;
   padding-bottom: 10px;
   background-color: black;
   color: white;
   font-size: 18px;
   border-radius: 20px;
   transition: 0.3s;
+  font-weight: bold;
+}
+main .form-all .input-submit:hover {
+  font-size: 16px;
+  background-color: rgb(255, 254, 254);
+  color: black;
 }
 
 .window {
