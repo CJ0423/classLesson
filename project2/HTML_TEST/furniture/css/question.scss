@@ -1,0 +1,771 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  .header-all {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    color: white;
+    z-index: 100;
+    .header-control-width {
+      width: 1280px;
+      // height: 40vh;
+      margin: 0 auto;
+      overflow: visible;
+      //   border: 1px red solid;
+      padding-left: 150px;
+      padding-right: 150px;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      transition: 0.5s;
+      .header-left {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        img {
+          margin-top: 10px;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          // border: 1px red solid;
+          width: 100px;
+        }
+      }
+      .header-right {
+        display: flex;
+        // border: 1px red solid;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        text-shadow: #666 2px 1px 5px;
+        div {
+          padding-bottom: 8px;
+          // border: 1px red solid;
+          .first-page {
+            // border: 1px red solid;
+            i {
+              font-size: 16px;
+              margin-left: 3px;
+            }
+            &:hover::before {
+              height: 2px;
+              width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+          }
+          .line-design {
+            // position: relative;
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: 0.2s;
+            // border: 1px red solid;
+            &:hover {
+              color: rgb(197, 188, 188);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              // left: 70%;
+              bottom: 10px; /* 调整下划线的位置 */
+              width: 0;
+              height: 4px;
+              background-color: white;
+              transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+            }
+            &:hover::before {
+              height: 2px;
+              width: 5%;
+            }
+            // .triangle {
+            //   position: absolute;
+            //   top: 2px;
+            //   left: 100%;
+            //   font-size: 2px;
+            // }
+          }
+        }
+
+        .human-icon,
+        .home {
+          font-size: 10px;
+        }
+        .all-case {
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          .under-case {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            overflow: white-space;
+            white-space: nowrap;
+            z-index: 101;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
+            a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
+              overflow: white-space;
+              white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  article {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../../furniture_img/question4.jpg);
+    // animation: shinning 3s infinite linear;
+    background-attachment: fixed;
+    // animation: 2s shinngLittle infinite;
+    transition: 0.3s;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(49, 48, 48);
+    // border: 1px red solid;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title-chinese {
+      font-size: 60px;
+      letter-spacing: 4px;
+      // animation: shinning 3s infinite linear;
+      // color: bl;
+    }
+    .title-english {
+      color: rgb(49, 48, 48);
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    &::after {
+      content: "";
+      display: flex;
+      width: 5%;
+      border: 1px rgb(49, 48, 48) solid;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: rotate(90deg);
+      transform-origin: top left;
+      animation: lineRotated 15s infinite linear;
+    }
+    &::before {
+      content: "";
+      display: flex;
+      width: 3%;
+      border: 1.6px rgb(49, 48, 48) solid;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: rotate(90deg);
+      transform-origin: top left;
+      // animation: lineRotated 4s infinite linear;
+    }
+  }
+}
+main {
+  width: 100%;
+  // height: 150vh;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: rgb(49, 48, 48);
+  //   border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .paper1 {
+    width: 80%;
+    height: 80%;
+    // border: 2px white solid;
+    padding-left: 50px;
+    padding-top: 50px;
+    display: block;
+  }
+  .question-title {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 18px;
+    font-weight: bold;
+    .question-furniture {
+      color: rgb(49, 48, 48);
+      background-color: white;
+    }
+    div {
+      border: 1px white solid;
+      padding: 10px 10px 10px 10px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: bold;
+      &:hover {
+        color: rgb(198, 197, 197);
+      }
+    }
+  }
+  .paper1 {
+    color: white;
+    font-size: 28px;
+    // border: 1px red solid;
+    .paper1-question1 {
+      border-bottom: 1px white solid;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      .paper1-option {
+        display: flex;
+        input {
+          display: none;
+        }
+        label {
+          cursor: pointer;
+          font-size: 16px;
+          letter-spacing: 3px;
+        }
+        span {
+          margin-right: 12px;
+        }
+
+        .question1-all {
+          margin-right: 10px;
+          &:hover {
+            color: rgb(171, 170, 170);
+          }
+          .all-radio {
+            &:checked + label {
+              color: red;
+            }
+          }
+        }
+      }
+      .what-material {
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        span {
+          font-size: 50px;
+        }
+      }
+    }
+    .paper1-question2 {
+      border-bottom: 1px white solid;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      .paper2-option {
+        display: flex;
+        input {
+          display: none;
+        }
+        label {
+          cursor: pointer;
+          font-size: 16px;
+          letter-spacing: 3px;
+        }
+        span {
+          margin-right: 12px;
+        }
+        .question2-all {
+          margin-right: 10px;
+          &:hover {
+            color: rgb(171, 170, 170);
+          }
+          .all-radio {
+            &:checked + label {
+              color: red;
+            }
+          }
+        }
+      }
+      .what-material {
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        span {
+          font-size: 50px;
+        }
+      }
+    }
+    .paper1-question3 {
+      border-bottom: 1px white solid;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      .paper3-option {
+        display: flex;
+        input {
+          display: none;
+        }
+        label {
+          cursor: pointer;
+          letter-spacing: 3px;
+          font-size: 16px;
+        }
+        span {
+          margin-right: 12px;
+        }
+        .question3-all {
+          margin-right: 10px;
+          &:hover {
+            color: rgb(171, 170, 170);
+          }
+          .all-radio {
+            &:checked + label {
+              color: red;
+            }
+          }
+        }
+      }
+      .what-material {
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        span {
+          font-size: 50px;
+        }
+      }
+    }
+    .paper1-question4 {
+      border-bottom: 1px white solid;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      .paper4-option {
+        display: flex;
+        input {
+          display: none;
+        }
+        label {
+          cursor: pointer;
+          font-size: 16px;
+          letter-spacing: 3px;
+        }
+        span {
+          margin-right: 12px;
+        }
+        .question4-all {
+          margin-right: 10px;
+          &:hover {
+            color: rgb(171, 170, 170);
+          }
+          .all-radio {
+            &:checked + label {
+              color: red;
+            }
+          }
+        }
+      }
+      .what-material {
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        span {
+          font-size: 50px;
+        }
+      }
+    }
+    .sendBtn {
+      border: 1px white solid;
+      display: flex;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      justify-content: center;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+}
+.welcome {
+  width: 100%;
+  height: 100vh;
+  // border: 1px red solid;
+  background-image: url(../../furniture_img/question2.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-attachment: fixed;
+  .welcome-son {
+    width: 70%;
+    height: 100%;
+    border: 2px black solid;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(49, 48, 48);
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: relative;
+    .welcome-first {
+      position: relative;
+      &::after {
+        content: "";
+        width: 20px;
+        border: 1px white solid;
+        position: absolute;
+        transform: rotate(90deg);
+        animation: shinning 2s infinite;
+        top: 50%;
+      }
+    }
+  }
+  .dot {
+    color: transparent;
+  }
+}
+.paper2 {
+  width: 80%;
+  height: 80%;
+  //   border: 2px white solid;
+  padding-left: 50px;
+  padding-top: 50px;
+  display: none;
+  color: white;
+  .paper2-question1 {
+    border-bottom: 1px white solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .paper2-option {
+      display: flex;
+      input {
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 3px;
+      }
+      span {
+        margin-right: 12px;
+      }
+      .question11-all {
+        margin-right: 10px;
+        &:hover {
+          color: rgb(171, 170, 170);
+        }
+        .all-radio {
+          &:checked + label {
+            color: red;
+          }
+        }
+      }
+    }
+    .what-material {
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+  .paper1-question2 {
+    border-bottom: 1px white solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .paper2-option {
+      display: flex;
+      input {
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 3px;
+      }
+      span {
+        margin-right: 12px;
+      }
+      .question2-all {
+        margin-right: 10px;
+        &:hover {
+          color: rgb(171, 170, 170);
+        }
+        .all-radio {
+          &:checked + label {
+            color: red;
+          }
+        }
+      }
+    }
+    .what-material {
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+  .paper1-question3 {
+    border-bottom: 1px white solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .paper3-option {
+      display: flex;
+      input {
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-size: 16px;
+      }
+      span {
+        margin-right: 12px;
+      }
+      .question3-all {
+        margin-right: 10px;
+        &:hover {
+          color: rgb(171, 170, 170);
+        }
+        .all-radio {
+          &:checked + label {
+            color: red;
+          }
+        }
+      }
+    }
+    .what-material {
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+  .paper1-question4 {
+    border-bottom: 1px white solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .paper4-option {
+      display: flex;
+      input {
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 3px;
+      }
+      span {
+        margin-right: 12px;
+      }
+      .question4-all {
+        margin-right: 10px;
+        &:hover {
+          color: rgb(171, 170, 170);
+        }
+        .all-radio {
+          &:checked + label {
+            color: red;
+          }
+        }
+      }
+    }
+    .what-material {
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+  .paper2-sendBtn {
+    border: 1px white solid;
+    display: flex;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+  }
+}
+.show-result {
+  position: fixed;
+  border: 2px black solid;
+  border-radius: 20px;
+  width: 60%;
+  height: 50%;
+  top: 30%;
+  left: 20%;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  .x-mark {
+    display: flex;
+    justify-content: flex-end;
+    height: 20%;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-bottom: 1px black dotted;
+  }
+  .score {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    letter-spacing: 4px;
+    font-size: 20px;
+  }
+  //   div {
+  //     border: 1px red solid;
+  //   }
+}
+footer {
+  width: 100%;
+  .footer-width-control {
+    // padding-left: 120px;
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #cec5ba;
+    // background-image: url(../../furniture_img/Group\ 3.svg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: -30px;
+    // border: 1px red solid;
+    .footer-all {
+      display: flex;
+      //   border: 1px red solid;
+      color: #423e44;
+      .footer-left {
+        // border: 1px red solid;
+        margin-right: 80px;
+        line-height: 30px;
+        padding-right: 15px;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 300;
+          letter-spacing: 4px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s;
+          &:hover {
+            color: #524d55;
+          }
+        }
+      }
+      .footer-middle {
+        // border: 1px red solid;
+        margin-right: 80px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 300;
+          letter-spacing: 4px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s;
+          &:hover {
+            color: #524d55;
+          }
+        }
+        div {
+          font-weight: 300;
+          letter-spacing: 4px;
+        }
+      }
+      .footer-right {
+        // border: 1px red solid;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        div {
+          font-weight: 300;
+          letter-spacing: 3px;
+        }
+      }
+    }
+    .last-text {
+      position: absolute;
+      top: 240px;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}
+@keyframes shinning {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shinngLittle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lineRotated {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}

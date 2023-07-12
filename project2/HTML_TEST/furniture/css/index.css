@@ -1,0 +1,1278 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.count-to-hundred {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  background-color: rgb(42, 58, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.sign-in-program {
+  width: 100%;
+  display: none;
+  position: relative;
+  background-image: url("../../furniture_img/sign-in-pic2.jpg"), url("../../furniture_img/sign-in-pic-3.jpg"), url("../../furniture_img/sign-in-pic-4.jpg");
+  background-position: left, top 50% left 60%, right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, contain;
+}
+.sign-in-program .sign-in-border {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.sign-in-program .sign-in-border .send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px white solid;
+  background-color: black;
+  color: white;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.sign-in-program .sign-in-border .sign-in-title {
+  font-size: 30px;
+}
+.sign-in-program .sign-in-border .sign-in-type {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.sign-in-program .sign-in-border .three-times {
+  animation: none;
+}
+.sign-in-program .for-gray-bkc {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.4);
+  position: absolute;
+  content: "";
+  display: none;
+}
+
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: visible;
+  padding-left: 150px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+header .header-all .header-control-width .header-left img {
+  margin-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div .first-page:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div .first-page::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
+}
+header .header-all .header-control-width .header-right div .line-design {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div .line-design:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div .line-design::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div .line-design:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case {
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right .all-case .top-case {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .fa-solid {
+  font-size: 10px;
+  vertical-align: center;
+  animation: caseMove 2s infinite;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-color: rgba(30, 29, 29, 0.8);
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a:hover {
+  color: rgba(223, 218, 218, 0.928);
+}
+header .banner {
+  background-color: rgb(49, 48, 48);
+  position: relative; /* 添加相对定位 */
+  z-index: -1;
+}
+header .banner img {
+  max-width: 1280px;
+  position: relative;
+  top: -110px;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  z-index: -1;
+  transition: 1.5s;
+}
+
+main .posts-all {
+  max-width: 1300px;
+}
+main .posts-all .news {
+  width: 100%;
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+main .posts-all .news .news-top {
+  letter-spacing: 8px;
+  color: white;
+  display: flex;
+  margin-bottom: 30px;
+}
+main .posts-all .news .news-top .news-top-first {
+  font-size: 42px;
+  font-weight: 300;
+}
+main .posts-all .news .news-top .news-top-first .spanN {
+  color: rgba(222, 28, 28, 0.6);
+}
+main .posts-all .news .news-top .news-top-first .spanE {
+  background-image: linear-gradient(to right, rgba(222, 28, 28, 0.6), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+main .posts-all .news .news-top .news-top-second {
+  padding-left: 12px;
+  padding-top: 18px;
+  font-size: 18px;
+}
+main .posts-all .news .news-bottom {
+  display: none;
+}
+main .posts-all .news .news-bottom .news-bottom-first img {
+  width: 400px;
+  animation: showOpacity 2s forwards;
+}
+main .posts-all .news .news-bottom .news-bottom-second {
+  padding-top: 95px;
+  padding-left: 100px;
+  padding-right: 80px;
+  position: relative;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-top {
+  display: flex;
+  padding-bottom: 12px;
+  white-space: nowrap;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-top .title-one {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 42px;
+  letter-spacing: 7.2px;
+  margin-right: 10px;
+  color: white;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-top .title-one span {
+  margin-left: 5px;
+  color: white;
+}
+main .posts-all .news .news-bottom .news-bottom-second .news-bottom-second-bottom {
+  color: #34495e;
+  letter-spacing: 5px;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+}
+main .posts-all .news .news-bottom .news-bottom-third {
+  border-bottom: 1.6px solid rgb(49, 48, 48);
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  display: flex;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  color: white;
+}
+main .posts-all .news .news-bottom .news-bottom-third:hover {
+  animation: 1.5s viewMoreBtn forwards;
+}
+main .posts-all .news .news-bottom .news-bottom-third .news-bottom-third-second {
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+main .posts-all .news .hamburger-all {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  cursor: pointer;
+}
+main .posts-all .news .hamburger-all div {
+  animation: 2s moveUp infinite;
+  margin: 0 auto;
+  color: white;
+  width: 30px;
+  border-bottom: 1px white solid;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+main .posts-all .all-customers-response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px white solid;
+  background-color: rgb(49, 48, 48);
+}
+main .posts-all .all-customers-response .customers-width-control {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #423e44;
+  margin-bottom: 60px;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-one {
+  font-size: 35px;
+  font-weight: 300;
+  color: white;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-one .spanD {
+  color: rgba(222, 28, 28, 0.6);
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-one .spanG {
+  background-image: linear-gradient(to right, rgba(222, 28, 28, 0.6), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+main .posts-all .all-customers-response .customers-width-control .customers-title-all .customers-title-second {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-left: 15px;
+  color: white;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: white;
+  height: 50vh;
+  width: 50%;
+  border: 1px rgb(125, 123, 123) solid;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all div:hover {
+  background-color: rgb(93, 92, 92);
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(49, 48, 48);
+  transition: 0.3s;
+  animation: showDesign 2s forwards;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-one {
+  transition: 0.6s;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-one:hover {
+  background-image: url(../../furniture_img/index-link-pic1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  writing-mode: horizontal-tb;
+  align-items: flex-end;
+  font-weight: bold;
+  color: rgb(235, 231, 231);
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-two {
+  transition: 0.6s;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-two:hover {
+  justify-content: center;
+  background-image: url(../../furniture_img/index-link-pic2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  writing-mode: horizontal-tb;
+  align-items: flex-end;
+  font-weight: bold;
+  color: rgb(47, 46, 46);
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-three {
+  transition: 0.6s;
+}
+main .posts-all .all-customers-response .customers-width-control .design-links-all .show-link-three:hover {
+  justify-content: center;
+  background-image: url(../../furniture_img/index-link-pic3.png);
+  background-repeat: no-repeat;
+  background-position: 15% 100%;
+  background-size: 145%;
+  writing-mode: horizontal-tb;
+  align-items: flex-end;
+  font-weight: bold;
+  color: rgb(248, 247, 247);
+}
+main .posts-all .all-customers-response .customers-width-control .hamburger-all {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+main .posts-all .all-customers-response .customers-width-control .hamburger-all div {
+  animation: 2s moveUp infinite;
+  margin: 0 auto;
+  color: white;
+  width: 30px;
+  border-bottom: 1px white solid;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+main .posts-all .design-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  background-color: rgb(49, 48, 48);
+}
+main .posts-all .design-projects .line-one-pic-all,
+main .posts-all .design-projects .line-two-pic-all,
+main .posts-all .design-projects .line-three-pic-all {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+main .posts-all .design-projects .line-one-pic-all div,
+main .posts-all .design-projects .line-two-pic-all div,
+main .posts-all .design-projects .line-three-pic-all div {
+  width: 30%;
+  overflow: hidden;
+}
+main .posts-all .design-projects .line-one-pic-all div img,
+main .posts-all .design-projects .line-two-pic-all div img,
+main .posts-all .design-projects .line-three-pic-all div img {
+  width: 100%;
+  transform: scale(1.8);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic1,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic1,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic1::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic1::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic1::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "墨䔳情境 紳灰";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic1:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic1:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic1:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic1:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic1:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic1:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic2,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic2,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic2::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic2::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic2::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "坐設計 若杉牧水";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic2:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic2:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic2:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic2:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic2:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic2:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic3,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic3,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic3::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic3::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic3::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "禾宇 秋穗山嵐";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic3:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic3:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic3:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic3:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic3:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic3:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic4,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic4,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic4::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic4::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic4::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "拾葉 彰化L宅";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic4:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic4:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic4:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic4:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic4:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic4:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic5,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic5,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic5::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic5::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic5::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "豐聚 微粉寓所";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic5:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic5:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic5:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic5:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic5:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic5:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic6,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic6,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic6::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic6::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic6::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "安藤 美術花園";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic6:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic6:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic6:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic6:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic6:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic6:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic7,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic7,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic7 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic7::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic7::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic7::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "映荷空間 和 煦";
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic7:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic7:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic7:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic7:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic7:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic7:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic8,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic8,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic8 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic8::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic8::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic8::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "豐聚 Waltz 圓舞曲";
+  font-size: 18px;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic8:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic8:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic8:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic8:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic8:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic8:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic9,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic9,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic9 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic9::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic9::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic9::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  content: "大也 仁山協和 ";
+  font-size: 18px;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic9:hover::after,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic9:hover::after,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic9:hover::after {
+  display: flex;
+}
+main .posts-all .design-projects .line-one-pic-all .line-one-pic9:hover img,
+main .posts-all .design-projects .line-two-pic-all .line-one-pic9:hover img,
+main .posts-all .design-projects .line-three-pic-all .line-one-pic9:hover img {
+  animation: scalePic 20s infinite;
+}
+main .posts-all .all-traffic-information {
+  width: 100%;
+  background-color: rgb(49, 48, 48);
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+}
+main .posts-all .all-traffic-information .traffic-width-control {
+  padding-bottom: 50px;
+  padding-top: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all {
+  display: flex;
+  letter-spacing: 8px;
+  color: white;
+  margin-bottom: 30px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all .traffic-title-one {
+  font-size: 42px;
+  font-weight: 300;
+  background-image: linear-gradient(to right, rgba(222, 28, 28, 0.6), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-title-all .traffic-title-second {
+  padding-left: 12px;
+  padding-top: 18px;
+  font-size: 18px;
+  font-weight: 350;
+}
+main .posts-all .all-traffic-information .traffic-width-control iframe {
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text {
+  display: none;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left {
+  margin-right: 70px;
+  color: white;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left h4 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .traffic-information-text .information-text-left p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 15px 0;
+  letter-spacing: 4px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right div {
+  letter-spacing: 8px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right h4 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 6px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .information-text-right .address {
+  margin-bottom: 12px;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us {
+  display: none;
+  margin-top: 20px;
+  height: 80px;
+  padding-top: 20px;
+  color: white;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a {
+  position: relative;
+  border: 1px black solid;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  padding: 20px 27px 17px 27px;
+  border-radius: 20px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a:hover {
+  background-color: rgb(114, 113, 113);
+  color: white;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5px;
+  top: 42px;
+  transition: 0.6s;
+}
+main .posts-all .all-traffic-information .traffic-width-control .contact-us a:hover::before {
+  height: 2px;
+  width: 70%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+main .posts-all .all-traffic-information .traffic-width-control .hamburger-all {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+}
+main .posts-all .all-traffic-information .traffic-width-control .hamburger-all .forChangeToBlack {
+  animation: 2s moveUp infinite;
+  margin: 0 auto;
+  color: white;
+  width: 30px;
+  border-bottom: 1px white solid;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.in-page-navigation {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  top: 70%;
+  left: 93%;
+  z-index: 300;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.in-page-navigation a {
+  position: relative;
+  margin-bottom: 20px;
+  color: white;
+  width: 100%;
+  transition: 0.3s;
+  border-bottom: 1px white solid;
+}
+.in-page-navigation a i {
+  color: white;
+  padding: 5px 0px;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.in-page-navigation::after {
+  content: "";
+  width: 0;
+  border: 1px white solid;
+  position: absolute;
+  transform: rotate(90deg);
+  top: -60%;
+  transition: 0.5s;
+  opacity: 0;
+}
+.in-page-navigation:hover::after {
+  width: 200%;
+  opacity: 1;
+}
+.in-page-navigation::before {
+  content: "";
+  width: 0;
+  border: 1px white solid;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 140%;
+  transition: 0.5s;
+  opacity: 0;
+}
+.in-page-navigation:hover::before {
+  width: 200%;
+  opacity: 1;
+}
+
+.fake-message {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  left: 53%;
+  top: 35%;
+  z-index: 500;
+  height: 62vh;
+  width: 45%;
+  border: 1px rgb(158, 157, 157) solid;
+  background-color: rgb(250, 248, 248);
+  border-radius: 15px;
+}
+.fake-message .fake-message-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  height: 20%;
+  border-bottom: 1px rgb(10, 10, 10) solid;
+}
+.fake-message .fake-message-top div {
+  font-size: 25px;
+  color: black;
+}
+.fake-message .fake-message-top div span {
+  font-size: 16px;
+}
+.fake-message .fake-message-top i {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+.fake-message .fake-message-top .maxT,
+.fake-message .fake-message-top .isRainning {
+  font-size: 14px;
+}
+.fake-message .fake-message-bottom {
+  border-top: 2px black solid;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.fake-message .fake-message-bottom .message-ask {
+  position: relative;
+  margin-left: 15px;
+  padding: 3px 3px;
+  width: 200px;
+  border: 1px black solid;
+}
+.fake-message .fake-message-bottom .message-ask::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.fake-message .fake-message-bottom .message-ask::after {
+  content: "9:45AM";
+  position: absolute;
+  left: 105%;
+  top: 45%;
+  font-size: 12px;
+  color: #666;
+}
+.fake-message .fake-message-bottom .people-saying {
+  display: flex;
+  flex-direction: column;
+}
+.fake-message .fake-message-bottom .people-saying div {
+  padding: 2px 10px;
+  position: relative;
+  margin-left: auto;
+  border: 1px black solid;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.fake-message .fake-message-bottom .people-saying div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.fake-message .fake-message-bottom .input-and-submit {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px black solid;
+  padding-top: 10px;
+}
+.fake-message .fake-message-bottom .input-and-submit input {
+  margin-left: auto;
+  width: 200px;
+}
+.fake-message .fake-message-bottom .input-and-submit .submitBtn {
+  margin: 0px 10px;
+  border: 1px black solid;
+  padding: 0px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.fake-message .fake-message-bottom .input-and-submit .submitBtn:hover {
+  animation: moveUp3px 2s infinite;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #cec5ba;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@keyframes viewMoreBtn {
+  0% {
+    border: 1px white solid;
+  }
+  50% {
+    padding: 5px 10px;
+    border-radius: 25px;
+  }
+  100% {
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes moveUp3px {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+@keyframes showDesign {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes showOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes notCorrect {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes caseMove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes scalePic {
+  0% {
+    transform: scale(1.8);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(1.8);
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  .header-all {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    color: white;
+    z-index: 100;
+    .header-control-width {
+      width: 1280px;
+      // height: 40vh;
+      margin: 0 auto;
+      overflow: visible;
+      // border: 1px red solid;
+      padding-left: 150px;
+      padding-right: 200px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: 0.5s;
+      .header-left {
+        img {
+          width: 60px;
+        }
+      }
+      .header-right {
+        display: flex;
+        // border: 1px red solid;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        text-shadow: #666 2px 1px 5px;
+        div {
+          padding-bottom: 8px;
+          // border: 1px red solid;
+          // margin: 0px 3px;
+          .first-page {
+            &:hover::before {
+              height: 2px;
+              width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+          }
+          .line-design {
+            // position: relative;
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: 0.2s;
+            // border: 1px red solid;
+            &:hover {
+              color: rgb(197, 188, 188);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              // left: 70%;
+              bottom: 10px; /* 调整下划线的位置 */
+              width: 0;
+              height: 4px;
+              background-color: white;
+              transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+            }
+            &:hover::before {
+              height: 2px;
+              width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+            // .triangle {
+            //   position: absolute;
+            //   top: 2px;
+            //   left: 100%;
+            //   font-size: 2px;
+            // }
+          }
+        }
+
+        .human-icon,
+        .home {
+          font-size: 10px;
+        }
+        .all-case {
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          .under-case {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            overflow: white-space;
+            white-space: nowrap;
+            z-index: 101;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
+            a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
+              overflow: white-space;
+              white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    position: relative;
+    // border: 1px rgb(70, 69, 69) solid;
+    // height: 100vh;
+    background: linear-gradient(76deg, rgb(176, 168, 159), rgb(255, 255, 255));
+
+    position: relative; /* 添加相对定位 */
+    z-index: -1;
+    transition: 1s;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      top: 80%;
+      left: 55%;
+      border: 1px #b0a89f solid;
+      transform: rotate(90deg);
+    }
+    .banner-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 40vh;
+      font-weight: 300;
+      letter-spacing: 4px;
+      font-size: 38px;
+      transition: 0.3s;
+      .banner-text-span {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+    }
+    img {
+      // max-width: 1280px;
+      // position: relative;
+      // top: -110px;
+      // margin: 0 auto;
+      // left: 0;
+      // border: 1px red solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 50px;
+      width: 100%;
+      height: 60vh;
+      // z-index: -1;
+      // transition: 1.5s;
+      // opacity: 0;
+    }
+  }
+}
+main {
+  .posts-all {
+    width: 100%;
+    // height: 180vh;
+    // border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    background: linear-gradient(97deg, rgb(176, 168, 159), rgb(255, 255, 255));
+
+    .posts-control-width {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      // align-items: center;
+      width: 80%;
+      border-top: 1px rgb(176, 168, 159) solid;
+      // border: 1px red solid;
+      padding-top: 30px;
+      transition: 0.3s;
+      .dragonBoat-father {
+        border-bottom: 1px #b0a89f solid;
+        // border: 1px red solid;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        // overflow: hidden;
+        padding-bottom: 50px;
+        position: relative;
+        img {
+          padding-right: 50px;
+          // border-right: 1px #b0a89f solid;
+          width: 300px;
+        }
+        .dragonBoat-text {
+          display: flex;
+          padding-left: 30px;
+          flex-direction: column;
+          transition: 0.3s;
+          border-left: 1px #b0a89f solid;
+          .dragonBoat-title {
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            span {
+              padding-left: 10px;
+            }
+          }
+          .dragonBoat-date {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+          .dragonBoat-detail {
+            margin-top: 40px;
+            letter-spacing: 3px;
+            span {
+              font-size: 18px;
+              color: red;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 70%;
+          left: 32%;
+          height: 41vh;
+          transition: 0.5s;
+          // background-color: black;
+          // background-color: rgb(110, 108, 108);
+          // opacity: 0.3;
+          border-top: 1px #b0a89f solid;
+        }
+        &:hover::after {
+          width: 25%;
+        }
+      }
+      .spring-father {
+        border-bottom: 1px #b0a89f solid;
+        // border: 1px red solid;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        // overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 170px;
+        position: relative;
+        img {
+          padding-right: 50px;
+          // border-right: 1px #b0a89f solid;
+          width: 300px;
+        }
+        .spring-text {
+          display: flex;
+          padding-left: 30px;
+          flex-direction: column;
+          transition: 0.3s;
+          border-left: 1px #b0a89f solid;
+          .spring-title {
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            span {
+              padding-left: 10px;
+            }
+          }
+          .spring-date {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+          .spring-detail {
+            margin-top: 40px;
+            letter-spacing: 3px;
+            span {
+              font-size: 18px;
+              color: red;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 70%;
+          left: 32%;
+          height: 41vh;
+          transition: 0.5s;
+          // background-color: black;
+          // background-color: rgb(110, 108, 108);
+          // opacity: 0.3;
+          border-top: 1px #b0a89f solid;
+        }
+        &:hover::after {
+          width: 25%;
+        }
+      }
+      .newYear-father {
+        border-bottom: 1px #b0a89f solid;
+        // border: 1px red solid;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        // overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 150px;
+        position: relative;
+        img {
+          padding-right: 50px;
+          // border-right: 1px #b0a89f solid;
+          width: 350px;
+        }
+        .newYear-text {
+          display: flex;
+          padding-left: 30px;
+          flex-direction: column;
+          transition: 0.3s;
+          border-left: 1px #b0a89f solid;
+          .newYear-title {
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            span {
+              padding-left: 10px;
+            }
+          }
+          .newYear-date {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+          .newYear-detail {
+            margin-top: 40px;
+            letter-spacing: 3px;
+            span {
+              font-size: 18px;
+              color: red;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 70%;
+          left: 32%;
+          height: 41vh;
+          transition: 0.5s;
+          // background-color: black;
+          // background-color: rgb(110, 108, 108);
+          // opacity: 0.3;
+          border-top: 1px #b0a89f solid;
+        }
+        &:hover::after {
+          width: 25%;
+        }
+      }
+      .christmas-father {
+        border-bottom: 1px #b0a89f solid;
+        // border: 1px red solid;
+        width: 100%;
+        height: 50vh;
+        display: none;
+        justify-content: space-between;
+        // overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 150px;
+        position: relative;
+        img {
+          padding-right: 50px;
+          // border-right: 1px #b0a89f solid;
+          width: 350px;
+        }
+        .christmas-text {
+          display: flex;
+          padding-left: 30px;
+          flex-direction: column;
+          transition: 0.3s;
+          border-left: 1px #b0a89f solid;
+          .christmas-title {
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            span {
+              padding-left: 10px;
+            }
+          }
+          .christmas-date {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+          .christmas-detail {
+            margin-top: 40px;
+            letter-spacing: 3px;
+            span {
+              font-size: 18px;
+              color: red;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 70%;
+          left: 32%;
+          height: 41vh;
+          transition: 0.5s;
+          // background-color: black;
+          // background-color: rgb(110, 108, 108);
+          // opacity: 0.3;
+          border-top: 1px #b0a89f solid;
+        }
+        &:hover::after {
+          width: 25%;
+        }
+      }
+      .halloween-father {
+        border-bottom: 1px #b0a89f solid;
+        // border: 1px red solid;
+        width: 100%;
+        height: 50vh;
+        display: none;
+        justify-content: space-between;
+        // overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 150px;
+        position: relative;
+        img {
+          padding-right: 50px;
+          // border-right: 1px #b0a89f solid;
+          width: 350px;
+        }
+        .halloween-text {
+          display: flex;
+          padding-left: 30px;
+          flex-direction: column;
+          transition: 0.3s;
+          border-left: 1px #b0a89f solid;
+          .halloween-title {
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            span {
+              padding-left: 10px;
+            }
+          }
+          .halloween-date {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+          .halloween-detail {
+            margin-top: 40px;
+            letter-spacing: 3px;
+            span {
+              font-size: 18px;
+              color: red;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 70%;
+          left: 32%;
+          height: 41vh;
+          transition: 0.5s;
+          // background-color: black;
+          // background-color: rgb(110, 108, 108);
+          // opacity: 0.3;
+          border-top: 1px #b0a89f solid;
+        }
+        &:hover::after {
+          width: 25%;
+        }
+      }
+      .click-more {
+        position: relative;
+        cursor: pointer;
+        letter-spacing: 3px;
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 15px;
+        font-size: 14px;
+        border: 1.5px #b0a89f solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        transition: 0.5s;
+        padding: 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+          rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+          rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        &:hover {
+          background-color: #b2a79c;
+          color: white;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 0;
+          border: 1px #b0a89f solid;
+          transition: 0.5s;
+        }
+        &:hover::before {
+          left: -200%;
+          width: 200%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 100%;
+          width: 0;
+          border: 1px #b0a89f solid;
+          transition: 0.5s;
+        }
+        &:hover::after {
+          left: 100%;
+          width: 200%;
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  .footer-width-control {
+    // padding-left: 120px;
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(74deg, rgb(176, 168, 159), rgb(255, 255, 255));
+    border-top: 1px #cec5ba solid;
+    // border: 1px red solid;
+    .footer-all {
+      display: flex;
+      //   border: 1px red solid;
+      color: #423e44;
+      .footer-left {
+        // border: 1px red solid;
+        margin-right: 80px;
+        line-height: 30px;
+        padding-right: 15px;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 300;
+          letter-spacing: 4px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s;
+          &:hover {
+            color: #524d55;
+          }
+        }
+      }
+      .footer-middle {
+        // border: 1px red solid;
+        margin-right: 80px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 300;
+          letter-spacing: 4px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s;
+          &:hover {
+            color: #524d55;
+          }
+        }
+        div {
+          font-weight: 300;
+          letter-spacing: 4px;
+        }
+      }
+      .footer-right {
+        // border: 1px red solid;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        div {
+          font-weight: 300;
+          letter-spacing: 3px;
+        }
+      }
+    }
+    .last-text {
+      position: absolute;
+      top: 240px;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}
