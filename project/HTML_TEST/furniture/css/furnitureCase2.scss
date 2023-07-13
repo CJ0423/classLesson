@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  // background-color: rgb(153, 153, 153);
+  overflow: visible;
+  .header-all {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    color: white;
+    z-index: 100;
+
+    // border: 1px red solid;
+    .header-control-width {
+      width: 1280px;
+
+      margin: 0 auto;
+      // border: 1px red solid;
+      padding-left: 150px;
+      padding-right: 150px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: 0.5s;
+      .header-left {
+        margin-bottom: 10px;
+        img {
+          margin-top: 10px;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          // border: 1px red solid;
+          width: 100px;
+        }
+      }
+      .header-right {
+        display: flex;
+        // border: 1px red solid;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        text-shadow: #666 2px 1px 5px;
+        div {
+          padding-bottom: 8px;
+          // border: 1px red solid;
+          .first-page {
+            &:hover::before {
+              height: 2px;
+              width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+            i {
+              font-size: 16px;
+              margin-left: 3px;
+            }
+          }
+          a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: 0.2s;
+            // border: 1px red solid;
+            &:hover {
+              color: rgb(197, 188, 188);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              // left: 70%;
+              bottom: 10px; /* 调整下划线的位置 */
+              width: 0;
+              height: 4px;
+              background-color: white;
+              transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+            }
+            &:hover::before {
+              height: 2px;
+              width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+          }
+        }
+        .human-icon,
+        .home {
+          font-size: 10px;
+        }
+        .all-case {
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          .under-case {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            overflow: white-space;
+            white-space: nowrap;
+            z-index: 101;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
+            a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
+              overflow: white-space;
+              white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .case-banner {
+    position: relative;
+    // display: flex;
+    // position: relative;
+    // background-color: rgb(153, 153, 153);
+    align-items: flex-start;
+    // border: 3px red solid;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url(../../furnitureCase_img/pic1.png);
+    background-attachment: fixed;
+    background-position: 70% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    .banner-txt {
+      overflow: hidden;
+      font-size: 80px;
+      color: white;
+      letter-spacing: 3px;
+      transition: 1s;
+    }
+    .final-txt {
+      opacity: 0;
+      transition: 1s;
+      font-size: 60px;
+      letter-spacing: 3px;
+      color: white;
+    }
+  }
+}
+
+.test {
+  width: 100%;
+  height: 100vh;
+  border: 1px red solid;
+}

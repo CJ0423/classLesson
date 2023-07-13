@@ -1,3 +1,16 @@
+let topCase = document.querySelector(".top-case");
+let underCase = document.querySelector(".under-case");
+let underCaseTrueOrFalse = false;
+topCase.addEventListener("click", function () {
+  underCaseTrueOrFalse = !underCaseTrueOrFalse;
+  if (underCaseTrueOrFalse) {
+    underCase.style.display = "flex";
+  } else {
+    underCase.style.display = "none";
+  }
+});
+
+// ---------------------------------
 let faqChinese = document.querySelector(".faq-chinese");
 let faqChineseArr = ["常", "見", "問", "題"];
 let faqChineseNum = 0;
