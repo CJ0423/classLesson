@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+.all-2 :first-of-type {
+  background-color: aqua;
+}/*# sourceMappingURL=lesson.css.map */

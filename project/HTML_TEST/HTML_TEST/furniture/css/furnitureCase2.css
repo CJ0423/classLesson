@@ -1,0 +1,377 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  overflow: visible;
+}
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left {
+  margin-bottom: 10px;
+}
+header .header-all .header-control-width .header-left img {
+  margin-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
+}
+header .header-all .header-control-width .header-right div a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div a:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div a:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case {
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right .all-case .top-case {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-color: rgba(30, 29, 29, 0.8);
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a:hover {
+  color: rgba(223, 218, 218, 0.928);
+}
+header .case-banner {
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url(../../furnitureCase_img/pic1.png);
+  background-attachment: fixed;
+  background-position: 70% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+header .case-banner .banner-txt {
+  overflow: hidden;
+  font-size: 80px;
+  color: white;
+  letter-spacing: 3px;
+  transition: 1s;
+}
+header .case-banner .final-txt {
+  opacity: 0;
+  transition: 1s;
+  font-size: 100px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.mini-detail {
+  width: 90%;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: 2px white solid;
+  z-index: 1000;
+  background-color: rgb(37, 37, 37);
+  display: none;
+  flex-direction: column;
+}
+.mini-detail .mini-close {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: flex-end;
+  padding-right: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+  color: white;
+  cursor: pointer;
+}
+.mini-detail .mini-pic {
+  width: 100%;
+  height: 80%;
+  border: 1px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mini-detail .mini-pic .control-mini-pic {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.mini-detail .mini-pic .control-mini-pic .mini-translate {
+  width: 100%;
+  transform: translateX(-900px);
+}
+.mini-detail .mini-pic .left-side,
+.mini-detail .mini-pic .right-side {
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+.mini-detail .under-txt {
+  display: flex;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+main {
+  width: 100%;
+  height: 200vh;
+  background-color: rgb(49, 48, 48);
+}
+main .main-control {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px red solid;
+}
+main .main-control .furniture-control-btn {
+  width: 100%;
+  border: 1px red solid;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .main-control .furniture-control-btn .btn-item {
+  border: 1px white solid;
+  padding: 8px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+}
+main .main-control .furniture-control-btn .btn-item:hover {
+  animation: btnRotate 0.3s infinite;
+  color: gray;
+}
+main .main-control .furniture-control-btn .btn-item:first-child {
+  background-color: white;
+  color: black;
+}
+main .main-control .sofa-items-all {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+main .main-control .sofa-items-all .sofa-title {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  color: white;
+  position: relative;
+  margin-bottom: 20px;
+}
+main .main-control .sofa-items-all .sofa-title::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 30%;
+  left: 10%;
+  top: 50%;
+  border-top: 1px white solid;
+}
+main .main-control .sofa-items-all .sofa-title::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 30%;
+  left: 60%;
+  top: 50%;
+  border-top: 1px white solid;
+}
+main .main-control .sofa-items-all .coltrol-items-width1,
+main .main-control .sofa-items-all .coltrol-items-width2,
+main .main-control .sofa-items-all .coltrol-items-width3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items {
+  width: calc(33.3333333333% - 20px);
+  border: 1px white solid;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items .sofa-items-pic,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items .sofa-items-pic,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items .sofa-items-pic {
+  width: 100%;
+  height: 80%;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items .sofa-items-pic img,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items .sofa-items-pic img,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items .sofa-items-pic img {
+  width: 100%;
+  height: 100%;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items .sofa-items-pic:hover::after,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items .sofa-items-pic:hover::after,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items .sofa-items-pic:hover::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "點擊查看更多";
+  letter-spacing: 3px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items .sofa-items-txt,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items .sofa-items-txt,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items .sofa-items-txt {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 4px;
+  justify-content: space-around;
+  align-items: center;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items .sofa-items-txt .txt-img,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items .sofa-items-txt .txt-img,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items .sofa-items-txt .txt-img {
+  cursor: pointer;
+}
+main .main-control .sofa-items-all .coltrol-items-width1 .sofa-items .sofa-items-txt .txt-img:hover,
+main .main-control .sofa-items-all .coltrol-items-width2 .sofa-items .sofa-items-txt .txt-img:hover,
+main .main-control .sofa-items-all .coltrol-items-width3 .sofa-items .sofa-items-txt .txt-img:hover {
+  animation: heartBig 0.8s infinite;
+}
+
+@keyframes heartBig {
+  0% {
+    transform: scale(1) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(0deg);
+  }
+}
+@keyframes btnRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=furnitureCase2.css.map */

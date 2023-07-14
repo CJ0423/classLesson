@@ -1,0 +1,510 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  overflow: visible;
+}
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left {
+  margin-bottom: 10px;
+}
+header .header-all .header-control-width .header-left img {
+  margin-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
+}
+header .header-all .header-control-width .header-right div a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div a:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div a:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case {
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right .all-case .top-case {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-color: rgba(30, 29, 29, 0.8);
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a:hover {
+  color: rgba(223, 218, 218, 0.928);
+}
+header article {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../furniture_img/aboutUsPlus1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: rgb(49, 48, 48);
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  padding-left: 50px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+header article::after {
+  content: "";
+  width: 5%;
+  border: 1px white solid;
+  animation: shinning 1.5s infinite;
+  transform: rotate(90deg);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(49, 48, 48);
+}
+main .about-black-sign {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+main .about-black-sign .aboutUs-title {
+  width: 50%;
+  height: 100vh;
+  font-size: 30px;
+  color: white;
+}
+main .about-black-sign .aboutUs-title .company {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-size: 40px;
+  height: 40%;
+}
+main .about-black-sign .aboutUs-title .company::after {
+  content: "";
+  transition: 0.5s;
+  top: 80%;
+  left: 10%;
+  position: absolute;
+  width: 20%;
+  border: 1px white solid;
+  animation: shinning 2s infinite;
+}
+main .about-black-sign .aboutUs-title .company:hover::after {
+  width: 80%;
+}
+main .about-black-sign .aboutUs-title .aboutUs-Anthony {
+  padding-left: 30px;
+  line-height: 40px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  letter-spacing: 4px;
+  border-right: 1px white solid;
+}
+main .about-black-sign .last-text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  letter-spacing: 4px;
+  line-height: 40px;
+  writing-mode: vertical-rl;
+}
+main .same-banner-pic {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../furniture_img/aboutUsPlus1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .introduce-all {
+  width: 100%;
+  height: 150vh;
+  background-color: rgb(49, 48, 48);
+  color: white;
+  display: flex;
+}
+main .introduce-all .introduce-service {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+main .introduce-all .introduce-service .service-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .introduce-all .introduce-service .sweet-heart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .introduce-all .introduce-service .sweet-heart .sweet-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .introduce-all .introduce-service .sweet-heart .sweet-text {
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  color: #999;
+}
+main .introduce-all .introduce-service .rest-assured {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  justify-content: center;
+  writing-mode: vertical-rl;
+}
+main .introduce-all .introduce-service .rest-assured .assured-title {
+  font-size: 30px;
+  margin-right: 30px;
+}
+main .introduce-all .introduce-service .rest-assured .assured-text {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #999;
+  margin-right: 15px;
+}
+main .introduce-all .introduce-service .peace-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .introduce-all .introduce-service .peace-all .peace-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .introduce-all .introduce-service .peace-all .peace-text {
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  color: #999;
+}
+main .introduce-all .introduce-service .introduce-service-options {
+  height: 25%;
+}
+main .introduce-all .introduce-service .introduce-service-options .service-chinese {
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+main .introduce-all .introduce-service .introduce-service-options .service-second {
+  letter-spacing: 8px;
+  position: relative;
+  font-size: 38px;
+  font-weight: 700;
+  transition: 0.3s;
+  text-decoration: none;
+  transform: translateX(-120px) rotate(90deg);
+  animation: 5s transX infinite;
+}
+main .introduce-all .introduce-service::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 115%;
+  left: -35%;
+  border: 1px white solid;
+  top: 55%;
+  transform: rotate(90deg);
+}
+main .introduce-all .introduce-right-all {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .introduce-all .introduce-right-all img {
+  width: 35px;
+  margin-bottom: 20px;
+  position: relative;
+}
+main .introduce-all .introduce-right-all div {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+main .introduce-all .introduce-right-all .right-heart-one {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 13px 0px 10px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+main .introduce-all .introduce-right-all .right-heart-one::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 250%;
+  width: 200px;
+  border: 1px white solid;
+}
+main .introduce-all .introduce-right-all .right-heart-two {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 13px 0px 10px;
+  border-radius: 50px;
+}
+main .introduce-all .introduce-right-all .right-heart-two::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 250%;
+  width: 200px;
+  border: 1px white solid;
+}
+main .introduce-all .introduce-right-all .right-heart-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 13px 0px 10px;
+  border-radius: 50px;
+  animation: 2s shinning infinite;
+}
+main .hu-slogon {
+  width: 100%;
+  height: 50vh;
+  border-top: 1px white solid;
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .hu-slogon .slogon-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+}
+main .hu-slogon .slogon-furn {
+  color: white;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-right: 30px;
+}
+main .hu-slogon img {
+  width: 15px;
+  margin-right: 15px;
+  transition: 0.5s;
+}
+main .hu-slogon .move-1 {
+  animation: 3s rotated infinite;
+  animation-timing-function: linear;
+  border: 1px white solid;
+  padding: 25px;
+}
+main .hu-slogon .move-2 {
+  padding: 25px;
+  border: 1px white solid;
+  transform: rotate(45deg);
+}
+main .hu-slogon .move-3 {
+  padding: 25px;
+  border: 1px white solid;
+  transform: rotate(45deg);
+}
+
+@keyframes shinning {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #cec5ba;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@keyframes rotated {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=aboutUs2.css.map */

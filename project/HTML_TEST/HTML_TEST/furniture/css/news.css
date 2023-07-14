@@ -1,0 +1,562 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: visible;
+  padding-left: 150px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left img {
+  width: 60px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .line-design {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div .line-design:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div .line-design::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div .line-design:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case {
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right .all-case .top-case {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-color: rgba(30, 29, 29, 0.8);
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a:hover {
+  color: rgba(223, 218, 218, 0.928);
+}
+header .banner {
+  position: relative;
+  background: linear-gradient(76deg, rgb(176, 168, 159), rgb(255, 255, 255));
+  position: relative; /* 添加相对定位 */
+  z-index: -1;
+  transition: 1s;
+}
+header .banner::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  top: 80%;
+  left: 55%;
+  border: 1px #b0a89f solid;
+  transform: rotate(90deg);
+}
+header .banner .banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 38px;
+  transition: 0.3s;
+}
+header .banner .banner-text .banner-text-span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+header .banner img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  width: 100%;
+  height: 60vh;
+}
+
+main .posts-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  background: linear-gradient(97deg, rgb(176, 168, 159), rgb(255, 255, 255));
+}
+main .posts-all .posts-control-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  border-top: 1px rgb(176, 168, 159) solid;
+  padding-top: 30px;
+  transition: 0.3s;
+}
+main .posts-all .posts-control-width .dragonBoat-father {
+  border-bottom: 1px #b0a89f solid;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  position: relative;
+}
+main .posts-all .posts-control-width .dragonBoat-father img {
+  padding-right: 50px;
+  width: 300px;
+}
+main .posts-all .posts-control-width .dragonBoat-father .dragonBoat-text {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  transition: 0.3s;
+  border-left: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .dragonBoat-father .dragonBoat-text .dragonBoat-title {
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+main .posts-all .posts-control-width .dragonBoat-father .dragonBoat-text .dragonBoat-title span {
+  padding-left: 10px;
+}
+main .posts-all .posts-control-width .dragonBoat-father .dragonBoat-text .dragonBoat-date {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+main .posts-all .posts-control-width .dragonBoat-father .dragonBoat-text .dragonBoat-detail {
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+main .posts-all .posts-control-width .dragonBoat-father .dragonBoat-text .dragonBoat-detail span {
+  font-size: 18px;
+  color: red;
+}
+main .posts-all .posts-control-width .dragonBoat-father::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 70%;
+  left: 32%;
+  height: 41vh;
+  transition: 0.5s;
+  border-top: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .dragonBoat-father:hover::after {
+  width: 25%;
+}
+main .posts-all .posts-control-width .spring-father {
+  border-bottom: 1px #b0a89f solid;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 170px;
+  position: relative;
+}
+main .posts-all .posts-control-width .spring-father img {
+  padding-right: 50px;
+  width: 300px;
+}
+main .posts-all .posts-control-width .spring-father .spring-text {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  transition: 0.3s;
+  border-left: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .spring-father .spring-text .spring-title {
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+main .posts-all .posts-control-width .spring-father .spring-text .spring-title span {
+  padding-left: 10px;
+}
+main .posts-all .posts-control-width .spring-father .spring-text .spring-date {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+main .posts-all .posts-control-width .spring-father .spring-text .spring-detail {
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+main .posts-all .posts-control-width .spring-father .spring-text .spring-detail span {
+  font-size: 18px;
+  color: red;
+}
+main .posts-all .posts-control-width .spring-father::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 70%;
+  left: 32%;
+  height: 41vh;
+  transition: 0.5s;
+  border-top: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .spring-father:hover::after {
+  width: 25%;
+}
+main .posts-all .posts-control-width .newYear-father {
+  border-bottom: 1px #b0a89f solid;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  position: relative;
+}
+main .posts-all .posts-control-width .newYear-father img {
+  padding-right: 50px;
+  width: 350px;
+}
+main .posts-all .posts-control-width .newYear-father .newYear-text {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  transition: 0.3s;
+  border-left: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .newYear-father .newYear-text .newYear-title {
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+main .posts-all .posts-control-width .newYear-father .newYear-text .newYear-title span {
+  padding-left: 10px;
+}
+main .posts-all .posts-control-width .newYear-father .newYear-text .newYear-date {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+main .posts-all .posts-control-width .newYear-father .newYear-text .newYear-detail {
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+main .posts-all .posts-control-width .newYear-father .newYear-text .newYear-detail span {
+  font-size: 18px;
+  color: red;
+}
+main .posts-all .posts-control-width .newYear-father::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 70%;
+  left: 32%;
+  height: 41vh;
+  transition: 0.5s;
+  border-top: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .newYear-father:hover::after {
+  width: 25%;
+}
+main .posts-all .posts-control-width .christmas-father {
+  border-bottom: 1px #b0a89f solid;
+  width: 100%;
+  height: 50vh;
+  display: none;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  position: relative;
+}
+main .posts-all .posts-control-width .christmas-father img {
+  padding-right: 50px;
+  width: 350px;
+}
+main .posts-all .posts-control-width .christmas-father .christmas-text {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  transition: 0.3s;
+  border-left: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .christmas-father .christmas-text .christmas-title {
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+main .posts-all .posts-control-width .christmas-father .christmas-text .christmas-title span {
+  padding-left: 10px;
+}
+main .posts-all .posts-control-width .christmas-father .christmas-text .christmas-date {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+main .posts-all .posts-control-width .christmas-father .christmas-text .christmas-detail {
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+main .posts-all .posts-control-width .christmas-father .christmas-text .christmas-detail span {
+  font-size: 18px;
+  color: red;
+}
+main .posts-all .posts-control-width .christmas-father::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 70%;
+  left: 32%;
+  height: 41vh;
+  transition: 0.5s;
+  border-top: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .christmas-father:hover::after {
+  width: 25%;
+}
+main .posts-all .posts-control-width .halloween-father {
+  border-bottom: 1px #b0a89f solid;
+  width: 100%;
+  height: 50vh;
+  display: none;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  position: relative;
+}
+main .posts-all .posts-control-width .halloween-father img {
+  padding-right: 50px;
+  width: 350px;
+}
+main .posts-all .posts-control-width .halloween-father .halloween-text {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  transition: 0.3s;
+  border-left: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .halloween-father .halloween-text .halloween-title {
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+main .posts-all .posts-control-width .halloween-father .halloween-text .halloween-title span {
+  padding-left: 10px;
+}
+main .posts-all .posts-control-width .halloween-father .halloween-text .halloween-date {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+main .posts-all .posts-control-width .halloween-father .halloween-text .halloween-detail {
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+main .posts-all .posts-control-width .halloween-father .halloween-text .halloween-detail span {
+  font-size: 18px;
+  color: red;
+}
+main .posts-all .posts-control-width .halloween-father::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 70%;
+  left: 32%;
+  height: 41vh;
+  transition: 0.5s;
+  border-top: 1px #b0a89f solid;
+}
+main .posts-all .posts-control-width .halloween-father:hover::after {
+  width: 25%;
+}
+main .posts-all .posts-control-width .click-more {
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 3px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 14px;
+  border: 1.5px #b0a89f solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: 0.5s;
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+main .posts-all .posts-control-width .click-more:hover {
+  background-color: #b2a79c;
+  color: white;
+}
+main .posts-all .posts-control-width .click-more::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border: 1px #b0a89f solid;
+  transition: 0.5s;
+}
+main .posts-all .posts-control-width .click-more:hover::before {
+  left: -200%;
+  width: 200%;
+}
+main .posts-all .posts-control-width .click-more::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 0;
+  border: 1px #b0a89f solid;
+  transition: 0.5s;
+}
+main .posts-all .posts-control-width .click-more:hover::after {
+  left: 100%;
+  width: 200%;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(74deg, rgb(176, 168, 159), rgb(255, 255, 255));
+  border-top: 1px #cec5ba solid;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}/*# sourceMappingURL=news.css.map */

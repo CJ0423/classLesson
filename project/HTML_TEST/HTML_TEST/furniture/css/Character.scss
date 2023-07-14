@@ -1,0 +1,1571 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+  overflow: visible;
+  font-family: "Montserrat", sans-serif;
+}
+.start-show {
+  //   overflow: hidden;
+  // transform: translateX(-1300px);
+  //   display: none;
+  width: 100%;
+  //   max-width: 100%;
+  transition: 4s;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .start-one {
+    width: 25%;
+    height: 100%;
+    display: "block";
+    background-image: url("../../furniture_img/human1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .start-second {
+    width: 25%;
+    height: 100%;
+    display: "block";
+    background-image: url("../../furniture_img/human2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .start-third {
+    width: 25%;
+    height: 100%;
+    display: "block";
+    background-image: url("../../furniture_img/human3.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .start-four {
+    width: 25%;
+    height: 100%;
+    display: "block";
+    background-image: url("../../furniture_img/human4.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .show-txt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 3px;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block; /* 新增這行 */
+      vertical-align: middle; /* 新增這行 */
+      border: 1px white dotted;
+      width: 50%;
+      height: 50%;
+      left: 24.8%;
+      top: 50%;
+      //   transform: translateX(-200%);
+      transform: translateY(-50%);
+      //   transform: rotate(90deg);
+      animation: shine 2s infinite;
+    }
+  }
+  .start-all {
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+header {
+  // background-color: rgb(153, 153, 153);
+  display: none;
+  overflow: visible;
+  .header-all {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    color: white;
+    z-index: 100;
+    // border: 1px red solid;
+    .header-control-width {
+      width: 1280px;
+      margin: 0 auto;
+      // border: 1px red solid;
+      padding-left: 150px;
+      padding-right: 150px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: 0.5s;
+      .header-left {
+        margin-bottom: 10px;
+        img {
+          margin-top: 10px;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          // border: 1px red solid;
+          width: 100px;
+        }
+      }
+      .header-right {
+        display: flex;
+        // border: 1px red solid;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        text-shadow: #666 2px 1px 5px;
+        div {
+          padding-bottom: 8px;
+          // border: 1px red solid;
+          .first-page {
+            &:hover::before {
+              height: 2px;
+              width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+            i {
+              font-size: 16px;
+              margin-left: 3px;
+            }
+          }
+          a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: 0.2s;
+            // border: 1px red solid;
+            &:hover {
+              color: rgb(197, 188, 188);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              // left: 70%;
+              bottom: 10px; /* 调整下划线的位置 */
+              width: 0;
+              height: 4px;
+              background-color: white;
+              transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+            }
+            &:hover::before {
+              height: 2px;
+              width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+            }
+          }
+        }
+        .human-icon,
+        .home {
+          font-size: 10px;
+        }
+        .all-case {
+          // margin: 0 10px;
+          text-decoration: none;
+          // padding-bottom: 3px;
+          transition: 0.2s;
+          .top-case {
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          .under-case {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            overflow: white-space;
+            white-space: nowrap;
+            z-index: 101;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            background-color: rgba(30, 29, 29, 0.8);
+            a {
+              margin-bottom: 10px;
+              color: white;
+              text-decoration: none;
+              overflow: white-space;
+              white-space: nowrap;
+              &:hover {
+                color: rgba(223, 218, 218, 0.928);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.jane-introduce {
+  width: 80%;
+  height: 90vh;
+  position: fixed;
+  left: 50%;
+  // top: 50%;
+  transform: translate(-50%);
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 71, 71);
+  border: 0.8px white dotted;
+  z-index: 200;
+  .jane-title {
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    border-bottom: 0.4px dotted white;
+    span {
+      font-size: 14px;
+      margin-left: 8px;
+      letter-spacing: 3px;
+    }
+  }
+  .jane-close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .jane-pic {
+    // height: 30%;
+    width: 100%;
+    // border: 1px red solid;
+    display: flex;
+    justify-content: space-around;
+    div {
+      width: 40%;
+      height: 300px;
+      overflow: hidden;
+      // border: 1px red solid;
+      img {
+        transform: scale(2);
+        width: 100%;
+      }
+    }
+    .jane-pic1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "墨䔳情境 紳灰";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .jane-pic2 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "坐設計 若山牧水";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .jane-pic3 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "禾宇 秋穗山嵐";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .jane-pic4 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "竹工 國賓楊宅";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  .jane-page {
+    // border: 1px red solid;
+    display: flex;
+    margin-top: 20px;
+    div {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px white solid;
+      font-size: 8px;
+      color: white;
+      margin: 0px 10px;
+      cursor: pointer;
+      &:first-child {
+        background-color: white;
+        color: black;
+      }
+    }
+    .jane-btn2 {
+      background-color: black;
+    }
+  }
+}
+.justin-introduce {
+  width: 80%;
+  height: 90vh;
+  position: fixed;
+  left: 50%;
+  // top: 50%;
+  transform: translate(-50%);
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 71, 71);
+  border: 0.8px white dotted;
+  z-index: 200;
+  .justin-title {
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    border-bottom: 0.4px dotted white;
+    span {
+      font-size: 14px;
+      margin-left: 8px;
+      letter-spacing: 3px;
+    }
+  }
+  .justin-close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .justin-pic {
+    // height: 30%;
+    width: 100%;
+    // border: 1px red solid;
+    display: flex;
+    justify-content: space-around;
+    div {
+      width: 40%;
+      height: 300px;
+      overflow: hidden;
+      // border: 1px red solid;
+      img {
+        transform: scale(2);
+        width: 100%;
+      }
+    }
+    .justin-pic1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "拾葉 彰化L宅";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .justin-pic2 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "豐聚 微粉寓所";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .justin-pic3 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "禾宇 秋穗山嵐";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .justin-pic4 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "竹工 國賓楊宅";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  .justin-page {
+    // border: 1px red solid;
+    display: flex;
+    margin-top: 20px;
+    div {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px white solid;
+      font-size: 8px;
+      color: white;
+      margin: 0px 10px;
+      cursor: pointer;
+      &:first-child {
+        background-color: white;
+        color: black;
+      }
+    }
+    .justin-btn2 {
+      background-color: black;
+    }
+  }
+}
+.nelson-introduce {
+  width: 80%;
+  height: 90vh;
+  position: fixed;
+  left: 50%;
+  // top: 50%;
+  transform: translate(-50%);
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 71, 71);
+  border: 0.8px white dotted;
+  z-index: 200;
+  .nelson-title {
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    border-bottom: 0.4px dotted white;
+    span {
+      font-size: 14px;
+      margin-left: 8px;
+      letter-spacing: 3px;
+    }
+  }
+  .nelson-close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .nelson-pic {
+    // height: 30%;
+    width: 100%;
+    // border: 1px red solid;
+    display: flex;
+    justify-content: space-around;
+    div {
+      width: 40%;
+      height: 300px;
+      overflow: hidden;
+      // border: 1px red solid;
+      img {
+        transform: scale(2);
+        width: 100%;
+      }
+    }
+    .nelson-pic1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "大也 仁山協和";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .nelson-pic2 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "一秝 金光裕建";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .nelson-pic3 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "柱間 南投君詠";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .nelson-pic4 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "日見 惠來L宅";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  .nelson-page {
+    // border: 1px red solid;
+    display: flex;
+    margin-top: 20px;
+    div {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px white solid;
+      font-size: 8px;
+      color: white;
+      margin: 0px 10px;
+      cursor: pointer;
+      &:first-child {
+        background-color: white;
+        color: black;
+      }
+    }
+    .nelson-btn2 {
+      background-color: black;
+    }
+  }
+}
+.dandy-introduce {
+  width: 80%;
+  height: 90vh;
+  position: fixed;
+  left: 50%;
+  // top: 50%;
+  transform: translate(-50%);
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 71, 71);
+  border: 0.8px white dotted;
+  z-index: 200;
+  .dandy-title {
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    border-bottom: 0.4px dotted white;
+    span {
+      font-size: 14px;
+      margin-left: 8px;
+      letter-spacing: 3px;
+    }
+  }
+  .dandy-close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .dandy-pic {
+    // height: 30%;
+    width: 100%;
+    // border: 1px red solid;
+    display: flex;
+    justify-content: space-around;
+    div {
+      width: 40%;
+      height: 300px;
+      overflow: hidden;
+      // border: 1px red solid;
+      img {
+        transform: scale(2);
+        width: 100%;
+      }
+    }
+    .dandy-pic1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "映荷空間  眺 望";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .dandy-pic2 {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "映荷空間 和 煦";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .dandy-pic3 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "Z軸 橡園陳邸";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+    .dandy-pic4 {
+      position: relative;
+      display: none;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        content: "禾馬 脈墨質所";
+        transition: 0.3s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  .dandy-page {
+    // border: 1px red solid;
+    display: flex;
+    margin-top: 20px;
+    div {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px white solid;
+      font-size: 8px;
+      color: white;
+      margin: 0px 10px;
+      cursor: pointer;
+      &:first-child {
+        background-color: white;
+        color: black;
+      }
+    }
+    .dandy-btn2 {
+      background-color: black;
+    }
+  }
+}
+// -------------------------
+.banner-team {
+  display: none;
+  width: 100%;
+  background-color: rgb(49, 48, 48);
+  // display: flex;
+  flex-direction: column;
+  // border: 2px red solid;
+  .banner-top {
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+
+    opacity: 0;
+    // background-image: url("../../furniture_img/CharacterBanner1.jpg"),
+    //   url("../../furniture_img/CharacterBanner2.jpg"),
+    //   url("../../furniture_img/CharacterBanner3.jpg");
+    // background-position: center center center;
+    // background-repeat: no-repeat no-repeat no-repeat;
+    // background-size: contain contain contain;
+    border-bottom: 1px white dotted;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    letter-spacing: 3px;
+    transform: translateX(-2000px);
+    transition: 1s;
+    .chinese {
+      font-size: 20px;
+      padding-bottom: 8px;
+      margin-left: 3px;
+    }
+  }
+  .banner-mid {
+    width: 100%;
+    // border: 2px red solid;
+    margin-bottom: 50px;
+    border-bottom: 1px white dotted;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      width: 30%;
+      // margin-left: 50px;
+
+      img {
+        width: 100%;
+        // border-bottom: 2px white solid;
+        padding-bottom: 20px;
+      }
+    }
+    .human1 {
+      animation: float1 4s -3s infinite linear;
+      display: flex;
+      margin-left: 50px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      border: 0.8px white dotted;
+      padding-top: 30px;
+      .gai-pic1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px white solid;
+        overflow: hidden;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+      .gai-pic1-txt {
+        margin-top: 30px;
+        border-top: 0.5px white dotted;
+        // border: 1px red solid;
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // height: 300px;
+        .gai-pic1-txt-son {
+          // border: 1px red solid;
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+        .view-more {
+          border: 1px white solid;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 20px;
+          color: black;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          &::before {
+            content: "View Cases";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+          &:hover::before {
+            content: "";
+            transition: 1s;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+        }
+      }
+    }
+    .human2 {
+      animation: float1 4s -3s infinite linear;
+      display: flex;
+      margin-left: 50px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      border: 0.8px white dotted;
+      padding-top: 30px;
+
+      transition: 0.4s;
+      .gai-pic2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 0.6px white dotted;
+        overflow: hidden;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        position: relative;
+        img {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      .gai-pic2-txt {
+        margin-top: 30px;
+        border-top: 0.6px white dotted;
+        // border: 1px red solid;
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // height: 300px;
+        .gai-pic2-txt-son {
+          // border: 1px red solid;
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+        .view-more2 {
+          border: 1px white solid;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 20px;
+          color: black;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          &::before {
+            content: "View Cases";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+          &:hover::before {
+            content: "";
+            transition: 1s;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+  .banner-bottom {
+    width: 100%;
+    // border: 2px red solid;
+    // height: 80vh;
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    div {
+      width: 30%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    img {
+      width: 100%;
+    }
+    .human4 {
+      animation: float1 7s -2s infinite linear;
+      display: flex;
+      margin-left: 50px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      border: 0.8px white dotted;
+      padding-top: 30px;
+      .gai-pic4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 0.6px white dotted;
+        overflow: hidden;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+      .gai-pic4-txt {
+        margin-top: 30px;
+        border-top: 0.6px white dotted;
+        // border: 1px red solid;
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // height: 300px;
+        .gai-pic4-txt-son {
+          // border: 1px red solid;
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+        .view-more4 {
+          border: 1px white solid;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 20px;
+          color: black;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          &::before {
+            content: "View More";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+          &:hover::before {
+            content: "";
+            transition: 1s;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+        }
+      }
+    }
+    .introduce-bottom {
+      display: none;
+      padding: 10px;
+      color: white;
+      font-size: 25px;
+    }
+    .human3 {
+      animation: float1 5s -3s infinite linear;
+      display: flex;
+      margin-left: 50px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      border: 0.8px white dotted;
+      padding-top: 30px;
+      .gai-pic3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 0.6px white dotted;
+        overflow: hidden;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+      .gai-pic3-txt {
+        margin-top: 30px;
+        border-top: 0.6px white dotted;
+        // border: 1px red solid;
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // height: 300px;
+        .gai-pic3-txt-son {
+          // border: 1px red solid;
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+        .view-more3 {
+          border: 1px white solid;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 20px;
+          color: black;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          &::before {
+            content: "View More";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+          &:hover::before {
+            content: "";
+            transition: 1s;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+.home-show-all {
+  width: 100%;
+
+  height: 100vh;
+  border-top: 0.8px white dotted;
+  color: white;
+  background-color: rgb(49, 48, 48);
+  display: none;
+  // border: 10px red solid;
+  justify-content: center;
+  align-items: center;
+
+  .home-show {
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    // border: 1px red solid;
+    position: relative;
+    .designers-txt {
+      position: relative;
+      // border: 1px red solid;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 80%;
+        right: -3%;
+        top: 50%;
+        transform: translateY(-50%);
+        border-right: 1px white solid;
+        animation: 2s shine infinite;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 0%;
+      border-right: 2px white solid;
+      transition: 0.4s;
+      animation: heightLong 20s infinite;
+    }
+  }
+  .home-contact {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 70px;
+    // border: 1px red solid;
+    align-items: flex-end;
+    background-image: url("../../furniture_img/CharacterFooterPic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    img {
+      cursor: pointer;
+      animation: float1 5s infinite;
+      transform: rotate(90deg);
+    }
+    .contact-link {
+      // margin-bottom: 20px;
+      padding-right: 3px;
+      a {
+        writing-mode: vertical-rl;
+        text-decoration: none;
+        color: rgb(198, 44, 44);
+        letter-spacing: 3px;
+        font-size: 20px;
+        // border: 1.2px white dotted;
+        // padding: 5px 15px;
+        border-radius: 10px;
+        // background-color: black;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+
+  .footer-width-control {
+    // padding-left: 120px;
+    position: relative;
+    padding-top: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #cec5ba;
+    // background-image: url(../../furniture_img/Group\ 3.svg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: -30px;
+    // border: 1px red solid;
+    .footer-all {
+      display: flex;
+      //   border: 1px red solid;
+      color: #423e44;
+      .footer-left {
+        // border: 1px red solid;
+        margin-right: 80px;
+        line-height: 30px;
+        padding-right: 15px;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 300;
+          letter-spacing: 4px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s;
+          &:hover {
+            color: #524d55;
+          }
+        }
+      }
+      .footer-middle {
+        // border: 1px red solid;
+        margin-right: 80px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 300;
+          letter-spacing: 4px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s;
+          &:hover {
+            color: #524d55;
+          }
+        }
+        div {
+          font-weight: 300;
+          letter-spacing: 4px;
+        }
+      }
+      .footer-right {
+        // border: 1px red solid;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        div {
+          font-weight: 300;
+          letter-spacing: 3px;
+        }
+      }
+    }
+    .last-text {
+      position: absolute;
+      top: 240px;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heightLong {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@keyframes float1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scaleToClose {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes rotateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}

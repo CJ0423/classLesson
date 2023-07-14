@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .wrap {
+      width: 100%;
+      /* height: 300px; */
+      display: flex;
+      border: 1px red solid;
+      flex-wrap: wrap;
+    }
+    .item {
+      margin: 0 auto;
+      width: 280px;
+      box-sizing: border-box;
+      border: 2px red solid;
+      /* margin: 0 0.83%; */
+      /* width: 23%; */
+      margin: 10px;
+      width: calc(100% / 4 -20px);
+      background-color: gray;
+    }
+    @media screen and (min-width: 768px) {
+      .item {
+        background-color: aqua;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .item {
+        background-color: brown;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .item {
+        background-color: blueviolet;
+      }
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam
+        dolore itaque consequatur officia nisi provident, quas omnis iusto aut
+        laborum totam unde deserunt rem sapiente in odio expedita cupiditate.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam
+        dolore itaque consequatur officia nisi provident, quas omnis iusto aut
+        laborum totam unde deserunt rem sapiente in odio expedita cupiditate.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam
+        dolore itaque consequatur officia nisi provident, quas omnis iusto aut
+        laborum totam unde deserunt rem sapiente in odio expedita cupiditate.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam
+        dolore itaque consequatur officia nisi provident, quas omnis iusto aut
+        laborum totam unde deserunt rem sapiente in odio expedita cupiditate.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam
+        excepturi possimus quo voluptatum exercitationem. Molestias itaque
+        soluta, illum, fuga est sed officiis nisi accusamus iste velit
+        voluptatibus ex doloribus!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam
+        excepturi possimus quo voluptatum exercitationem. Molestias itaque
+        soluta, illum, fuga est sed officiis nisi accusamus iste velit
+        voluptatibus ex doloribus!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam
+        excepturi possimus quo voluptatum exercitationem. Molestias itaque
+        soluta, illum, fuga est sed officiis nisi accusamus iste velit
+        voluptatibus ex doloribus!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam
+        excepturi possimus quo voluptatum exercitationem. Molestias itaque
+        soluta, illum, fuga est sed officiis nisi accusamus iste velit
+        voluptatibus ex doloribus!
+      </div>
+    </div>
+  </body>
+</html>

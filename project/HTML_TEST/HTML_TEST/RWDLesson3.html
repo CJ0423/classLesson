@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        /* border: 2px red solid; */
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+      :root {
+        --column-count: 2;
+      }
+      .column {
+        padding: 10px;
+        width: calc(100% / var(--column-count));
+        /* border: 2px red solid; */
+        box-sizing: border-box;
+      }
+      /* @media screen and (min-width: 375px) {
+        .column {
+          width: calc(100% / var(--column-count));
+        }
+      } */
+      @media screen and (min-width: 768px) {
+        .column {
+          --column-count: 3;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .column {
+          --column-count: 4;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .column {
+          --column-count: 6;
+        }
+      }
+      .card {
+        height: 200px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="column">
+        <div class="card"></div>
+      </div>
+      <div class="column">
+        <div class="card"></div>
+      </div>
+      <div class="column">
+        <div class="card"></div>
+      </div>
+      <div class="column">
+        <div class="card"></div>
+      </div>
+      <div class="column">
+        <div class="card"></div>
+      </div>
+      <div class="column">
+        <div class="card"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --colnmu-count: 2;
+        --margin-count: 20px;
+      }
+      .wrap {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item {
+        --pp: gray;
+        --oo: 300px;
+        height: var(--oo);
+        width: calc(100% / var(--colnmu-count) - var(--margin-count));
+        margin: 10px;
+        background-color: var(--pp);
+      }
+      @media screen and (min-width: 768px) {
+        .wrap {
+          width: 768px;
+        }
+        .item {
+          --colnmu-count: 3;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .wrap {
+          width: 1024px;
+        }
+        .item {
+          --colnmu-count: 4;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .wrap {
+          width: 1200px;
+        }
+        .item {
+          --colnmu-count: 6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

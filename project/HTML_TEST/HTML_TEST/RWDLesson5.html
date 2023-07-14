@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1200px;
+        margin: auto;
+        /* border: 1px red solid; */
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+      .col {
+        width: 25%;
+        padding: 0 10px;
+      }
+      .col img {
+        width: 100%;
+      }
+      .row-cols-1 > .col {
+        width: 100%;
+      }
+      .row-cols-2 > .col {
+        width: 50%;
+      }
+      .row-cols-3 > .col {
+        width: 33.3333%;
+      }
+      .row-cols-4 > .col {
+        width: 25%;
+      }
+      .row-cols-5 > .col {
+        width: 20%;
+      }
+      .row-cols-6 > .col {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-2">
+        <div class="col">
+          <div class="card">
+            <img src="./furniture_img/aboutUsBanner.jpg" alt="" />
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              exercitationem
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./furniture_img/aboutUsBanner.jpg" alt="" />
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              exercitationem
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./furniture_img/aboutUsBanner.jpg" alt="" />
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              exercitationem
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./furniture_img/aboutUsBanner.jpg" alt="" />
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              exercitationem
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

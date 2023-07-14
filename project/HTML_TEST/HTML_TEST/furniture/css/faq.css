@@ -1,0 +1,610 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  overflow: visible;
+}
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left {
+  margin-bottom: 10px;
+}
+header .header-all .header-control-width .header-left img {
+  margin-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div .first-page i {
+  font-size: 16px;
+  margin-left: 3px;
+}
+header .header-all .header-control-width .header-right div a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div a:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div a:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right .human-icon,
+header .header-all .header-control-width .header-right .home {
+  font-size: 10px;
+}
+header .header-all .header-control-width .header-right .all-case {
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right .all-case .top-case {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+header .header-all .header-control-width .header-right .all-case .under-case {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  overflow: white-space;
+  white-space: nowrap;
+  z-index: 101;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-color: rgba(30, 29, 29, 0.8);
+}
+header .header-all .header-control-width .header-right .all-case .under-case a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  overflow: white-space;
+  white-space: nowrap;
+}
+header .header-all .header-control-width .header-right .all-case .under-case a:hover {
+  color: rgba(223, 218, 218, 0.928);
+}
+header article {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../furniture_img/faq.banner4.jpg);
+  background-size: contain, contain;
+  background-repeat: no-repeat, repeat;
+  background-position: top left, center;
+  background-color: rgb(49, 48, 48);
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  padding-left: 50px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+header article .faq {
+  opacity: 0;
+  transition: 1s;
+  animation: bling 7s forwards;
+}
+header article .faq-chinese {
+  font-size: 20px;
+}
+
+.main1 {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: rgb(49, 48, 48);
+}
+.main1 .main-control-width {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.main1 .main-control-width .line-show {
+  width: 100%;
+  border-top: 1px white dotted;
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+.main1 .main-control-width .question1 {
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question1 .question1-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question1-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question2 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question2 .question2-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question2-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question3 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question3 .question3-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question3-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question4 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question4 .question4-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question4-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question5 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question5 .question5-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question5-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question6 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question6 .question6-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question6-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main1 .main-control-width .question7 {
+  margin-top: 150px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 1px white dotted;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.main1 .main-control-width .question7 .question7-drop {
+  cursor: pointer;
+  border-top: 10px white solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  animation: arrMove 1.2s infinite;
+}
+.main1 .main-control-width .question7-ans {
+  color: white;
+  display: none;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.for-black-bkc {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(49, 48, 48);
+}
+
+.bottom-pic-all {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../furniture_img/faq.banner5.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(49, 48, 48);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: white;
+}
+.bottom-pic-all .other-question {
+  width: 50%;
+  height: 8%;
+  border-radius: 20px;
+  padding-left: 10px;
+  transition: 1s;
+}
+.bottom-pic-all .other-question-run {
+  position: relative;
+}
+.bottom-pic-all .other-question-run .dot {
+  color: transparent;
+}
+.bottom-pic-all .other-question-run::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  border-right: 1px white solid;
+  animation: shine 2s infinite;
+}
+.bottom-pic-all .send {
+  border: 1px white solid;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.bottom-pic-all .send:hover {
+  background-color: rgb(154, 152, 152);
+}
+
+.pass-msg {
+  width: 60%;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 60vh;
+  border: 1px black solid;
+  transition: 0.4s;
+}
+.pass-msg .close-msg {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: black;
+  border: 1px black solid;
+  background-color: white;
+}
+.pass-msg .msg-txt {
+  width: 100%;
+  height: 80%;
+  border: 1px black solid;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.pass-msg .msg-txt .expect {
+  display: flex;
+  transition: 1s;
+}
+.pass-msg .msg-txt .letter {
+  transition: 1s;
+  position: relative;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #cec5ba;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@keyframes bling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shine {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes widthLong {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes arrMove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=faq.css.map */

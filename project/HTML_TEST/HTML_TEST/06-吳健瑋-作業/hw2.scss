@@ -1,0 +1,194 @@
+.tibameStudy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  margin-bottom: 150px;
+  p {
+    margin: 0px 0px;
+  }
+
+  h2 {
+    color: rgb(9, 173, 191);
+  }
+  .tibameStudy-title-span {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 173, 191);
+    padding: 0px 8px;
+    margin-right: 8px;
+  }
+  .tibameStudy-pic-text {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+    // border: 1px red solid;
+    font-size: 0.9rem;
+    .tibameStudy-pic-text-parts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: calc((100% / 3) - 100px);
+      // border: 1px red solid;
+      img {
+        width: 200px;
+      }
+    }
+    .tibameStudy-pic-text-parts-second-parts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.eight-article {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  border: 1px red solid;
+  .all-posts {
+    display: flex;
+    .left-posts {
+      .left-single-post {
+        display: flex;
+        // border: 1px red solid;
+        // width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        &:last-child {
+          border-bottom: none;
+        }
+        .every-posts-num {
+          //   padding-top: 15px;
+          padding-right: 15px;
+          -webkit-text-stroke: 1px rgb(140, 140, 140);
+          color: transparent;
+          font-size: 64px;
+          font-weight: 600;
+          line-height: 0.8;
+          font-style: italic;
+          flex-shrink: 0;
+          width: 35px;
+          text-align: center;
+        }
+        .left-single-title {
+          color: rgb(9, 173, 191);
+          font-size: 0.9rem;
+          span {
+            margin-right: 5px;
+          }
+        }
+        .left-post {
+          display: block;
+          a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+              color: rgb(9, 173, 191);
+            }
+          }
+        }
+      }
+    }
+    .right-posts {
+      .right-single-post {
+        display: flex;
+        // border: 1px red solid;
+        // width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        &:last-child {
+          border-bottom: none;
+        }
+        .every-posts-num {
+          //   padding-top: 15px;
+          padding-right: 15px;
+          -webkit-text-stroke: 1px rgb(140, 140, 140);
+          color: transparent;
+          font-size: 64px;
+          font-weight: 600;
+          line-height: 0.8;
+          font-style: italic;
+          flex-shrink: 0;
+          width: 35px;
+          text-align: center;
+        }
+        .right-single-title {
+          color: rgb(9, 173, 191);
+          font-size: 0.9rem;
+          span {
+            margin-right: 5px;
+          }
+        }
+        .right-post {
+          display: block;
+          a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+              color: rgb(9, 173, 191);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.the-footer-lists {
+  display: flex;
+  border: 1px red solid;
+  .the-footer-threeParts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 1px red solid;
+    margin-right: 50px;
+    .threeParts-title {
+      font-weight: bold;
+    }
+    .the-footer-ul {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.8);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .aboutUs {
+    // border: 1px red solid;
+    margin-right: 50px;
+    .aboutUs-link {
+      a {
+        text-decoration: none;
+        color: inherit;
+        border: 1px black solid;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  .chinese {
+    display: inline-block;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}

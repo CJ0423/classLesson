@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var temperature = 30;
+      let changeTemperature = 30 * (9 / 5) + 32;
+      alert(changeTemperature);
+
+      let hour = 16;
+      let minute = 54;
+      let sec = 20;
+
+      let allTime = 16 * 60 * 60 + 54 * 60 + 20;
+      alert(allTime);
+      // 60860
+
+      let hour2 = parseInt(allTime / 60 / 60);
+      alert(hour2);
+      let sec2 = allTime % 60;
+      let min2 = allTime - (hour2 * 60 * 60 + sec2);
+      min2 /= 60;
+      alert(min2, "分鐘");
+      alert(sec2);
+    </script>
+  </body>
+</html>

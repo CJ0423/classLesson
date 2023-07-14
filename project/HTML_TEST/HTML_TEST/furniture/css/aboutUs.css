@@ -1,0 +1,365 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+header .header-all {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+  z-index: 100;
+}
+header .header-all .header-control-width {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+header .header-all .header-control-width .header-left img {
+  width: 60px;
+}
+header .header-all .header-control-width .header-right {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  text-shadow: #666 2px 1px 5px;
+}
+header .header-all .header-control-width .header-right div {
+  padding-bottom: 8px;
+}
+header .header-all .header-control-width .header-right div .first-page:hover::before {
+  height: 2px;
+  width: 2.8%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .header-all .header-control-width .header-right div a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+header .header-all .header-control-width .header-right div a:hover {
+  color: rgb(197, 188, 188);
+}
+header .header-all .header-control-width .header-right div a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整下划线的位置 */
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+header .header-all .header-control-width .header-right div a:hover::before {
+  height: 2px;
+  width: 5%; /* hover 状态下将下划线的宽度设置为 100% */
+}
+header .banner {
+  overflow: hidden;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+header .banner img {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  top: -50px;
+}
+header .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(-180deg, rgb(206, 197, 186), rgb(255, 255, 255));
+}
+header .banner-text h1 {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-weight: 300;
+}
+header .banner-text p {
+  height: 10vh;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+header .banner-text p::after {
+  position: absolute;
+  border-bottom: 1px black solid;
+  content: "";
+  top: 30px;
+  left: 0%;
+  width: 100%;
+}
+header .banner-text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+header .banner-text2 h2 {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-weight: 300;
+}
+header .banner-text2 p {
+  height: 10vh;
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+header .banner-text2 p::after {
+  position: absolute;
+  border-bottom: 1px black solid;
+  content: "";
+  top: 30px;
+  left: 0%;
+  width: 100%;
+}
+
+main .main-first {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(99deg, rgb(206, 197, 186), rgb(255, 255, 255));
+}
+main .main-first .main-first-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+main .main-first .main-first-pic img {
+  width: 80%;
+}
+main .main-first .main-first-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 30px;
+  width: 50%;
+  line-height: 60px;
+}
+main .main-first .main-first-text h3 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 400;
+}
+main .main-first .main-first-text p {
+  font-size: 14px;
+  letter-spacing: 3.5px;
+}
+main .main-second {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  background: linear-gradient(65deg, rgb(206, 197, 186), rgb(255, 255, 255));
+}
+main .main-second .main-second-pic {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-second .main-second-pic div {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  overflow: hidden;
+}
+main .main-second .main-second-pic div img {
+  position: absolute;
+  width: 100%;
+  top: -110px;
+}
+main .main-second .main-second-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 65px;
+  line-height: 60px;
+}
+main .main-second .main-second-text h3 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 400;
+}
+main .main-second .main-second-text p {
+  font-size: 14px;
+  letter-spacing: 3.5px;
+}
+main .main-third {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(180deg, rgb(206, 197, 186), rgb(255, 255, 255));
+}
+main .main-third .main-third-pic {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-third .main-third-pic div {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+main .main-third .main-third-pic div img {
+  position: absolute;
+  width: 100%;
+  top: -170px;
+}
+main .main-third .main-third-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  line-height: 60px;
+}
+main .main-third .main-third-text h3 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 400;
+}
+main .main-third .main-third-text p {
+  font-size: 14px;
+  letter-spacing: 3.5px;
+}
+main .concact-us {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+main .concact-us a {
+  height: 50%;
+  position: relative;
+  border: 1px #b4a169 solid;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: #b4a169;
+  font-size: 18px;
+  letter-spacing: 6px;
+  padding: 15px 30px 0px 30px;
+  border-radius: 28px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, padding 0.5s ease-in-out;
+}
+main .concact-us a:hover {
+  background-color: #b4a169;
+  color: white;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-width-control {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #cec5ba;
+}
+footer .footer-width-control .footer-all {
+  display: flex;
+  color: #423e44;
+}
+footer .footer-width-control .footer-all .footer-left {
+  margin-right: 80px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+footer .footer-width-control .footer-all .footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-left a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-left a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle {
+  margin-right: 80px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-middle h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-middle a {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+footer .footer-width-control .footer-all .footer-middle a:hover {
+  color: #524d55;
+}
+footer .footer-width-control .footer-all .footer-middle div {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+footer .footer-width-control .footer-all .footer-right {
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-width-control .footer-all .footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .footer-width-control .footer-all .footer-right div {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+footer .footer-width-control .last-text {
+  position: absolute;
+  top: 240px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}/*# sourceMappingURL=aboutUs.css.map */
