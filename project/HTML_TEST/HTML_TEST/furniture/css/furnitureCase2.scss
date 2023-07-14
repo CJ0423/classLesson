@@ -202,6 +202,7 @@ header {
       .mini-translate {
         width: 100%;
         transform: translateX(-900px);
+        transition: 1s;
       }
     }
     .left-side,

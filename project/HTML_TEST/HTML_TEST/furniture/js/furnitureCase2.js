@@ -31,11 +31,9 @@ setInterval(() => {
   }, 3500);
 }, 600);
 
-let lastScrollPosition =
-  window.pageYOffset || document.documentElement.scrollTop;
+let lastScrollPosition = document.documentElement.scrollTop;
 window.addEventListener("scroll", function () {
-  let currentScrollPosition =
-    window.pageYOffset || document.documentElement.scrollTop;
+  let currentScrollPosition = document.documentElement.scrollTop;
 
   if (currentScrollPosition > lastScrollPosition) {
     // 向下滑动
@@ -59,12 +57,18 @@ let miniTranslate = document.querySelectorAll(".mini-translate");
 let miniTranslateNum = -900;
 let miniClose = document.querySelector(".mini-close");
 let miniDetail = document.querySelector(".mini-detail");
+let miniPageNum = 1;
+let miniPage = document.querySelector(".miniPage");
 
 leftSide.addEventListener("click", function () {
   miniTranslateNum -= 300;
+  miniPageNum--;
+  miniPage.innerHTML = miniPageNum;
   if (miniTranslateNum <= -900) {
     miniTranslateNum = -900;
-    leftSide.style.color = "gray";
+    miniPageNum = 1;
+    miniPage.innerHTML = miniPageNum;
+    // leftSide.style.color = "gray";
   }
   for (let i = 0; i < miniTranslate.length; i++) {
     miniTranslate[i].style.transform = `translateX(${miniTranslateNum}px)`;
@@ -72,9 +76,13 @@ leftSide.addEventListener("click", function () {
 });
 rightSide.addEventListener("click", function () {
   miniTranslateNum += 300;
+  miniPageNum++;
+  miniPage.innerHTML = miniPageNum;
   if (miniTranslateNum >= 0) {
     miniTranslateNum = 0;
-    rightSide.style.color = "gray";
+    miniPageNum = 4;
+    miniPage.innerHTML = miniPageNum;
+    // rightSide.style.color = "gray";
   }
   for (let i = 0; i < miniTranslate.length; i++) {
     miniTranslate[i].style.transform = `translateX(${miniTranslateNum}px)`;

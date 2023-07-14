@@ -187,6 +187,7 @@ header .case-banner .final-txt {
 .mini-detail .mini-pic .control-mini-pic .mini-translate {
   width: 100%;
   transform: translateX(-900px);
+  transition: 1s;
 }
 .mini-detail .mini-pic .left-side,
 .mini-detail .mini-pic .right-side {

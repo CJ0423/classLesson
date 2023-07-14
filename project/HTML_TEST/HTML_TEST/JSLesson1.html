@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i < 11; i++) {
+        document.write(`${i}.`);
+      }
+
+      let x = 0;
+      for (let i = 1; i < 11; i++) {
+        x += i;
+      }
+      document.write(x);
+
+      let xx = 0;
+      for (let i = 1; i <= 50; i++) {
+        if (i % 3 == 0) {
+          xx += i;
+        }
+      }
+      document.write(`三的倍數總和${xx}`);
+
+      let xxx = 0;
+      for (let i = 3; i <= 50; i += 3) {
+        xxx += i;
+      }
+      document.write(`三的倍數總和${xxx} xxxx`);
+    </script>
+  </body>
+</html>
