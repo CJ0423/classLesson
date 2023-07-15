@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // question1
+      let orange = 50;
+      let buyOrange = 20;
+      let allPrice = orange * buyOrange;
+      if (allPrice > 500) {
+        allPrice *= 0.9;
+      }
+      document.write(`第一題答案${allPrice}<br>`);
+      // question2
+      let apple = 70;
+      let buyApple = 50;
+      let allPriceApple = apple * buyApple;
+      if (allPriceApple > 500) {
+        allPriceApple *= 0.9;
+      } else if (allPriceApple > 1000) {
+        allPriceApple *= 0.7;
+      }
+      document.write(`第二題答案${allPriceApple}<br>`);
+
+      // question3
+      let orangeLevel = 2;
+      let orangeWeight = 60;
+      let orangePrice = 0;
+      if (orangeLevel == 1) {
+        if (orangeWeight <= 40) {
+          orangePrice = orangeWeight * 40;
+        } else if (orangeWeight > 40) {
+          orangePrice = orangeWeight * 25;
+        } else if (orangeWeight > 100) {
+          orangePrice = orangeWeight * 20;
+        }
+      } else if ((orangeLevel = 2)) {
+        if (orangeWeight <= 40) {
+          orangePrice = orangeWeight * 25;
+        } else if (orangeWeight > 40) {
+          orangePrice = orangeWeight * 20;
+        } else if (orangeWeight > 100) {
+          orangePrice = orangeWeight * 15;
+        }
+      } else if (orangeLevel == 3) {
+        if (orangeWeight <= 40) {
+          orangePrice = orangeWeight * 20;
+        } else if (orangeWeight > 40) {
+          orangePrice = orangeWeight * 15;
+        } else if (orangeWeight > 100) {
+          orangePrice = orangeWeight * 10;
+        }
+      }
+      document.write(`第三題答案${orangePrice}<br>`);
+      // question4
+      let x = 50;
+      let allX = 0;
+      let all2 = 0;
+      let all3 = 0;
+
+      for (let i = 1; i <= x; i++) {
+        allX += i;
+        if (i % 2 == 0) {
+          all2 += i;
+        }
+        if (i % 3 == 0) {
+          all3 += i;
+        }
+      }
+      document.write(`總和${allX},偶數和${all2},奇數和${all3}<br>`);
+
+      // question5
+      let random1 = 0;
+      let allRandom = 0;
+      for (let i = 1; i <= 11; i++) {
+        random1 = Math.random() * 11;
+        document.write(`第${i}次${parseInt(random1)}<br>`);
+        allRandom += random1;
+      }
+      document.write(`亂數總和為${parseInt(allRandom)}<br>`);
+    </script>
+  </body>
+</html>

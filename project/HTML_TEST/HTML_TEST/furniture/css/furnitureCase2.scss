@@ -159,7 +159,10 @@ header {
     }
   }
 }
-.mini-detail {
+.mini-detail,
+.bon-detail,
+.corner-detail,
+.homeBed-detail {
   width: 90%;
   height: 100vh;
   position: fixed;
@@ -172,7 +175,10 @@ header {
   display: none;
   flex-direction: column;
 
-  .mini-close {
+  .mini-close,
+  .bon-close,
+  .corner-close,
+  .homeBed-close {
     width: 100%;
     height: 10%;
     display: flex;
@@ -185,28 +191,43 @@ header {
     color: white;
     cursor: pointer;
   }
-  .mini-pic {
+  .mini-pic,
+  .bon-pic,
+  .corner-pic,
+  .homeBed-pic {
     width: 100%;
     height: 80%;
     border: 1px white solid;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    .control-mini-pic {
+    .control-mini-pic,
+    .control-bon-pic,
+    .control-corner-pic,
+    .control-homeBed-pic {
       // border: 1px black solid;
       width: 300px;
       height: 300px;
       display: flex;
       overflow: hidden;
       transition: 0.5s;
-      .mini-translate {
+      .mini-translate,
+      .bon-translate,
+      .corner-translate,
+      .homeBed-translate {
         width: 100%;
         transform: translateX(-900px);
         transition: 1s;
       }
     }
-    .left-side,
-    .right-side {
+    .mini-left-side,
+    .mini-right-side,
+    .bon-left-side,
+    .bon-right-side,
+    .corner-left-side,
+    .corner-right-side,
+    .homeBed-left-side,
+    .homeBed-right-side {
       color: white;
       font-size: 60px;
       cursor: pointer;
@@ -259,13 +280,15 @@ main {
         }
       }
     }
-    .sofa-items-all {
+    .sofa-items-all,
+    .bed-items-all {
       width: 100%;
       height: 90%;
-      display: flex;
+      // display: flex;
       padding: 30px;
       flex-direction: column;
-      .sofa-title {
+      .sofa-title,
+      .bed-title {
         // border: 1px red solid;
         font-size: 35px;
         display: flex;
@@ -302,7 +325,8 @@ main {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
-        .sofa-items {
+        .sofa-items,
+        .bed-items {
           width: calc(100% / 3 - 20px);
           border: 1px white solid;
           height: 300px;
@@ -310,7 +334,8 @@ main {
           flex-direction: column;
           position: relative;
 
-          .sofa-items-pic {
+          .sofa-items-pic,
+          .bed-items-pic {
             width: 100%;
             height: 80%;
             // border: 1px red solid;
@@ -334,7 +359,8 @@ main {
               cursor: pointer;
             }
           }
-          .sofa-items-txt {
+          .sofa-items-txt,
+          .bed-items-txt {
             width: 100%;
             height: 20%;
             display: flex;
@@ -350,9 +376,20 @@ main {
                 animation: heartBig 0.8s infinite;
               }
             }
+            .heart-change,
+            .heart-change-two,
+            .heartCh {
+              width: 30px;
+            }
           }
         }
       }
+    }
+    .bed-items-all {
+      display: none;
+    }
+    .sofa-items-all {
+      display: flex;
     }
   }
 }
