@@ -162,7 +162,10 @@ header {
 .mini-detail,
 .bon-detail,
 .corner-detail,
-.homeBed-detail {
+.homeBed-detail,
+.loka-detail,
+.oliver-detail,
+.bonjour-detail {
   width: 90%;
   height: 100vh;
   position: fixed;
@@ -178,7 +181,10 @@ header {
   .mini-close,
   .bon-close,
   .corner-close,
-  .homeBed-close {
+  .homeBed-close,
+  .loka-close,
+  .oliver-close,
+  .bonjour-close {
     width: 100%;
     height: 10%;
     display: flex;
@@ -194,7 +200,10 @@ header {
   .mini-pic,
   .bon-pic,
   .corner-pic,
-  .homeBed-pic {
+  .homeBed-pic,
+  .loka-pic,
+  .oliver-pic,
+  .bonjour-pic {
     width: 100%;
     height: 80%;
     border: 1px white solid;
@@ -204,7 +213,10 @@ header {
     .control-mini-pic,
     .control-bon-pic,
     .control-corner-pic,
-    .control-homeBed-pic {
+    .control-homeBed-pic,
+    .control-loka-pic,
+    .control-oliver-pic,
+    .control-bonjour-pic {
       // border: 1px black solid;
       width: 300px;
       height: 300px;
@@ -214,7 +226,14 @@ header {
       .mini-translate,
       .bon-translate,
       .corner-translate,
-      .homeBed-translate {
+      .homeBed-translate,
+      .loka-translate,
+      .oliver-translate {
+        width: 100%;
+        transform: translateX(-900px);
+        transition: 1s;
+      }
+      .bonjour-translate {
         width: 100%;
         transform: translateX(-900px);
         transition: 1s;
@@ -227,7 +246,13 @@ header {
     .corner-left-side,
     .corner-right-side,
     .homeBed-left-side,
-    .homeBed-right-side {
+    .homeBed-right-side,
+    .loka-left-side,
+    .loka-right-side,
+    .oliver-left-side,
+    .oliver-right-side,
+    .bonjour-left-side,
+    .bonjour-right-side {
       color: white;
       font-size: 60px;
       cursor: pointer;
@@ -253,10 +278,10 @@ main {
     height: 100%;
 
     margin: 0 auto;
-    border: 1px red solid;
+    border: 1px white solid;
     .furniture-control-btn {
       width: 100%;
-      border: 1px red solid;
+      border-bottom: 1px white solid;
       // height: 100%;
       height: 10%;
       display: flex;
@@ -279,16 +304,25 @@ main {
           color: black;
         }
       }
+      .favorite-list {
+        color: white;
+        .favorite-list-num {
+          font-size: 18px;
+          color: rgb(170, 24, 24);
+        }
+      }
     }
     .sofa-items-all,
-    .bed-items-all {
+    .bed-items-all,
+    .table-items-all {
       width: 100%;
       height: 90%;
       // display: flex;
       padding: 30px;
       flex-direction: column;
       .sofa-title,
-      .bed-title {
+      .bed-title,
+      .table-title {
         // border: 1px red solid;
         font-size: 35px;
         display: flex;
@@ -326,7 +360,8 @@ main {
         justify-content: space-between;
         margin-bottom: 20px;
         .sofa-items,
-        .bed-items {
+        .bed-items,
+        .table-items {
           width: calc(100% / 3 - 20px);
           border: 1px white solid;
           height: 300px;
@@ -335,7 +370,8 @@ main {
           position: relative;
 
           .sofa-items-pic,
-          .bed-items-pic {
+          .bed-items-pic,
+          .table-items-pic {
             width: 100%;
             height: 80%;
             // border: 1px red solid;
@@ -360,7 +396,8 @@ main {
             }
           }
           .sofa-items-txt,
-          .bed-items-txt {
+          .bed-items-txt,
+          .table-items-txt {
             width: 100%;
             height: 20%;
             display: flex;
@@ -384,6 +421,9 @@ main {
           }
         }
       }
+    }
+    .table-items-all {
+      display: none;
     }
     .bed-items-all {
       display: none;

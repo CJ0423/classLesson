@@ -60,44 +60,101 @@ let cornerLeftSide = document.querySelector(".corner-left-side");
 let cornerRightSide = document.querySelector(".corner-right-side");
 let homeBedLeftSide = document.querySelector(".homeBed-left-side");
 let homeBedRightSide = document.querySelector(".homeBed-right-side");
+let lokaLeftSide = document.querySelector(".loka-left-side");
+let lokaRightSide = document.querySelector(".loka-right-side");
+let oliverLeftSide = document.querySelector(".oliver-left-side");
+let oliverRightSide = document.querySelector(".oliver-right-side");
+let bonjourLeftSide = document.querySelector(".bonjour-left-side");
+let bonjourRightSide = document.querySelector(".bonjour-right-side");
 
-let leftArr = [miniLeftSide, bonLeftSide, cornerLeftSide, homeBedLeftSide];
-let rightArr = [miniRightSide, bonRightSide, cornerRightSide, homeBedRightSide];
+let leftArr = [
+  miniLeftSide,
+  bonLeftSide,
+  cornerLeftSide,
+  homeBedLeftSide,
+  lokaLeftSide,
+  oliverLeftSide,
+  bonjourLeftSide,
+];
+let rightArr = [
+  miniRightSide,
+  bonRightSide,
+  cornerRightSide,
+  homeBedRightSide,
+  lokaRightSide,
+  oliverRightSide,
+  bonjourRightSide,
+];
 
 let miniTranslate = document.querySelectorAll(".mini-translate");
 let bonTranslate = document.querySelectorAll(".bon-translate");
 let cornerTranslate = document.querySelectorAll(".corner-translate");
 let homeBedTranslate = document.querySelectorAll(".homeBed-translate");
+let lokaTranslate = document.querySelectorAll(".loka-translate");
+let oliverTranslate = document.querySelectorAll(".oliver-translate");
+let bonjourTranslate = document.querySelectorAll(".bonjour-translate");
 
 let translateArr = [
   miniTranslate,
   bonTranslate,
   cornerTranslate,
   homeBedTranslate,
+  lokaTranslate,
+  oliverTranslate,
+  bonjourTranslate,
 ];
 
 let miniTranslateNum = -900;
 let bonTranslateNum = -900;
 let cornerTranslateNum = -900;
 let homeBedTranslateNum = -900;
+let lokaTranslateNum = -900;
+let oliverTranslateNum = -900;
+let bonjourTranslateNum = -900;
 let translateNum = [
   miniTranslateNum,
   bonTranslateNum,
   cornerTranslateNum,
   homeBedTranslateNum,
+  lokaTranslateNum,
+  oliverTranslateNum,
+  bonjourTranslateNum,
 ];
 
 let miniPageNum = 1;
 let bonPageNum = 1;
 let cornerPageNum = 1;
 let homeBedPageNum = 1;
-let pageNumArr = [miniPageNum, bonPageNum, cornerPageNum, homeBedPageNum];
+let lokaPageNum = 1;
+let oliverPageNum = 1;
+let bonjourPageNum = 1;
+let pageNumArr = [
+  miniPageNum,
+  bonPageNum,
+  cornerPageNum,
+  homeBedPageNum,
+  lokaPageNum,
+  oliverPageNum,
+  bonjourPageNum,
+];
 
 let miniPage = document.querySelector(".miniPage");
 let bonPage = document.querySelector(".bonPage");
 let cornerPage = document.querySelector(".cornerPage");
 let homeBedPage = document.querySelector(".homeBedPage");
-let pageArr = [miniPage, bonPage, cornerPage, homeBedPage];
+let lokaPage = document.querySelector(".lokaPage");
+let oliverPage = document.querySelector(".oliverPage");
+let bonjourPage = document.querySelector(".bonjourPage");
+
+let pageArr = [
+  miniPage,
+  bonPage,
+  cornerPage,
+  homeBedPage,
+  lokaPage,
+  oliverPage,
+  bonjourPage,
+];
 
 // for (let i = 0; i < leftArr.length; i++) {
 //   leftArr[i].addEventListener("click", function () {
@@ -115,6 +172,90 @@ let pageArr = [miniPage, bonPage, cornerPage, homeBedPage];
 //     }
 //   });
 // }
+// bonjour---------------
+bonjourLeftSide.addEventListener("click", function () {
+  bonjourTranslateNum -= 300;
+  bonjourPageNum--;
+  bonjourPage.innerHTML = bonjourPageNum;
+  if (bonjourTranslateNum <= -900) {
+    bonjourTranslateNum = -900;
+    bonjourPageNum = 1;
+    bonjourPage.innerHTML = bonjourPageNum;
+  }
+  for (let i = 0; i < bonjourTranslate.length; i++) {
+    bonjourTranslate[
+      i
+    ].style.transform = `translateX(${bonjourTranslateNum}px)`;
+  }
+});
+bonjourRightSide.addEventListener("click", function () {
+  bonjourTranslateNum += 300;
+  bonjourPageNum++;
+
+  if (bonjourTranslateNum >= 0) {
+    bonjourTranslateNum = 0;
+    bonjourPageNum = 4;
+  }
+  bonjourPage.innerHTML = bonjourPageNum;
+  for (let i = 0; i < bonjourTranslate.length; i++) {
+    bonjourTranslate[
+      i
+    ].style.transform = `translateX(${bonjourTranslateNum}px)`;
+  }
+});
+// oliver----------------
+oliverLeftSide.addEventListener("click", function () {
+  oliverTranslateNum -= 300;
+  oliverPageNum--;
+  oliverPage.innerHTML = oliverPageNum;
+  if (oliverTranslateNum <= -900) {
+    oliverTranslateNum = -900;
+    oliverPageNum = 1;
+    oliverPage.innerHTML = oliverPageNum;
+  }
+  for (let i = 0; i < oliverTranslate.length; i++) {
+    oliverTranslate[i].style.transform = `translateX(${oliverTranslateNum}px)`;
+  }
+});
+oliverRightSide.addEventListener("click", function () {
+  oliverTranslateNum += 300;
+  oliverPageNum++;
+
+  if (oliverTranslateNum >= 0) {
+    oliverTranslateNum = 0;
+    oliverPageNum = 4;
+  }
+  oliverPage.innerHTML = oliverPageNum;
+  for (let i = 0; i < oliverTranslate.length; i++) {
+    oliverTranslate[i].style.transform = `translateX(${oliverTranslateNum}px)`;
+  }
+});
+// loka------------------
+lokaLeftSide.addEventListener("click", function () {
+  lokaTranslateNum -= 300;
+  lokaPageNum--;
+  lokaPage.innerHTML = lokaPageNum;
+  if (lokaTranslateNum <= -900) {
+    lokaTranslateNum = -900;
+    lokaPageNum = 1;
+    lokaPage.innerHTML = lokaPageNum;
+  }
+  for (let i = 0; i < lokaTranslate.length; i++) {
+    lokaTranslate[i].style.transform = `translateX(${lokaTranslateNum}px)`;
+  }
+});
+lokaRightSide.addEventListener("click", function () {
+  lokaTranslateNum += 300;
+  lokaPageNum++;
+  if (lokaTranslateNum >= 0) {
+    lokaTranslateNum = 0;
+    lokaPageNum = 4;
+  }
+  lokaPage.innerHTML = lokaPageNum;
+  for (let i = 0; i < lokaTranslate.length; i++) {
+    lokaTranslate[i].style.transform = `translateX(${lokaTranslateNum}px)`;
+  }
+});
 // homeBed---------------
 homeBedLeftSide.addEventListener("click", function () {
   homeBedTranslateNum -= 300;
@@ -231,21 +372,57 @@ let miniOpen = document.querySelector(".mini-open");
 let bonOpen = document.querySelector(".bon-open");
 let cornerOpen = document.querySelector(".corner-open");
 let homeBedOpen = document.querySelector(".home-bed-open");
-let openArr = [miniOpen, bonOpen, cornerOpen, homeBedOpen];
+let lokaOpen = document.querySelector(".loka-open");
+let oliverOpen = document.querySelector(".oliver-open");
+let bonjourOpen = document.querySelector(".bonjour-open");
+
+let openArr = [
+  miniOpen,
+  bonOpen,
+  cornerOpen,
+  homeBedOpen,
+  lokaOpen,
+  oliverOpen,
+  bonjourOpen,
+];
 
 // 商品細節視窗
 let miniDetail = document.querySelector(".mini-detail");
 let bonDetail = document.querySelector(".bon-detail");
 let cornerDetail = document.querySelector(".corner-detail");
 let homeBedDetail = document.querySelector(".homeBed-detail");
-let detailArr = [miniDetail, bonDetail, cornerDetail, homeBedDetail];
+let lokaDetail = document.querySelector(".loka-detail");
+let oliverDetail = document.querySelector(".oliver-detail");
+let bonjourDetail = document.querySelector(".bonjour-detail");
+
+let detailArr = [
+  miniDetail,
+  bonDetail,
+  cornerDetail,
+  homeBedDetail,
+  lokaDetail,
+  oliverDetail,
+  bonjourDetail,
+];
 
 // 關閉細節按鍵
 let miniClose = document.querySelector(".mini-close");
 let bonClose = document.querySelector(".bon-close");
 let cornerClose = document.querySelector(".corner-close");
 let homeBedClose = document.querySelector(".homeBed-close");
-let closeArr = [miniClose, bonClose, cornerClose, homeBedClose];
+let lokaClose = document.querySelector(".loka-close");
+let oliverClose = document.querySelector(".oliver-close");
+let bonjourClose = document.querySelector(".bonjour-close");
+
+let closeArr = [
+  miniClose,
+  bonClose,
+  cornerClose,
+  homeBedClose,
+  lokaClose,
+  oliverClose,
+  bonjourClose,
+];
 
 for (let i = 0; i < openArr.length; i++) {
   openArr[i].addEventListener("click", function () {
@@ -285,6 +462,15 @@ let heartBedSix = document.querySelector(".heart-bed-six");
 let heartBedSeven = document.querySelector(".heart-bed-seven");
 let heartBedEight = document.querySelector(".heart-bed-eight");
 let heartBedNine = document.querySelector(".heart-bed-nine");
+let heartTableOne = document.querySelector(".heart-table-one");
+let heartTableTwo = document.querySelector(".heart-table-two");
+let heartTableThree = document.querySelector(".heart-table-three");
+let heartTableFour = document.querySelector(".heart-table-four");
+let heartTableFive = document.querySelector(".heart-table-five");
+let heartTableSix = document.querySelector(".heart-table-six");
+let heartTableSeven = document.querySelector(".heart-table-seven");
+let heartTableEight = document.querySelector(".heart-table-eight");
+let heartTableNine = document.querySelector(".heart-table-nine");
 
 let heartChangeArr = [
   heartChange,
@@ -305,6 +491,15 @@ let heartChangeArr = [
   heartBedSeven,
   heartBedEight,
   heartBedNine,
+  heartTableOne,
+  heartTableTwo,
+  heartTableThree,
+  heartTableFour,
+  heartTableFive,
+  heartTableSix,
+  heartTableSeven,
+  heartTableEight,
+  heartTableNine,
 ];
 
 let heart1 = false;
@@ -325,6 +520,15 @@ let heart15 = false;
 let heart16 = false;
 let heart17 = false;
 let heart18 = false;
+let heart19 = false;
+let heart20 = false;
+let heart21 = false;
+let heart22 = false;
+let heart23 = false;
+let heart24 = false;
+let heart25 = false;
+let heart26 = false;
+let heart27 = false;
 let heartTrueFalse = [
   heart1,
   heart2,
@@ -339,7 +543,18 @@ let heartTrueFalse = [
   heart11,
   heart12,
   heart13,
+  heart19,
+  heart20,
+  heart21,
+  heart22,
+  heart23,
+  heart24,
+  heart25,
+  heart26,
 ];
+let countFavorite = 0;
+let favoriteListNum = document.querySelector(".favorite-list-num");
+
 heartChange.addEventListener("click", function () {
   heart1 = !heart1;
   if (heart1) {
@@ -353,9 +568,12 @@ for (let i = 0; i < heartChangeArr.length; i++) {
     heartTrueFalse[i] = !heartTrueFalse[i];
     if (heartTrueFalse[i]) {
       heartChangeArr[i].src = "../../furniture_img/H03.svg";
+      countFavorite++;
     } else {
       heartChangeArr[i].src = "../../furniture_img/H00.png";
+      countFavorite--;
     }
+    favoriteListNum.innerHTML = countFavorite;
   });
 }
 
@@ -365,10 +583,11 @@ let bedBtn = document.querySelector(".bed-btn");
 let tableBtn = document.querySelector(".table-btn");
 let sofaItemsAll = document.querySelector(".sofa-items-all");
 let bedItemsAll = document.querySelector(".bed-items-all");
-let tableItemsAll = document.querySelector(".table-items-al");
+let tableItemsAll = document.querySelector(".table-items-all");
 
 bedBtn.addEventListener("click", function () {
   sofaItemsAll.style.display = "none";
+  tableItemsAll.style.display = "none";
   bedItemsAll.style.display = "flex";
   sofaBtn.style.backgroundColor = "rgb(49, 48, 48)";
   tableBtn.style.backgroundColor = "rgb(49, 48, 48)";
@@ -381,10 +600,23 @@ bedBtn.addEventListener("click", function () {
 sofaBtn.addEventListener("click", function () {
   sofaItemsAll.style.display = "flex";
   bedItemsAll.style.display = "none";
+  tableItemsAll.style.display = "none";
   bedBtn.style.backgroundColor = "rgb(49, 48, 48)";
   tableBtn.style.backgroundColor = "rgb(49, 48, 48)";
   bedBtn.style.color = "white";
   tableBtn.style.color = "white";
   sofaBtn.style.backgroundColor = "white";
   sofaBtn.style.color = "black";
+});
+
+tableBtn.addEventListener("click", function () {
+  sofaItemsAll.style.display = "none";
+  bedItemsAll.style.display = "none";
+  tableItemsAll.style.display = "flex";
+  tableBtn.style.backgroundColor = "white";
+  tableBtn.style.color = "black";
+  bedBtn.style.color = "white";
+  sofaBtn.style.color = "white";
+  bedBtn.style.backgroundColor = "rgb(49, 48, 48)";
+  sofaBtn.style.backgroundColor = "rgb(49, 48, 48)";
 });
